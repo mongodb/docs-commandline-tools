@@ -730,7 +730,8 @@ Options
 .. option:: --forceTableScan
 
    
-   By default, :program:`mongodump` uses the ``_id`` index when scanning
+   This option only applies to the deprecated MMAPv1 storage engine.  By default, with servers
+   using MMAPv1, :program:`mongodump` uses the ``_id`` index when scanning
    collections with that index is available (e.g. 
    :ref:`3.4-reference-views` do not have any indexes). Specify :option:`--forceTableScan` 
    to direct :program:`mongodump` to scan collection data without the use of the 
@@ -740,6 +741,8 @@ Options
    :option:`--oplog` to create a point-in-time snapshot.
    
    You cannot use :option:`--forceTableScan` with the :option:`--query` option.
+   
+   Using this option with the WiredTiger storage engine has no effect.  :program:`mongodump` always uses a table scan to scan collection data with WiredTiger.
 
 
 .. option:: --gzip
