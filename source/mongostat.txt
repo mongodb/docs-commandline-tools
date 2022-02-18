@@ -798,7 +798,7 @@ The counters and corresponding column names are:
    * - wiredTiger.cache.pages requested from the cache
      - Pages Req
    * - metrics.document.inserted
-     - Inserted Rate'
+     - Inserted Rate
 
 
 .. _ex-mongostat-rate:
