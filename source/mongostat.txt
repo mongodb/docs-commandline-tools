@@ -781,14 +781,14 @@ The :binary:`~bin.mongostat` output resembles:
    localhost:27500         181          2           11   3000969         10080
    localhost:27500          39          2           10   3001124         10120
 
-The counters and corresponding column names are: 
+The counters and corresponding custom field names are: 
 
 .. list-table::
    :widths: 30 70
    :header-rows: 1
 
    * - Counter
-     - Column Name
+     - Custom Field Name
    * - opcounters.insert.rate
      - Insert Rate
    * - opcounters.query.rate
