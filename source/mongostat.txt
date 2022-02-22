@@ -730,12 +730,8 @@ Add Fields to :binary:`~bin.mongostat` Output
 :binary:`~bin.mongostat` output. If you include a space in your
 custom filed name, do not put additional quotes around the field name. 
 
-The following example adds these fields to the default
+The following example adds fields to the default
 :binary:`~bin.mongostat` output:
-
-- :serverstatus:`host`
-- :serverstatus:`version`
-- :serverstatus:`network.numRequests`
 
 .. code-block:: sh
 
@@ -749,6 +745,12 @@ The :binary:`~bin.mongostat` output resembles:
        *0    *0     *0     *0       0     2|0  0.0% 0.0%       0 2.51G 19.0M 0|0 0|0   158b   39.4k    2 Oct 11 12:14:45.878 localhost:37017  3.3.14               91
        *0    *0     *0     *0       0     1|0  0.0% 0.0%       0 2.51G 19.0M 0|0 0|0   157b   39.3k    2 Oct 11 12:14:46.879 localhost:37017  3.3.14               95
        *0    *0     *0     *0       0     1|0  0.0% 0.0%       0 2.51G 19.0M 0|0 0|0   157b   39.2k    2 Oct 11 12:14:47.884 localhost:37017  3.3.14               99
+
+The following fields are added to the default output:
+
+- :serverstatus:`host`
+- :serverstatus:`version`
+- :serverstatus:`network.numRequests`
 
 The :serverstatus:`network.numRequests` field has a custom field name,
 "network requests".
