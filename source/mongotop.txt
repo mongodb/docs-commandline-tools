@@ -37,9 +37,9 @@ Versioning
 
 .. note:: Quick links to older documentation
 
-   - `MongoDB 4.2 mongotop <https://mongodb.com/docs/v4.2/reference/program/mongotop>`__
-   - `MongoDB 4.0 mongotop <https://mongodb.com/docs/v4.0/reference/program/mongotop>`__
-   - `MongoDB 3.6 mongotop <https://mongodb.com/docs/v3.6/reference/program/mongotop>`__
+   - `MongoDB 4.2 mongotop <https://www.mongodb.com/docs/v4.2/reference/program/mongotop>`__
+   - `MongoDB 4.0 mongotop <https://www.mongodb.com/docs/v4.0/reference/program/mongotop>`__
+   - `MongoDB 3.6 mongotop <https://www.mongodb.com/docs/v3.6/reference/program/mongotop>`__
 
 This documentation is for version ``{+release+}`` of |tool-binary|. 
 

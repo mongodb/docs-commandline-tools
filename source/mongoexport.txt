@@ -46,9 +46,9 @@ Versioning
 
 .. note:: Quick links to older documentation
 
-   - `MongoDB 4.2 mongoexport <https://mongodb.com/docs/v4.2/reference/program/mongoexport>`__
-   - `MongoDB 4.0 mongoexport <https://mongodb.com/docs/v4.0/reference/program/mongoexport>`__
-   - `MongoDB 3.6 mongoexport <https://mongodb.com/docs/v3.6/reference/program/mongoexport>`__
+   - `MongoDB 4.2 mongoexport <https://www.mongodb.com/docs/v4.2/reference/program/mongoexport>`__
+   - `MongoDB 4.0 mongoexport <https://www.mongodb.com/docs/v4.0/reference/program/mongoexport>`__
+   - `MongoDB 3.6 mongoexport <https://www.mongodb.com/docs/v3.6/reference/program/mongoexport>`__
 
 This documentation is for version ``{+release+}`` of |tool-binary|. 
 

@@ -1,5 +1,5 @@
 name: mongodb
-url: https://mongodb.com/docs/manual/
+url: https://www.mongodb.com/docs/manual/
 path: mongodb.inv
 ---
 name: python
@@ -15,10 +15,10 @@ url: https://docs.python.org/3/
 path: python3.inv
 ---
 name: clouddocs
-url: https://mongodb.com/docs/atlas/
+url: https://www.mongodb.com/docs/atlas/
 path: cloud-docs.inv
 ---
 name: compassdocs
-url: https://mongodb.com/docs/compass/current/
+url: https://www.mongodb.com/docs/compass/current/
 path: compass-docs.inv
 ...
