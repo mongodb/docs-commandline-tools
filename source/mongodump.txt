@@ -49,8 +49,8 @@ Versioning
 
 .. note:: Quick links to older documentation
 
-   - :v4.2:`MongoDB 4.2 mongodump </reference/program/mongodump>`__
-   - :v4.0:`MongoDB 4.0 mongodump </reference/program/mongodump>`__
+   - :v4.2:`MongoDB 4.2 mongodump </reference/program/mongodump>`
+   - :v4.0:`MongoDB 4.0 mongodump </reference/program/mongodump>`
 
 
 This documentation is for version ``{+release+}`` of |tool-binary|. 
