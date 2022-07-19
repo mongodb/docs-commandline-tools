@@ -1,6 +1,6 @@
 .. _100.5.4-changelog:
 
-100.5.3 Changelog
+100.5.4 Changelog
 -----------------
 
 *Released 2022-07-19*
