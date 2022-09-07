@@ -895,7 +895,7 @@ Options
 
 .. option:: --viewsAsCollections
 
-   When specified, :program:`mongodump` exports :manual:`read-only views
+   When specified, :program:`mongodump` exports :manual:`views
    </core/views>` as collections.
    
    .. note::
