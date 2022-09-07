@@ -896,9 +896,15 @@ Options
 .. option:: --viewsAsCollections
 
    When specified, :program:`mongodump` exports :manual:`read-only views
-   </core/views>` as collections. For each view, :program:`mongodump` will
-   produce a BSON file containing the documents in the view. If you
-   :binary:`~bin.mongorestore` the produced BSON file, the view will be
+   </core/views>` as collections.
+   
+   .. note::
+   
+      Only views are exported.
+   
+   For each view, :program:`mongodump` creates a BSON file containing
+   the documents in the view. If you use :binary:`~bin.mongorestore`
+   with a BSON file created by :program:`mongodump`, the view is
    restored as a :term:`collection`.
    
    If you do *not* include :option:`--viewsAsCollections`,
