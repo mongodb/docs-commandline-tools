@@ -26,7 +26,7 @@ Synopsis
 --------
 
 :binary:`~bin.mongodump` is a utility that creates a binary export of
-the contents of a database.
+a database's contents.
 
 :binary:`~bin.mongodump` can export data from:
 
