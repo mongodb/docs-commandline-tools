@@ -26,17 +26,21 @@ Synopsis
 --------
 
 :binary:`~bin.mongodump` is a utility for creating a binary export of
-the contents of a database. :binary:`~bin.mongodump` can export data
-from either :binary:`~bin.mongod` or :binary:`~bin.mongos` instances;
-i.e. can export data from standalone, replica set, and sharded cluster
-deployments.
+the contents of a database.
+
+:binary:`~bin.mongodump` can export data from:
+
+- :binary:`~bin.mongod` or :binary:`~bin.mongos` instances.
+- Standalone deployments.
+- Replica sets.
+- Sharded clusters.
 
 .. include:: /includes/extracts/require-cmd-line-mongodump.rst
 
 .. seealso::
 
-   :binary:`~bin.mongorestore` which provides the corresponding
-   binary data import capability.
+   :binary:`~bin.mongorestore`, which allows you to
+   import data exported from :binary:`~bin.mongodump`.
 
 .. note::
 
@@ -47,13 +51,12 @@ Versioning
 
 .. include:: /includes/extracts/dbtools-version-single.rst
 
-.. note:: Quick links to older documentation
+This documentation is for version ``{+release+}`` of |tool-binary|. 
+
+.. seealso:: Links to older documentation
 
    - :v4.2:`MongoDB 4.2 mongodump </reference/program/mongodump>`
    - :v4.0:`MongoDB 4.0 mongodump </reference/program/mongodump>`
-
-
-This documentation is for version ``{+release+}`` of |tool-binary|. 
 
 Compatibility
 -------------
@@ -66,8 +69,7 @@ MongoDB Server Compatibility
 Platform Support
 ~~~~~~~~~~~~~~~~
 
-|tool-binary| version ``{+release+}`` is supported on the following
-platforms:
+|tool-binary| version ``{+release+}`` is supported on these platforms:
 
 .. include:: /includes/fact-platform-support.rst
 
@@ -79,7 +81,7 @@ Installation
 Syntax
 ------
 
-The :binary:`~bin.mongodump` command has the following form:
+:binary:`~bin.mongodump` command syntax:
 
 .. code-block:: sh
 
@@ -279,16 +281,18 @@ Data Exclusion
 :binary:`~bin.mongodump` excludes the content of the ``local`` database
 in its output.
 
-:binary:`~bin.mongodump` output only captures the documents in the
+:binary:`~bin.mongodump` output only exports the documents in the
 database and does not include index data. :binary:`~bin.mongorestore`
 or :binary:`~bin.mongod` must then rebuild the indexes after restoring
 data.
 
-If using :manual:`read-only views </core/views>`,
-:binary:`~bin.mongodump` only captures a view's metadata: it
-does not create a binary export of the documents included in the view.
-To capture the documents in a view use
-:option:`--viewsAsCollections <mongodump --viewsAsCollections>`.
+If you're using :manual:`views </core/views>`:
+
+- By default, :binary:`~bin.mongodump` only exports a view's metadata.
+  :binary:`~bin.mongodump` doesn't create a binary export of the
+  documents included in the view.
+- To export the documents in a view, you use
+  :option:`--viewsAsCollections <mongodump --viewsAsCollections>`.
 
 Metadata Format
 ~~~~~~~~~~~~~~~
