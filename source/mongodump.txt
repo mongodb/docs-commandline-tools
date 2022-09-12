@@ -862,7 +862,7 @@ Options
 
 .. option:: --viewsAsCollections
 
-   When specified, :program:`mongodump` exports ref:`views
+   When specified, :program:`mongodump` exports :ref:`views
    <views-landing-page>` as collections.
    
    .. note::
