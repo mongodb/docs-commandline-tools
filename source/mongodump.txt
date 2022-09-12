@@ -286,7 +286,7 @@ database and does not include index data. :binary:`~bin.mongorestore`
 or :binary:`~bin.mongod` must then rebuild the indexes after restoring
 data.
 
-If you're using :manual:`views </core/views>`:
+If you're using :ref:`views <views-landing-page>`:
 
 - By default, :binary:`~bin.mongodump` only exports a view's metadata.
   :binary:`~bin.mongodump` doesn't create a binary export of the
@@ -862,8 +862,8 @@ Options
 
 .. option:: --viewsAsCollections
 
-   When specified, :program:`mongodump` exports :manual:`views
-   </core/views>` as collections.
+   When specified, :program:`mongodump` exports ref:`views
+   <views-landing-page>` as collections.
    
    .. note::
    
