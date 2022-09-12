@@ -30,10 +30,10 @@ a database's contents.
 
 :binary:`~bin.mongodump` can export data from:
 
-- :binary:`~bin.mongod` and :binary:`~bin.mongos` instances.
-- Standalone deployments.
-- Replica sets.
-- Sharded clusters.
+- :binary:`~bin.mongod` and :binary:`~bin.mongos` instances
+- Standalone deployments
+- Replica sets
+- Sharded clusters
 
 .. include:: /includes/extracts/require-cmd-line-mongodump.rst
 
@@ -291,7 +291,7 @@ If you're using :manual:`views </core/views>`:
 - By default, :binary:`~bin.mongodump` only exports a view's metadata.
   :binary:`~bin.mongodump` doesn't create a binary export of the
   documents included in the view.
-- To export the documents in a view, you use
+- To export the documents in a view, use
   :option:`--viewsAsCollections <mongodump --viewsAsCollections>`.
 
 Metadata Format
@@ -867,7 +867,9 @@ Options
    
    .. note::
    
-      Only views are exported.
+      Only views are exported. By default, :binary:`~bin.mongodump` only
+      exports a view's metadata. To export the documents in a view, use
+      the ``--viewsAsCollections`` option.
    
    For each view, :program:`mongodump` creates a BSON file containing
    the documents in the view. If you use :binary:`~bin.mongorestore`
