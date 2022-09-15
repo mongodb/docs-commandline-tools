@@ -30,10 +30,12 @@ a database's contents.
 
 :binary:`~bin.mongodump` can export data from:
 
-- :binary:`~bin.mongod` and :binary:`~bin.mongos` instances
 - Standalone deployments
 - Replica sets
 - Sharded clusters
+
+:binary:`~bin.mongodump` can connect to :binary:`~bin.mongod` and
+:binary:`~bin.mongos` instances.
 
 .. include:: /includes/extracts/require-cmd-line-mongodump.rst
 
@@ -281,10 +283,13 @@ Data Exclusion
 :binary:`~bin.mongodump` excludes the content of the ``local`` database
 in its output.
 
-:binary:`~bin.mongodump` output only exports the documents in the
-database and does not include index data. :binary:`~bin.mongorestore`
-or :binary:`~bin.mongod` must then rebuild the indexes after restoring
-data.
+:binary:`~bin.mongodump` output:
+
+- Contains the documents in the database and the index definitions.
+- Does not contain the index data.
+
+:binary:`~bin.mongorestore` or :binary:`~bin.mongod` must rebuild the
+indexes after restoring data.
 
 If you're using :ref:`views <views-landing-page>`:
 
