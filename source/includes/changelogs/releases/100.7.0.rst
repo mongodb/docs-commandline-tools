@@ -8,9 +8,9 @@
 This release adds tests against MongoDB 6.3. Highlights include:
 
 - New tests for `Column Store Indexes
-  <https://www.mongodb.com/products/column-store-indexes>`__
+  <https://www.mongodb.com/products/column-store-indexes>`__.
   
-- Updating the minimum Go version to 1.19
+- Updating the minimum Go version to 1.19.
 
 - Fixing a bug that caused the Tools to ignore a password supplied via a
   prompt.
