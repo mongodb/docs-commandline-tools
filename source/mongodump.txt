@@ -75,6 +75,11 @@ Platform Support
 
 .. include:: /includes/fact-platform-support.rst
 
+Additional Considerations
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /includes/ubuntu-connection.rst
+
 Installation
 ------------
 
