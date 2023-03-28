@@ -1,5 +1,5 @@
-Ubuntu 18.04 may use a non-standard DNS resolver. If so, when you try to
-connect to the MongoDB server, the shell returns an error message like:
+Ubuntu 18.04 may use a non-standard DNS resolver. When you use a
+non-standard DNS resolver, the shell returns an error message like:
 
 .. code-block:: shell
 
