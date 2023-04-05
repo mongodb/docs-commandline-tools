@@ -62,8 +62,8 @@ platforms:
 
 .. include:: /includes/fact-platform-support.rst
 
-Additional Considerations
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Additional Considerations for Ubuntu 18.04
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /includes/ubuntu-connection.rst
 
