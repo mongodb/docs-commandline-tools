@@ -2,6 +2,7 @@ Ubuntu 18.04 may use a non-standard DNS resolver. When you use a
 non-standard DNS resolver, the shell returns an error message like:
 
 .. code-block:: shell
+   :copyable: false
 
   error parsing uri: lookup <HOSTNAME> on 127.0.0.53:53: cannot unmarshal DNS message
 
