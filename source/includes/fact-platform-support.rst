@@ -119,7 +119,7 @@
     -
     -
 
-  * - macOS 10.12 or later
+  * - macOS 10.12 - 10.15
     - |checkmark|
     -
     -
