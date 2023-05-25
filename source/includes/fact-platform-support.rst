@@ -113,6 +113,12 @@
     -
     -
 
+  * - macOS 11 or later
+    - |checkmark|
+    - |checkmark|
+    -
+    -
+
   * - macOS 10.12 or later
     - |checkmark|
     -
