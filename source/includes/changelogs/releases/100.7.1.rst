@@ -14,7 +14,7 @@ Bug
 
 - :issue:`TOOLS-2598` - Tools improperly parse multi-certs inside client certificate file
 - :issue:`TOOLS-3203` - mongodump fails because it can’t query system.sharding_ddl_coordinators collection
-- :issue:`TOOLS-3273` - Validation added in 100.7.0 prevents Atlas proxy from running &quot;mongodump&quot;
+- :issue:`TOOLS-3273` - Validation added in 100.7.0 prevents Atlas proxy from running mongodump
 - :issue:`TOOLS-3279` - Test suite segfaults in some failure cases
 
 Task
