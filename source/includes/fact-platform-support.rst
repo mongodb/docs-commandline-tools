@@ -12,7 +12,7 @@
     - s390x
 
   * - Amazon Linux 2023
-    - 
+    - |checkmark|
     - |checkmark|
     -
     -
@@ -49,8 +49,8 @@
 
   * - :abbr:`RHEL (Red Hat Enterprise Linux)` / CentOS 9
     - |checkmark|
-    -
     - |checkmark|
+    - 
     -
     
   * - :abbr:`RHEL (Red Hat Enterprise Linux)` / CentOS 8
