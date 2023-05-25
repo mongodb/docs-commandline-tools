@@ -11,6 +11,12 @@
     - PPC64LE
     - s390x
 
+  * - Amazon Linux 2023
+    - 
+    - |checkmark|
+    -
+    -
+
   * - Amazon 2
     - |checkmark|
     -
@@ -41,6 +47,12 @@
     -
     -
 
+  * - :abbr:`RHEL (Red Hat Enterprise Linux)` / CentOS 9
+    - |checkmark|
+    -
+    - |checkmark|
+    -
+    
   * - :abbr:`RHEL (Red Hat Enterprise Linux)` / CentOS 8
     - |checkmark|
     -
