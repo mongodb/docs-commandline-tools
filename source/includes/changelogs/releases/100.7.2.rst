@@ -5,9 +5,9 @@
 
 *Released 2023-05-30*
 
-This release fixes an issue with installing Database Tools on RHEL aarch64 architecture. 
+This release fixes an issue with installing Database Tools on RHEL AArch64 architecture. 
 
 Bug
 ~~~
 
-- :issue:`TOOLS-3309` Fix release issue on RHEL ARM architecture
+- :issue:`TOOLS-3309` Fix release issue on RHEL AArch64 architecture
