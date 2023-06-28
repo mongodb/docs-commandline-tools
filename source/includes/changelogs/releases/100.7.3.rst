@@ -6,7 +6,7 @@
 *Released 2023-06-26*
 
 This release fixes an issue introduced in 100.7.1 where specifying 
-``mongodump --db=confg`` will not dump the entire config collection.
+``mongodump --db=confg`` would not dump the entire config collection.
 
 Bug
 ~~~
