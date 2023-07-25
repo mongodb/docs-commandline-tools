@@ -264,6 +264,13 @@ Behavior
    the :dbtools:`--archive </mongodump/#std-option-mongodump.--archive>` 
    option.  
 
+Using ``mongodump`` Without a ``authSource``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When :urioption:`authSource` is not specified in the MongoDB URI, the database name provided 
+with the ``--db`` or ``-d`` flag is used to authenticate your ``mongodump`` session
+and *not* indicate the database being dumped.
+
 Restore to Matching Server Version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
