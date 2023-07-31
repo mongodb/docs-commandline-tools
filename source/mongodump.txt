@@ -267,9 +267,10 @@ Behavior
 Using ``mongodump`` Without an ``authSource``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When :urioption:`authSource` is not specified in the MongoDB URI, the database name provided 
-with :option:`--db` is used to authenticate your ``mongodump`` session
-and indicate the database being dumped.
+When :urioption:`authSource` is not specified in the MongoDB URI, the 
+database name specified in :option:`--db` is used to authenticate your 
+``mongodump`` session and indicate the database being dumped. For a 
+detailed example see :ref:`mongodump-auth-dump`. 
 
 Restore to Matching Server Version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1105,3 +1106,18 @@ connect to a MongoDB Atlas cluster:
 .. code-block:: none
 
    mongodump 'mongodb+srv://cluster0.example.com/testdb?authSource=$external&authMechanism=MONGODB-AWS'  <other options>
+
+.. _mongodump-auth-dump:
+
+Authenticating to a Specific Database With ``mongodump``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To authenticate to a different database than the one being dumped, you 
+must specify the ``authSource`` option.
+
+In this example, the ``admin` database is being used for authentication,
+and ``testdb`` is being dumped.
+
+.. code-block:: none
+
+   mongodump 'mongodb+srv://cluster0.example.com?authSource=admin' --db testdb
