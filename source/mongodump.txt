@@ -1116,9 +1116,13 @@ Authenticating to a Specific Database With ``mongodump``
 To authenticate to a different database than the one being dumped, you 
 must specify ``authSource`` in the MongoDB URI.
 
-In this example, the ``admin` database is being used for authentication,
-and ``testdb`` is being dumped.
+In this example:
+
+- The username ``myuser`` and password ``mypassword`` is used. This user
+  has read access to the ``testdb``.
+- The ``admin`` database is used to authentication the user.
+- The``testdb`` is being dumped.
 
 .. code-block:: none
 
-   mongodump 'mongodb+srv://cluster0.example.com?authSource=admin' --db testdb
+   mongodump 'mongodb+srv://myuser:mypassword@cluster0.example.com?authSource=admin' --db testdb
