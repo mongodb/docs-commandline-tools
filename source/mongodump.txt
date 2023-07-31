@@ -1121,7 +1121,7 @@ In this example:
 - The username ``myuser`` and password ``mypassword`` is used. This user
   has read access to the ``testdb``.
 - The ``admin`` database is used to authentication the user.
-- The``testdb`` is being dumped.
+- The ``testdb`` is being dumped.
 
 .. code-block:: none
 
