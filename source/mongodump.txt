@@ -1119,10 +1119,10 @@ must specify ``authSource`` in the MongoDB URI.
 In this example:
 
 - The username ``myuser`` and password ``mypassword`` is used. This user
-  has read access to the ``testdb``.
+  has read access to ``testdb``.
 - The ``admin`` database is used to authentication the user.
 - The ``testdb`` is being dumped.
 
 .. code-block:: none
 
-   mongodump 'mongodb+srv://myuser:mypassword@cluster0.example.com?authSource=admin' --db testdb
+   mongodump 'mongodb+srv://myuser:mypassword@cluster0.example.com/?authSource=admin' --db testdb
