@@ -3,12 +3,15 @@ When using :binary:`~bin.mongorestore` to load data files created by
 to has either:
 
 - The same major version.
-- The same :ref:`FCV level set <set-fcv>`.
+- The same feature compatibility version. 
 
 For example, if your dump was created from a MongoDB deployment running
-version ``4.4.x``, be sure that the MongoDB deployment you are restoring 
-to is also running version ``4.4.x`` or has the FCV level set to 
-``4.4.x``.
+version ``4.4``, be sure that the MongoDB deployment you are restoring 
+to is also running version ``4.4`` or has the FCV level set to 
+``4.4``. 
+
+See :dbcommand:`setFeatureCompatibilityVersion` for 
+information on changing feature compatibility versions.
 
 .. note::
 
