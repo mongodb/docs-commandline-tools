@@ -19,9 +19,10 @@ see :dbcommand:`setFeatureCompatibilityVersion`.
    as the source deployment.
 
    This guarantee does not apply to metadata, archive, or oplog replay 
-   files. If you attempt to restore these files using different 
-   source and destination deployment versions, it could lead to failure, 
-   silent failure, or corrupted metadata.
+   files. If you try to restore these files using different 
+   source and destination deployment versions, the ``mongorestore`` 
+   process could result in failure, silent failure, or corrupted 
+   metadata.
 
 In addition, ensure that you are using the same version of 
 :binary:`~bin.mongorestore` to load the data files as the version of
