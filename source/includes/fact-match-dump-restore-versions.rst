@@ -7,10 +7,10 @@ destination deployments must be either:
 
 For example, if your dump was created from a MongoDB deployment running
 version ``4.4``, the MongoDB deployment you restore to must also run 
-version ``4.4`` or have its FCV level set to ``4.4``.
+version ``4.4`` or have its FCV set to ``4.4``.
 
-For information on changing feature compatibility versions, 
-see :dbcommand:`setFeatureCompatibilityVersion`.
+To change your feature compatibility version, see 
+:dbcommand:`setFeatureCompatibilityVersion`.
 
 .. note::
 
