@@ -429,6 +429,8 @@ Options
    
    - connection closed events
 
+   - error messages
+
 .. option:: --version
 
    Returns the :program:`mongodump` release number.

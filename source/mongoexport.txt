@@ -337,6 +337,8 @@ Options
    
    - connection closed events
 
+   - error messages
+
 
 .. option:: --version
 
