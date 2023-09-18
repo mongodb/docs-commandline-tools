@@ -29,8 +29,7 @@ a database's contents. :binary:`~bin.mongodump` can export data from:
 - Replica sets
 - Sharded clusters
 - :atlas:`Serverless instances 
-  </create-database-deployment/#serverless-instances>` running a
-  non-rapid-release version of MongoDB
+  </create-database-deployment/#serverless-instances>`
 
 .. |tool-command| replace:: :binary:`~bin.mongodump`
 
