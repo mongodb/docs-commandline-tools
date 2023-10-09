@@ -49,13 +49,6 @@ into a :binary:`~bin.mongod` or :binary:`~bin.mongos` instance.
 Versioning
 ~~~~~~~~~~
 
-.. include:: /includes/extracts/dbtools-version-single.rst
-
-.. note:: Quick links to older documentation
-
-   - :v4.2:`MongoDB 4.2 mongorestore </reference/program/mongorestore>`
-   - :v4.0:`MongoDB 4.0 mongorestore </reference/program/mongorestore>`
-
 This documentation is for version ``{+release+}`` of |tool-binary|. 
 
 Compatibility
