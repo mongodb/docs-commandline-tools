@@ -1,5 +1,14 @@
 {
    "cSpell.words": [
-      "mongorestore"
+      "authrole",
+      "backlinks",
+      "bson",
+      "dbtools",
+      "FIPS",
+      "mongodump",
+      "mongorestore",
+      "oplog",
+      "seealso",
+      "singlecol"
    ]
 }
