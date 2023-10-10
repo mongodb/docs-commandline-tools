@@ -1120,8 +1120,8 @@ on port ``27017``.
 
 .. _example-complex-wildcard-usage:
 
-Change Collections' Namespaces during Restore
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Change Collection Namespaces during Restore
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can use the :option:`--nsFrom <mongorestore --nsFrom>` and
 :option:`--nsTo <mongorestore --nsTo>` options to change the namespace
