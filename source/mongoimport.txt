@@ -50,8 +50,6 @@ tool.
 Versioning
 ~~~~~~~~~~
 
-.. include:: /includes/extracts/dbtools-version-single.rst
-
 This documentation is for version ``{+release+}`` of |tool-binary|. 
 
 Compatibility
