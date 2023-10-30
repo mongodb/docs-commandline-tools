@@ -76,7 +76,7 @@ Installation
 Syntax
 ------
 
-The :binary:`~bin.mongoimport` command has the following form:
+The :binary:`~bin.mongoimport` command has the following syntax:
 
 .. code-block:: sh
 
@@ -446,7 +446,7 @@ Options
 .. option:: --collection=<collection>, -c=<collection>
 
    Specifies the collection to import. If you do not specify
-   :option:`--collection`, :binary:`~bin.mongoimport` takes the
+   :option:`--collection`, :binary:`~bin.mongoimport` reads the
    collection name from the input filename, omitting the file's
    extension if it has one.
 
@@ -1140,7 +1140,7 @@ either: :option:`--fields <mongoimport --fields>`, :option:`--fieldFile
 Specify field names and data types in the form
 ``<colName>.<type>(<arg>)``. 
 
-For example, a ``/example/file.csv`` file contains the following data:
+For example, ``/example/file.csv`` contains the following data:
 
 .. code-block:: none
 
