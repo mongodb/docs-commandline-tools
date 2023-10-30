@@ -81,7 +81,7 @@ Installation
 Syntax
 ------
 
-The ``mongorestore`` command has the following form:
+The ``mongorestore`` command has the following syntax:
 
 .. code-block:: sh
 
@@ -562,14 +562,14 @@ Options
    Specifies the destination database for ``mongorestore`` to restore data
    *into* when restoring from a BSON file. If the database does not
    exist, ``mongorestore`` creates the database. For example, the following
-   restores the ``salaries`` collection into the ``reporting`` database.
+   example restores the ``salaries`` collection into the ``reporting`` database.
    
    .. code-block:: sh
       :copyable: false
    
       mongorestore --db=reporting dump/test/salaries.bson 
    
-   If you do not specify :option:`--db`, ``mongorestore`` takes the database name
+   If you do not specify :option:`--db`, ``mongorestore`` reads the database name
    from the data files.
    
    The use of :option:`--db` and :option:`--collection` options are
