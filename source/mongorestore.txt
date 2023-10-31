@@ -1288,7 +1288,8 @@ Insert time series documents into the collection:
    ] )
 
 Use ``mongodump`` to dump the time series collection to the ``dump/test``
-directory.
+directory. This command results in two bson files being added to the 
+directory, ``system.buckets.weather.bson`` and ``weather.metadata.json``.
 
 .. code-block:: sh
 
