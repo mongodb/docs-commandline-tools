@@ -1261,7 +1261,7 @@ Restore a Time Series Collection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To restore a time series collection, use ``mongosh`` to create a 
-time series collection. This example used the default ``test`` database:
+time series collection. This example uses the default ``test`` database:
 
 .. code-block:: javascript
 
@@ -1276,7 +1276,7 @@ time series collection. This example used the default ``test`` database:
       }
    )
 
-Insert sample time series documents into the collection:
+Insert time series documents into the collection:
 
 .. code-block:: javascript
 
