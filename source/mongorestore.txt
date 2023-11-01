@@ -1260,8 +1260,8 @@ the filename. For example:
 Restore a Time Series Collection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To restore a time series collection, use ``mongosh`` to create a 
-time series collection. This example uses the default ``test`` database:
+Use ``mongosh`` to create a time series collection. This example 
+uses the default ``test`` database:
 
 .. code-block:: javascript
 
@@ -1300,14 +1300,14 @@ Insert time series documents into the collection:
 
 Use ``mongodump`` to dump the time series collection to the ``dump/test``
 directory. This command results in two bson files being added to the 
-directory, ``system.buckets.weather.bson`` and ``weather.metadata.json``.
+directory, ``system.buckets.weather.bson`` and ``weather.metadata.json``:
 
 .. code-block:: sh
 
    mongodump --db=test
 
 Use ``mongorestore`` to restore the data to the ``mongorestore.weather`` 
-namespace.
+namespace:
 
 .. code-block:: sh
 
