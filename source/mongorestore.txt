@@ -1299,7 +1299,7 @@ Insert time series documents into the collection:
    ] )
 
 From your terminal, use ``mongodump`` to export the time series collection 
-to the ``dump/test`` directory. This command adds two files 
+to the ``dump/test`` directory. This commands adds 
 ``system.buckets.weather.bson`` and ``weather.metadata.json`` to 
 the directory:
 
