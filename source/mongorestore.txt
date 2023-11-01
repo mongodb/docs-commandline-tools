@@ -1299,9 +1299,9 @@ Insert time series documents into the collection:
    ] )
 
 From your terminal, use ``mongodump`` to export the time series collection 
-to the ``dump/test`` directory. This command results in two bson files 
-being added to the directory, ``system.buckets.weather.bson`` and 
-``weather.metadata.json``:
+to the ``dump/test`` directory. This command adds two bson files 
+``system.buckets.weather.bson`` and ``weather.metadata.json`` to 
+the directory:
 
 .. code-block:: sh
 
@@ -1317,7 +1317,7 @@ namespace:
 .. note::
 
        You cannot restore the ``system.buckets.weather.bson`` file
-       by itself, attempting to do so results in an error.
+       by itself. Attempting to do so results in an error.
 
 .. _mongorestore-example-connect-using-aws-iam:
 
