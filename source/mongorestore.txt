@@ -1312,7 +1312,7 @@ namespace:
 
 .. code-block:: sh
 
-   mongorestore --host localhost --port 27017 --nsInclude=mongorestore.weather dump/test
+   mongorestore --host localhost --port 27017 --nsFrom='test.*' --nsTo='mongorestore.*' dump/
 
 .. note::
 
