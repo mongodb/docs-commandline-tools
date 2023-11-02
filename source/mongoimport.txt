@@ -50,6 +50,12 @@ tool.
 Versioning
 ~~~~~~~~~~
 
+.. include:: /includes/extracts/dbtools-version-single.rst
+
+.. note:: Quick links to older documentation
+
+   - :v4.2:`MongoDB 4.2 mongoimport </reference/program/mongoimport>`
+
 This documentation is for version ``{+release+}`` of |tool-binary|. 
 
 Compatibility
@@ -331,7 +337,9 @@ Options
 .. option:: --sslAllowInvalidCertificates
 
    Bypasses the validation checks for server certificates and allows
-   the use of invalid certificates. MongoDB logs a warning for invalid certificates.
+   the use of invalid certificates. When using the
+   :setting:`~net.ssl.allowInvalidCertificates` setting, MongoDB logs a
+   warning for invalid certificates.
    
    .. include:: /includes/extracts/ssl-facts-invalid-cert-warning-clients.rst
    

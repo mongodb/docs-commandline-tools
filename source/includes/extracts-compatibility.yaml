@@ -8,6 +8,7 @@ content: |
    - MongoDB 6.0
    - MongoDB 5.0
    - MongoDB 4.4
+   - MongoDB 4.2
 
    While the tools may work on earlier versions of MongoDB server, any
    such compatibility is not guaranteed.
@@ -23,6 +24,7 @@ content: |
    - MongoDB 6.0
    - MongoDB 5.0
    - MongoDB 4.4
+   - MongoDB 4.2
 
    While |tool-binary| may work on earlier versions of MongoDB server,
    any such compatibility is not guaranteed.
