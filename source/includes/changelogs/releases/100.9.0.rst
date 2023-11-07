@@ -1,0 +1,14 @@
+.. _100.9.0-changelog:
+
+100.9.0 Changelog
+-----------------
+
+*Released 2023-10-20*
+
+This version adds support for MongoDB Server 7.0 and updates the Go version 
+used to build the tools to Go 1.20.10.
+
+Epic
+~~~~
+
+- :issue:`TOOLS-3278` Tools 7.0 Support
