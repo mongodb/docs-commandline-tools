@@ -5,8 +5,8 @@
 
 *Released 2023-11-09*
 
-- This version updates external dependencies and fixes an issue where
-  mongodump could change the ordering of fields in a view definition.
+This version updates external dependencies and fixes an issue where
+mongodump could change the ordering of fields in a view definition.
 
 Bug
 ~~~
