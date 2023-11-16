@@ -710,7 +710,7 @@ Options
 
    .. code-block:: sh 
 
-      mongodump -d=sample_mflix -c=movies  -q='{"year": {"$regex": "20"}}'
+      mongodump -d=sample_mflix -c=movies  -q='{ "year": { "$regex": "20" } }'
 
    .. note::
 
