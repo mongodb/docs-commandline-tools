@@ -958,11 +958,14 @@ Options
    :option:`mongodump --gzip`
    
    To restore from a dump directory that contains compressed files, run
-   ``mongorestore`` with the :option:`--gzip` option.
+   ``mongorestore`` with the ``--gzip`` option.
    
    To restore from a compressed archive file, run ``mongorestore`` with
-   both the :option:`--gzip` and the :option:`--archive <mongorestore
+   both the ``--gzip`` and the :option:`--archive <mongorestore
    --archive>` options.
+
+   .. include:: /includes/note-use-nsfrom-nsto.rst
+   
 
 .. option:: --archive=<file>
 
@@ -1137,9 +1140,8 @@ on port ``27017``.
 Change Collection Namespaces during Restore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can use the :option:`--nsFrom <mongorestore --nsFrom>` and
-:option:`--nsTo <mongorestore --nsTo>` options to change the namespace
-of the collection that you are restoring.
+.. include:: /includes/note-use-nsfrom-nsto.rst
+
 :option:`--nsFrom <mongorestore --nsFrom>` and :option:`--nsTo
 <mongorestore --nsTo>` support using asterisks as wild cards *and*
 support using dollar signs to delimit "wild card" variables to use in
@@ -1240,6 +1242,10 @@ database from the archive file ``test.20150715.gz``.
 .. code-block:: sh
 
    mongorestore --gzip --archive=test.20150715.gz --nsInclude="test.*"
+
+.. note::
+
+   .. include:: /includes/note-use-nsfrom-nsto.rst 
 
 .. _mongorestore-example-archive-stdin:
 
