@@ -964,8 +964,11 @@ Options
    both the ``--gzip`` and the :option:`--archive <mongorestore
    --archive>` options.
 
-   .. include:: /includes/note-use-nsfrom-nsto.rst
-   
+   .. note::
+
+      You can use the :option:`--nsFrom <mongorestore --nsFrom>` and
+      :option:`--nsTo <mongorestore --nsTo>` options with the ``--gzip`` option to 
+      change the namespace of the collection that you are restoring.
 
 .. option:: --archive=<file>
 
@@ -1140,10 +1143,12 @@ on port ``27017``.
 Change Collection Namespaces during Restore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /includes/note-use-nsfrom-nsto.rst
+To change the namespace of the collection that you are restoring, use the 
+:option:`--nsFrom <mongorestore --nsFrom>` and :option:`--nsTo <mongorestore --nsTo>` 
+options.
 
-:option:`--nsFrom <mongorestore --nsFrom>` and :option:`--nsTo
-<mongorestore --nsTo>` support using asterisks as wild cards *and*
+The :option:`--nsFrom <mongorestore --nsFrom>` and :option:`--nsTo
+<mongorestore --nsTo>` options support using asterisks as wild cards *and*
 support using dollar signs to delimit "wild card" variables to use in
 the replacement.
 
@@ -1225,7 +1230,7 @@ compressed archive files created by :binary:`~bin.mongodump`.
 
 To restore from a dump directory that contains compressed files, run
 ``mongorestore`` with the :option:`--gzip <mongorestore
---gzip>`. For example, the following operation restores the ``test``
+--gzip>` option. For example, the following operation restores the ``test``
 database from the compressed files located in the default ``dump``
 directory:
 
@@ -1243,9 +1248,13 @@ database from the archive file ``test.20150715.gz``.
 
    mongorestore --gzip --archive=test.20150715.gz --nsInclude="test.*"
 
-.. note::
+To change the namespace of the collection that you are restoring, use the 
+:option:`--nsFrom <mongorestore --nsFrom>` and :option:`--nsTo <mongorestore --nsTo>` 
+options with the ``--gzip`` option.
 
-   .. include:: /includes/note-use-nsfrom-nsto.rst 
+.. code-block:: sh
+
+   mongorestore --gzip --nsFrom='data.$prefix$_$customer$' --nsTo='$customer$.$prefix$'
 
 .. _mongorestore-example-archive-stdin:
 
