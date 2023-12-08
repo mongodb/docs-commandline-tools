@@ -14,8 +14,3 @@ Release
 - :issue:`TOOLS-3438` Release Database Tools 100.9.4 and update go 
   version to 1.20.12
 
-Bug
-~~~
-
-- :issue:`TOOLS-3411` MongoDump does not maintain field-order for sort 
-  and match in Views
