@@ -14,9 +14,12 @@ To change your feature compatibility version, see
 
 .. note::
 
-   You can restore the BSON files generated from ``mongodump``
-   into MongoDB deployments running the same or newer version 
-   as the source deployment.
+   You can restore the BSON files generated from ``mongodump`` into
+   MongoDB deployments if the deployments:
+
+   - run the same or newer version as the source deployment.
+   - have the same feature compatibility version as the source
+     deployment.
 
    This guarantee does not apply to metadata, archive, or oplog replay 
    files. If you try to restore these files using different 
