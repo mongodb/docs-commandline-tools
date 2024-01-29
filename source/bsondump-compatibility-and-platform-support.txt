@@ -1,0 +1,36 @@
+.. _bsondump-compatibility-and-platform-support:
+
+.. default-domain:: mongodb
+
+.. binary:: bsondump
+
+.. program:: bsondump
+
+===============================================
+``bsondump`` Compatibility and Platform Support
+===============================================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+.. |arrow| unicode:: U+27A4
+.. |tool-binary| replace:: :binary:`~bin.bsondump`
+
+This page describes the compatibility and platform support for
+|tool-binary|.
+
+MongoDB Server Compatibility
+----------------------------
+
+.. include:: /includes/extracts/dbtools-compatibility-single.rst
+
+Platform Support
+----------------
+
+|tool-binary| version ``{+release+}`` is supported on the following
+platforms:
+
+.. include:: /includes/fact-platform-support.rst

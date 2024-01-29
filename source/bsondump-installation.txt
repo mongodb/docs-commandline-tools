@@ -1,0 +1,27 @@
+.. _bsondump-installation:
+
+.. default-domain:: mongodb
+
+.. binary:: bsondump
+
+.. program:: bsondump
+
+=========================
+``bsondump`` Installation
+=========================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+.. |arrow| unicode:: U+27A4
+.. |tool-binary| replace:: :binary:`~bin.bsondump`
+
+This page describes installation for |tool-binary|.
+
+Installation
+------------
+
+.. include:: /includes/fact-see-install-guide.rst
