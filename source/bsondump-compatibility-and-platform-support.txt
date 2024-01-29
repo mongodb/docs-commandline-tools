@@ -22,6 +22,18 @@
 This page describes the compatibility and platform support for
 |tool-binary|.
 
+Version
+-------
+
+.. include:: /includes/extracts/dbtools-version-single.rst
+
+.. note:: Links to older documentation
+
+   - :v4.2:`MongoDB 4.2 bsondump <reference/program/bsondump>`
+   - :v4.0:`MongoDB 4.0 bsondump <reference/program/bsondump>`
+
+This documentation is for version ``{+release+}`` of |tool-binary|. 
+
 MongoDB Server Compatibility
 ----------------------------
 
@@ -30,7 +42,7 @@ MongoDB Server Compatibility
 Platform Support
 ----------------
 
-|tool-binary| version ``{+release+}`` is supported on the following
+|tool-binary| version ``{+release+}`` is supported on these
 platforms:
 
 .. include:: /includes/fact-platform-support.rst
