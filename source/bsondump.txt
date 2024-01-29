@@ -16,6 +16,10 @@
    :depth: 1
    :class: singlecol
 
+.. facet::
+   :name: genre
+   :values: reference
+
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: :binary:`~bin.bsondump`
 
