@@ -829,7 +829,8 @@ Options
    .. note::
 
       Writing to an archive file may improve :binary:`~bin.mongodump`
-      performance. For more information, see 
+      performance. For more information, see :ref:`Mongostore and
+      Mongodump Considerations <binary-bson-dumps>`. 
 
 .. option:: --oplog
 
