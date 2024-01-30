@@ -23,6 +23,9 @@
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: :binary:`~bin.bsondump`
 
-This page describes installation for |tool-binary|.
-
 .. include:: /includes/fact-see-install-guide.rst
+
+Learn More
+----------
+
+:ref:`bsondump`
