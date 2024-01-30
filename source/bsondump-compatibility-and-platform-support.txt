@@ -23,11 +23,11 @@
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: :binary:`~bin.bsondump`
 
-This page describes the compatibility and platform support for
+This page describes the version compatibility and platform support for
 |tool-binary|.
 
-Version
--------
+Software Version
+----------------
 
 .. include:: /includes/extracts/dbtools-version-single.rst
 
