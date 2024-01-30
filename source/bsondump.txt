@@ -41,16 +41,11 @@ to format its data.
 
 .. include:: /includes/extracts/require-cmd-line-bsondump.rst
 
-Compatibility and Platform Support
-----------------------------------
+Compatibility and Installation
+------------------------------
 
-For |tool-binary| compatibility and platform support, see
-:ref:`bsondump-compatibility-and-platform-support`.
-
-Installation
-------------
-
-To install |tool-binary|, see :ref:`bsondump-installation`.
+For |tool-binary| compatibility and installation, see
+:ref:`bsondump-compatibility-and-installation`.
 
 Options
 -------
@@ -80,6 +75,6 @@ output for a :term:`BSON` file:
 Learn More
 ----------
 
-- :ref:`bsondump-compatibility-and-platform-support`
-- :ref:`bsondump-installation`
+- :ref:`bsondump-compatibility-and-installation`
 - :ref:`bsondump-options`
+- :ref:`bsondump-examples`
