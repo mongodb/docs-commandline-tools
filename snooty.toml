@@ -6,7 +6,7 @@ intersphinx = [ "https://www.mongodb.com/docs/manual/objects.inv",
 
 toc_landing_pages = [
    "/installation/installation",
-   "/bsondump/bsondump"
+   "/bsondump"
 ]
 
 [constants]
@@ -27,7 +27,7 @@ pgp-short-fingerprint = "0x4B7C549A058F8B6B"
 source-available = "`source available and free to use <https://github.com/mongodb/mongo/>`_"
 
 [manpages.bsondump]
-file = "/bsondump/bsondump.txt"
+file = "bsondump.txt"
 title = "bsondump"
 section = 1
 
