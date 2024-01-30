@@ -131,7 +131,7 @@ Further Reading
 
    mongodump </mongodump>
    mongorestore </mongorestore>
-   bsondump </bsondump>
+   bsondump </bsondump/bsondump>
    mongoimport </mongoimport>
    mongoexport </mongoexport>
    mongostat </mongostat>
