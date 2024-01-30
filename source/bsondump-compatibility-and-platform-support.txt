@@ -29,12 +29,10 @@ This page describes the version compatibility and platform support for
 Software Version
 ----------------
 
-Starting with MongoDB 4.4, the {+dbtools+} are now released separately
-from the MongoDB Server and use their own versioning, with an initial
-version of ``100.0.0``. Previously, these tools were released
-alongside the MongoDB Server and used matching versioning.
-
-This documentation is for version ``{+release+}`` of |tool-binary|. 
+Starting with MongoDB 4.4, the {+dbtools+} are released separately from
+the MongoDB Server. The {+dbtools+} use their own versioning, with an
+initial version of ``100.0.0``. This documentation is for version
+``{+release+}`` of |tool-binary|. 
 
 MongoDB Server Compatibility
 ----------------------------
