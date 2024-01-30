@@ -6,10 +6,6 @@ bsondump Examples
 
 .. default-domain:: mongodb
 
-.. binary:: bsondump
-
-.. program:: bsondump
-
 .. contents:: On this page
    :local:
    :backlinks: none
