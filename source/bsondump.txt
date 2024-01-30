@@ -50,7 +50,7 @@ For |tool-binary| compatibility and platform support, see
 Installation
 ------------
 
-For |tool-binary| installation, see :ref:`bsondump-installation`.
+To install |tool-binary|, see :ref:`bsondump-installation`.
 
 Options
 -------

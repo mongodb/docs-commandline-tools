@@ -31,11 +31,6 @@ Software Version
 
 .. include:: /includes/extracts/dbtools-version-single.rst
 
-.. note:: Links to older documentation
-
-   - :v4.2:`MongoDB 4.2 bsondump <reference/program/bsondump>`
-   - :v4.0:`MongoDB 4.0 bsondump <reference/program/bsondump>`
-
 This documentation is for version ``{+release+}`` of |tool-binary|. 
 
 MongoDB Server Compatibility
