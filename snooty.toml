@@ -27,7 +27,7 @@ pgp-short-fingerprint = "0x4B7C549A058F8B6B"
 source-available = "`source available and free to use <https://github.com/mongodb/mongo/>`_"
 
 [manpages.bsondump]
-file = "bsondump.txt"
+file = "/bsondump/bsondump.txt"
 title = "bsondump"
 section = 1
 
