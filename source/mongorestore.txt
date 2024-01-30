@@ -706,6 +706,13 @@ Options
    To use :option:`--preserveUUID <mongorestore --preserveUUID>`, you
    must also include the :option:`--drop <mongorestore --drop>` option.
 
+   .. note::
+
+      If ``mongorestore`` uses the 
+      :option:`--preserveUUID <mongorestore--preserveUUID>` option and
+      does not find a UUID in the restore data, ``mongorestore`` creates
+      a new collection with a new UUID. 
+
 .. option:: --dryRun
 
    Runs ``mongorestore`` without actually importing any data, returning the
