@@ -1,8 +1,8 @@
 .. _mongodump-behavior:
 
-=========================================
-``mongodump`` Behavior, Access, and Usage
-=========================================
+=====================================
+mongodump Behavior, Access, and Usage
+=====================================
 
 .. default-domain:: mongodb
 

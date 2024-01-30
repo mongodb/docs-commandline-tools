@@ -1,8 +1,8 @@
 .. _mongodump-options:
 
-=====================
-``mongodump`` Options
-=====================
+=================
+mongodump Options
+=================
 
 .. default-domain:: mongodb
 

@@ -1,8 +1,8 @@
 .. _mongodump-compatibility-and-installation:
 
-============================================
-``mongodump`` Compatibility and Installation
-============================================
+========================================
+mongodump Compatibility and Installation
+========================================
 
 .. default-domain:: mongodb
 
