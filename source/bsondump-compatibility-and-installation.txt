@@ -1,8 +1,8 @@
 .. _bsondump-compatibility-and-installation:
 
-===========================================
-``bsondump`` Compatibility and Installation
-===========================================
+=======================================
+bsondump Compatibility and Installation
+=======================================
 
 .. default-domain:: mongodb
 

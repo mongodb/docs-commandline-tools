@@ -1,8 +1,8 @@
 .. _bsondump-examples:
 
-=====================
-``bsondump`` Examples
-=====================
+=================
+bsondump Examples
+=================
 
 .. default-domain:: mongodb
 

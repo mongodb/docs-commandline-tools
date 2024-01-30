@@ -1,8 +1,8 @@
 .. _bsondump:
 
-============
-``bsondump``
-============
+========
+bsondump
+========
 
 .. default-domain:: mongodb
 
@@ -57,9 +57,10 @@ Examples
 
 For |tool-binary| examples, see :ref:`bsondump-examples`.
 
-Learn More
-----------
+.. toctree::
+   :maxdepth: 1
+   :hidden:
 
-- :ref:`bsondump-compatibility-and-installation`
-- :ref:`bsondump-options`
-- :ref:`bsondump-examples`
+   Compatibility and Installation </bsondump/bsondump-compatibility-and-installation>
+   Examples </bsondump/bsondump-examples>
+   Options </bsondump/bsondump-options>

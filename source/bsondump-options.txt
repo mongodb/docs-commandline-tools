@@ -1,8 +1,8 @@
 .. _bsondump-options:
 
-====================
-``bsondump`` Options
-====================
+================
+bsondump Options
+================
 
 .. default-domain:: mongodb
 
