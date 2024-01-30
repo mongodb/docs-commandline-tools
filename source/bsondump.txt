@@ -55,22 +55,7 @@ For |tool-binary| options, see :ref:`bsondump-options`.
 Examples
 --------
 
-.. include:: /includes/extracts/require-cmd-line-bsondump.rst
-
-By default, :binary:`~bin.bsondump` outputs data to standard output. To
-create corresponding :term:`JSON` files, you can use the 
-:option:`--outFile <bsondump --outFile>` option:
-
-.. code-block:: sh
-
-   bsondump --outFile=collection.json collection.bson
-
-Use the following command (at the system shell) to produce debugging
-output for a :term:`BSON` file:
-
-.. code-block:: sh
-
-   bsondump --type=debug collection.bson
+For |tool-binary| examples, see :ref:`bsondump-examples`.
 
 Learn More
 ----------
