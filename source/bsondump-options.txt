@@ -1,14 +1,14 @@
 .. _bsondump-options:
 
+====================
+``bsondump`` Options
+====================
+
 .. default-domain:: mongodb
 
 .. binary:: bsondump
 
 .. program:: bsondump
-
-====================
-``bsondump`` Options
-====================
 
 .. contents:: On this page
    :local:

@@ -1,14 +1,14 @@
 .. _bsondump-compatibility-and-platform-support:
 
+===============================================
+``bsondump`` Compatibility and Platform Support
+===============================================
+
 .. default-domain:: mongodb
 
 .. binary:: bsondump
 
 .. program:: bsondump
-
-===============================================
-``bsondump`` Compatibility and Platform Support
-===============================================
 
 .. contents:: On this page
    :local:
