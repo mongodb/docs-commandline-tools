@@ -325,10 +325,17 @@ Metadata Output
 ~~~~~~~~~~~~~~~
 
 If :binary:`~bin.mongodump` outputs to a directory, the output contains
-collection metadata which includes the collection's name, type, creation
-options, UUIDs, and indexes. If :binary:`~bin.mongodump` outputs to
-standard output, the output does not include metadata. For more
-information on output, see the :option:`--out` option. 
+collection metadata which includes the following: 
+
+- Collection name
+- Collection type
+- Creation options
+- UUIDs
+- Indexes
+
+If :binary:`~bin.mongodump` outputs to standard output, the output does
+not include metadata. For more information, see the :option:`--out`
+option. 
 
 Metadata Format
 ~~~~~~~~~~~~~~~
