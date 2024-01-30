@@ -25,7 +25,4 @@
 
 This page describes installation for |tool-binary|.
 
-Installation
-------------
-
 .. include:: /includes/fact-see-install-guide.rst

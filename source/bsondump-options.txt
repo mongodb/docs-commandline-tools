@@ -25,9 +25,6 @@
 
 This page describes the |tool-binary| options.
 
-Options
--------
-
 .. option:: --help
 
    Returns information on the options and use of :program:`bsondump`.
