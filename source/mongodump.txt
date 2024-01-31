@@ -329,7 +329,7 @@ collection metadata which includes the following properties:
 
 - Collection names
 - Collection types
-- Creation options
+- Collection configuration options
 - UUIDs
 - Indexes
 
