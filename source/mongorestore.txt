@@ -710,7 +710,7 @@ Options
 
       If ``mongorestore`` uses the ``--preserveUUID`` option and does
       not find a UUID for a collection in the restore data,
-      ``mongorestore`` creates a collection with a new UUID. 
+      ``mongorestore`` creates the collection with a new UUID. 
 
 .. option:: --dryRun
 
