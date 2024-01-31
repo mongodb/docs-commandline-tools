@@ -325,17 +325,17 @@ Metadata Output
 ~~~~~~~~~~~~~~~
 
 If :binary:`~bin.mongodump` outputs to a directory, the output contains
-collection metadata which includes the following: 
+collection metadata which includes the following properties: 
 
-- Collection name
-- Collection type
+- Collection names
+- Collection types
 - Creation options
 - UUIDs
 - Indexes
 
-If :binary:`~bin.mongodump` outputs to standard output, the output does
-not include metadata. For more information, see the :option:`--out`
-option. 
+If :binary:`~bin.mongodump` outputs to standard output (``stdout``), the
+output does not include metadata. For more information, see the
+:option:`--out` option. 
 
 Metadata Format
 ~~~~~~~~~~~~~~~
@@ -835,10 +835,10 @@ Options
 
    .. note::
 
-      :binary:`~bin.mongodump` performance may improve if the process
-      writes to an archive file. For more information, see
-      :ref:`Mongostore and Mongodump Considerations
-      <binary-bson-dumps>`. 
+      :binary:`~bin.mongodump` performance can improve if the process
+      writes to an archive file. For more information on ``mongodump``
+      performance impacts, see :ref:`Mongostore and Mongodump
+      Considerations <binary-bson-dumps>`. 
 
 .. option:: --oplog
 
