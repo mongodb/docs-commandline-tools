@@ -17,9 +17,9 @@ bsondump Options
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: :binary:`~bin.bsondump`
 
-.. binary:: mongodump
+.. binary:: bsondump
 
-.. program:: mongodump
+.. program:: bsondump
 
 .. _bsondump-options:
 
