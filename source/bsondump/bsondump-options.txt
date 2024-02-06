@@ -21,9 +21,6 @@ bsondump Options
 
 .. program:: bsondump
 
-Options
--------
-
 This page describes the |tool-binary| options.
 
 .. option:: --help
