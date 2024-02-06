@@ -1,5 +1,3 @@
-.. _bsondump-options:
-
 ================
 bsondump Options
 ================
@@ -18,6 +16,11 @@ bsondump Options
 
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: :binary:`~bin.bsondump`
+
+.. _bsondump-options:
+
+Options
+-------
 
 This page describes the |tool-binary| options.
 
