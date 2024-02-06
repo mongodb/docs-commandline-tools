@@ -17,7 +17,7 @@ bsondump Options
    :values: reference
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: ``bsondump``
+.. |tool-binary| replace:: :binary:`~bin.bsondump`
 
 This page describes the |tool-binary| options.
 
