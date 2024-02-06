@@ -17,7 +17,7 @@ bsondump Compatibility and Installation
    :values: reference
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: :binary:`~bin.bsondump`
+.. |tool-binary| replace:: ``bsondump``
 
 This page describes the software compatibility and installation for
 |tool-binary|.
