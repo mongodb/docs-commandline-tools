@@ -19,6 +19,10 @@ bsondump Examples
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``bsondump``
 
+.. binary:: bsondump
+
+.. program:: bsondump
+
 This page shows examples for |tool-binary|.
 
 .. include:: /includes/extracts/require-cmd-line-bsondump.rst

@@ -1,3 +1,5 @@
+.. _bsondump-options:
+
 ================
 bsondump Options
 ================
@@ -15,13 +17,11 @@ bsondump Options
    :values: reference
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: :binary:`~bin.bsondump`
+.. |tool-binary| replace:: ``bsondump``
 
 .. binary:: bsondump
 
 .. program:: bsondump
-
-.. _bsondump-options:
 
 Options
 -------
