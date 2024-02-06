@@ -19,8 +19,6 @@ bsondump Options
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``bsondump``
 
-.. binary:: bsondump
-
 .. program:: bsondump
 
 Options
