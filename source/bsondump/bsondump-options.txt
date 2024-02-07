@@ -56,9 +56,9 @@ This page describes the |tool-binary| options.
 
    Validates each :term:`BSON` object before outputting it in
    :term:`JSON` format. By default, ``bsondump`` enables
-   :option:`--objcheck <bsondump --objcheck>`. For objects with a high
-   degree of sub-document nesting, :option:`--objcheck <bsondump
-   --objcheck>` can have a small impact on performance.
+   ``--objcheck <bsondump --objcheck>``. For objects with a high
+   degree of sub-document nesting, ``--objcheck <bsondump
+   --objcheck>`` can have a small impact on performance.
 
 .. option:: --type=<json|debug>
 
@@ -71,8 +71,8 @@ This page describes the |tool-binary| options.
 
 .. option:: --bsonFile
    
-   Specifies the path to a BSON file to dump to JSON. :option:`--bsonFile` is
-   an alternative to the positional :option:`\<bsonFilename\>` option.
+   Specifies the path to a BSON file to dump to JSON. ``--bsonFile`` is
+   an alternative to the positional ``\<bsonFilename\>`` option.
    
    By default, ``bsondump`` reads from standard input.
 
