@@ -835,10 +835,10 @@ Options
 
    .. note::
 
-      :binary:`~bin.mongodump` performance can improve if the process
-      writes to an archive file. For more information on ``mongodump``
-      performance impacts, see :ref:`Mongostore and Mongodump
-      Considerations <binary-bson-dumps>`. 
+      If :binary:`~bin.mongodump` writes to an archive file,
+      ``mongodump`` performance can improve. For more information on
+      ``mongodump`` performance impacts, see :ref:`Output Format
+      Considerations <considerations-output-format>`. 
 
 .. option:: --oplog
 
