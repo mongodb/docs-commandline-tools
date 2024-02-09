@@ -6,10 +6,10 @@
 *Released 2023-11-09*
 
 This version updates external dependencies and fixes an issue where mongodump 
-could change the ordering of fields in a view definition. View pipelines and 
-schema validation are the only collection options sensitive to field ordering.
-Depending on the contents of the view or validator options, the following can 
-change:
+could change the ordering of fields in a view definition (:issue:`TOOLS-3411`). 
+View pipelines and schema validation are the only collection options sensitive 
+to field ordering. Depending on the contents of the view or validator options, 
+the following can change:
 
 - The set of results returned by a view, or
 - The criteria determining which documents are accepted by a validator.
