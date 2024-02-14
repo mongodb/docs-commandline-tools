@@ -224,7 +224,7 @@ following limitations apply:
 - You can't run ``mongorestore`` on the ``admin`` database. If you use
   the :option:`--db <mongorestore --db>` option to set the destination
   database to ``admin``, the program returns an error. By default,
-  ``mongorestore`` skips this option.
+  ``mongorestore`` skips this database.
 
 - You can't use the following options with the ``mongorestore`` program:
 
