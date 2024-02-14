@@ -221,10 +221,10 @@ Using ``mongorestore`` on Atlas Free and Shared Tier Clusters
 On free (``M0``) and shared (``M2`` and ``M5``) tier Atlas clusters, the
 following limitations apply:
 
-- You can't run ``mongorestore`` on the ``admin`` database. If you use
-  the :option:`--db <mongorestore --db>` option to set the destination
-  database to ``admin``, the program returns an error. By default,
-  ``mongorestore`` skips this database.
+- You can't run ``mongorestore`` on the ``admin`` database. By default,
+  ``mongorestore`` skips this database. If you use the :option:`--db
+  <mongorestore --db>` option to set the destination database to
+  ``admin``, the program returns an error.
 
 - You can't use the following options with the ``mongorestore`` program:
 
