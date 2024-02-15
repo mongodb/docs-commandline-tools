@@ -1,0 +1,5 @@
+Bug
+~~~
+
+- :issue:`TOOLS-3429` - MongoDB Database Tools 100.9.2 not compatible 
+  with Debian 11 (Bullseye) 

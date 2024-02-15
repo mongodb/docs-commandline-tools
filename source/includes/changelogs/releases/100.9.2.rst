@@ -1,0 +1,4 @@
+Task
+~~~~
+
+- :issue:`TOOLS-3302` - Add support for Debian 12
