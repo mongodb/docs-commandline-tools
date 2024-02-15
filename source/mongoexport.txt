@@ -708,9 +708,8 @@ Options
 .. option:: --queryFile=<filename>
 
    An alternative to :option:`--query <mongoexport --query>`. The
-   :option:`--queryFile <mongoexport --query>` option allows you to
+   ``--queryFile`` option allows you to
    specify in a file the query in :manual:`Extended JSON v2 format
-   (either relaxed or canonical/strict mode)
    </reference/mongodb-extended-json>`. 
 
 
