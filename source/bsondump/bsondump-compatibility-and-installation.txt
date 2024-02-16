@@ -52,5 +52,4 @@ Learn More
 ----------
 
 - :ref:`bsondump`
-- :ref:`bsondump-options`
 - :ref:`bsondump-examples`

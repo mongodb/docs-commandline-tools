@@ -45,4 +45,3 @@ Learn More
 
 - :ref:`bsondump`
 - :ref:`bsondump-compatibility-and-installation`
-- :ref:`bsondump-options`
