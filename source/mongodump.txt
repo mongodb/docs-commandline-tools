@@ -6,6 +6,10 @@ mongodump
 
 .. default-domain:: mongodb
 
+.. binary:: mongodump
+
+.. program:: mongodump
+ 
 .. contents:: On this page
    :local:
    :backlinks: none
@@ -20,10 +24,6 @@ mongodump
    :name: genre
    :values: reference
 
-.. binary:: mongodump
-
-.. program:: mongodump
- 
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
