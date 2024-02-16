@@ -218,8 +218,8 @@ Learn More
 ----------
 
 - :ref:`mongodump-compatibility-and-installation`
-- :ref:`mongodump-behavior`
 - :ref:`mongodump-options`
+- :ref:`mongodump-behavior`
 - :ref:`mongodump-examples`
 
 .. toctree::
@@ -228,5 +228,5 @@ Learn More
 
    Compatibility and Installation </mongodump/mongodump-compatibility-and-installation>
    Options </mongodump/mongodump-options>
-   Behavior </mongodump/mongodump-compatibility-and-installation>
+   Behavior </mongodump/mongodump-behavior>
    Examples </mongodump/mongodump-examples>
