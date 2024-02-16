@@ -21,7 +21,7 @@ mongodump Examples
    :values: reference
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: :``mongodump``
+.. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
 .. |tool-command| replace:: ``mongodump``
 
