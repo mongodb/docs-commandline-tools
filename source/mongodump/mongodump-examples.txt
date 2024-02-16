@@ -8,8 +8,6 @@
    :name: genre
    :values: reference
 
-.. program:: mongodump
- 
 .. _mongodump-examples:
 
 ==================

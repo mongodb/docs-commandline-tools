@@ -14,8 +14,6 @@ mongodump Options
    :name: genre
    :values: reference
 
-.. program:: mongodump
-
 .. contents:: On this page
    :local:
    :backlinks: none
