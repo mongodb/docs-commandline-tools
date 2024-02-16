@@ -371,18 +371,18 @@ Options
 
 .. option:: --sslCRLFile=<filename>
 
-   Specifies the :file:`.pem` file that contains the Certificate Revocation
-   List. Specify the file name of the :file:`.pem` file using relative or
-   absolute paths.
+   Specifies the :file:`.pem` file that contains the Certificate
+   Revocation List. Specify the file name of the :file:`.pem` file using
+   relative or absolute paths.
    
    .. include:: /includes/extracts/ssl-facts-see-more.rst
 
 .. option:: --sslAllowInvalidCertificates
 
-   Bypasses the validation checks for server certificates and allows
-   the use of invalid certificates. When using the
-   :setting:`~net.ssl.allowInvalidCertificates` setting, MongoDB logs as a
-   warning the use of the invalid certificate.
+   Bypasses the validation checks for server certificates and allows the
+   use of invalid certificates. When using the
+   :setting:`~net.ssl.allowInvalidCertificates` setting, MongoDB logs as
+   a warning the use of the invalid certificate.
    
    .. include:: /includes/extracts/ssl-facts-invalid-cert-warning-clients.rst
 
@@ -392,9 +392,9 @@ Options
    
 .. option:: --sslAllowInvalidHostnames
 
-   Disables the validation of the hostnames in TLS/SSL certificates. Allows
-   ``mongodump`` to connect to MongoDB instances even if the hostname in their
-   certificates do not match the specified hostname.
+   Disables the validation of the hostnames in TLS/SSL certificates.
+   Allows ``mongodump`` to connect to MongoDB instances even if the
+   hostname in their certificates do not match the specified hostname.
 
    .. include:: /includes/extracts/uri-used-with-sslallowinvalidhostnames.rst
 
@@ -403,8 +403,9 @@ Options
 .. option:: --username=<username>, -u=<username>
 
    Specifies a username with which to authenticate to a MongoDB database
-   that uses authentication. Use in conjunction with the ``--password <mongodump --password>`` and
-   ``--authenticationDatabase <mongodump --authenticationDatabase>`` options.
+   that uses authentication. Use in conjunction with the ``--password
+   <mongodump --password>`` and ``--authenticationDatabase <mongodump
+   --authenticationDatabase>`` options.
 
    .. include:: /includes/extracts/uri-used-with-username.rst
 

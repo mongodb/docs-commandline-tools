@@ -38,11 +38,11 @@ Behavior
 Using ``mongodump`` Without an ``authSource``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When :urioption:`authSource` is not specified in the MongoDB URI, the 
-database name specified in :option:`--db <mongodump --db>` is used both to authenticate 
-your ``mongodump`` session and to indicate the database being dumped. For 
-an example of using a different database for authentication when using 
-``mongodump``, see :ref:`mongodump-auth-dump`.
+When :urioption:`authSource` is not specified in the MongoDB URI, the
+database name specified in :option:`--db <mongodump --db>` is used both
+to authenticate your ``mongodump`` session and to indicate the database
+being dumped. For an example of using a different database for
+authentication when using ``mongodump``, see :ref:`mongodump-auth-dump`.
 
 Restore to Matching Server Version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
