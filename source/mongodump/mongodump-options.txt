@@ -24,6 +24,8 @@ mongodump Options
 .. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
 
+.. program:: mongodump
+
 This page describes the |tool-binary| options.
 
 .. option:: --help
