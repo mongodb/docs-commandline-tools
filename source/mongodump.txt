@@ -734,6 +734,5 @@ Learn More
    :hidden:
 
    Compatibility and Installation </mongodump/mongodump-compatibility-and-installation>
-   Options </mongodump/mongodump-options>
    Behavior </mongodump/mongodump-behavior>
    Examples </mongodump/mongodump-examples>
