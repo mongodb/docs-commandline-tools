@@ -221,3 +221,13 @@ Learn More
 - :ref:`mongodump-behavior`
 - :ref:`mongodump-options`
 - :ref:`mongodump-examples`
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Compatibility and Installation </mongodump/mongodump-compatibility-and-installation>
+   Options </mongodump/mongodump-options>
+   Behavior </mongodump/mongodump-compatibility-and-installation>
+   Examples </mongodump/mongodump-examples>
+
