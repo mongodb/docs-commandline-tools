@@ -14,10 +14,6 @@ mongodump Compatibility and Installation
    :name: genre
    :values: reference
 
-.. binary:: mongodump
-
-.. program:: mongodump
-
 .. contents:: On this page
    :local:
    :backlinks: none

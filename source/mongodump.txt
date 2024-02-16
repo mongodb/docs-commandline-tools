@@ -1,17 +1,3 @@
-.. default-domain:: mongodb
-
-.. facet::
-   :name: programming_language
-   :values: shell
-
-.. facet::
-   :name: genre
-   :values: reference
-
-.. binary:: mongodump
-
-.. program:: mongodump
- 
 .. _mongodump:
 
 =========
@@ -26,9 +12,24 @@ mongodump
    :depth: 1
    :class: singlecol
 
+.. facet::
+   :name: programming_language
+   :values: shell
+
+.. facet::
+   :name: genre
+   :values: reference
+
+.. binary:: mongodump
+
+.. program:: mongodump
+ 
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
+
+Definition
+----------
 
 ``mongodump`` is a utility that creates a binary export of
 a database's contents. ``mongodump`` can export data from:

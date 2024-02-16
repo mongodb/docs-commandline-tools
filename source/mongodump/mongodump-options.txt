@@ -223,12 +223,12 @@ This page describes the |tool-binary| options.
 
    Specifies a password with which to authenticate to a MongoDB database
    that uses authentication. Use in conjunction with the 
-  ``--username <mongodump --username>`` and
-  ``--authenticationDatabase <mongodump --authenticationDatabase>`` options.
+   ``--username <mongodump --username>`` and
+   ``--authenticationDatabase <mongodump --authenticationDatabase>`` options.
 
    To prompt the user for the password, pass the ``--username <mongodump --username>``
    option without ``--password <mongodump --password>`` or specify an empty string as the
-  ``--password <mongodump --pas`sword>`` value, as in ``--password ""`` .
+   ``--password <mongodump --pas`sword>`` value, as in ``--password ""`` .
 
    .. include:: /includes/extracts/uri-used-with-password.rst
 
