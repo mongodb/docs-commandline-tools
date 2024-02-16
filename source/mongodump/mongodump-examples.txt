@@ -169,7 +169,7 @@ Alternatively, the AWS access key ID, secret access key, and optionally
 session token can each be provided outside of the connection string
 using the :option:`--username <mongodump --username>`, 
 :option:`--password <mongodump --password>`, and
-:option:`--awsSessionToken` options instead, like so:
+``--awsSessionToken`` options instead, like so:
 
 .. code-block:: none
 
