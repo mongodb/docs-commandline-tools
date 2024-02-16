@@ -6,6 +6,8 @@ mongodump Options
 
 .. default-domain:: mongodb
 
+.. program:: mongodump
+
 .. facet::
    :name: programming_language
    :values: shell
@@ -23,8 +25,6 @@ mongodump Options
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
-
-.. program:: mongodump
 
 This page describes the |tool-binary| options.
 
