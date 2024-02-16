@@ -25,7 +25,7 @@ mongodump Behavior, Access, and Usage
    :class: singlecol
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: :binary:`~bin.mongodump`
+.. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
 
 .. warning::
@@ -56,7 +56,7 @@ Restore to Matching Server Version
 Read Preference
 ~~~~~~~~~~~~~~~
 
-By default, :binary:`~bin.mongodump` uses read preference
+By default, ``mongodump`` uses read preference
 :readmode:`primary`. To override the default, you can specify the
 :ref:`read preference <replica-set-read-preference>` in the
 :option:`--readPreference <mongodump --readPreference>` command-line
@@ -70,10 +70,10 @@ value overrides the read preference specified in the URI string.
 Data Exclusion
 ~~~~~~~~~~~~~~
 
-:binary:`~bin.mongodump` excludes the content of the ``local`` database
+``mongodump`` excludes the content of the ``local`` database
 in its output.
 
-:binary:`~bin.mongodump` output:
+``mongodump`` output:
 
 - Contains the documents in the database and the index definitions.
 - Does not contain the index data.
@@ -83,8 +83,8 @@ indexes after restoring data.
 
 If you're using :ref:`views <views-landing-page>`:
 
-- By default, :binary:`~bin.mongodump` only exports a view's metadata.
-  :binary:`~bin.mongodump` doesn't create a binary export of the
+- By default, ``mongodump`` only exports a view's metadata.
+  ``mongodump`` doesn't create a binary export of the
   documents included in the view.
 - To export the documents in a view, use
   :option:`--viewsAsCollections <mongodump --viewsAsCollections>`.
@@ -92,7 +92,7 @@ If you're using :ref:`views <views-landing-page>`:
 Metadata Format
 ~~~~~~~~~~~~~~~
 
-:binary:`~bin.mongodump` uses :manual:`Extended
+``mongodump`` uses :manual:`Extended
 JSON v2.0 (Canonical) </reference/mongodb-extended-json>` format
 for the metadata files. To parse these files for restore, use
 :binary:`~bin.mongorestore`, which supports :manual:`Extended
@@ -102,8 +102,8 @@ JSON v2.0 (Canonical or Relaxed mode)
 Overwrite Files
 ~~~~~~~~~~~~~~~
 
-:binary:`~bin.mongodump` overwrites output files if they exist in the
-backup data folder. Before running the :binary:`~bin.mongodump` command
+``mongodump`` overwrites output files if they exist in the
+backup data folder. Before running the ``mongodump`` command
 multiple times, either ensure that you no longer need the files in the
 output folder (the default is the ``dump/`` folder) or rename the
 folders or files.
@@ -111,39 +111,39 @@ folders or files.
 ``mongodump`` During Resharding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:binary:`~bin.mongodump` fails if:
+``mongodump`` fails if:
 
-- :binary:`~bin.mongodump` is initiated when a 
+- ``mongodump`` is initiated when a 
   :ref:`resharding operation <sharding-resharding>` is in progress.
 
 - The :dbcommand:`reshardCollection` command is run during a 
-  :binary:`~bin.mongodump` operation.
+  ``mongodump`` operation.
 
 Data Compression Handling
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When run against a :binary:`~bin.mongod` instance that uses the
 :manual:`WiredTiger </core/wiredtiger>` storage engine,
-:binary:`~bin.mongodump` outputs uncompressed data.
+``mongodump`` outputs uncompressed data.
 
 Working Set
 ~~~~~~~~~~~
 
-:binary:`~bin.mongodump` can adversely affect performance of the
+``mongodump`` can adversely affect performance of the
 :binary:`~bin.mongod`. If your data is larger than system memory, the
-:binary:`~bin.mongodump` will push the working set out of memory.
+``mongodump`` will push the working set out of memory.
 
 FIPS
 ~~~~
 
-:binary:`~bin.mongodump` automatically creates FIPS-compliant
+``mongodump`` automatically creates FIPS-compliant
 connections to a :binary:`~bin.mongod`/:binary:`~bin.mongos` that is
 :manual:`configured to use FIPS mode </tutorial/configure-fips>`.
 
 Required Access
 ---------------
 
-To run :binary:`~bin.mongodump` against a MongoDB deployment that has
+To run ``mongodump`` against a MongoDB deployment that has
 :manual:`access control </core/authorization>` enabled, you must have
 privileges that grant :authaction:`find` action for each database to
 back up. The built-in :authrole:`backup` role provides the required
@@ -155,13 +155,13 @@ Usage in Backup Strategy
 Standalone Deployments and Replica Sets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For standalone or a replica set, :binary:`~bin.mongodump` can be a part
+For standalone or a replica set, ``mongodump`` can be a part
 of a :ref:`backup strategy <backup-with-mongodump>` with
 :binary:`~bin.mongorestore` for partial backups based on a query,
 syncing from production to staging or development environments, or
 changing the storage engine of a standalone.
 
-For details on using :binary:`~bin.mongodump` with
+For details on using ``mongodump`` with
 :binary:`~bin.mongorestore` as part of a backup and recovery strategy,
 see:
 
@@ -176,3 +176,8 @@ Sharded Clusters
 
 Learn More
 ----------
+
+- :ref:`mongodump`
+- :ref:`mongodump-compatibility-and-installation`
+- :ref:`mongodump-options`
+- :ref:`mongodump-examples`

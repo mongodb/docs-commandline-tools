@@ -25,7 +25,7 @@ mongodump Compatibility and Installation
    :class: singlecol
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: :binary:`~bin.mongodump`
+.. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
 
 This page describes the software compatibility and installation for
@@ -69,5 +69,6 @@ Learn More
 ----------
 
 - :ref:`mongodump`
+- :ref:`mongodump-behavior`
 - :ref:`mongodump-options`
 - :ref:`mongodump-examples`

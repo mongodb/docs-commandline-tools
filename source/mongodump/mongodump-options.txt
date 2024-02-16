@@ -14,8 +14,6 @@ mongodump Options
    :name: genre
    :values: reference
 
-.. binary:: mongodump
-
 .. program:: mongodump
 
 .. contents:: On this page
@@ -25,14 +23,14 @@ mongodump Options
    :class: singlecol
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: :binary:`~bin.mongodump`
+.. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
 
 This page describes the |tool-binary| options.
 
 .. option:: --help
 
-   Returns information on the options and use of :program:`mongodump`.
+   Returns information on the options and use of ``mongodump``.
 
 .. option:: --verbose, -v
 
@@ -42,7 +40,7 @@ This page describes the |tool-binary| options.
 
 .. option:: --quiet
 
-   Runs :program:`mongodump` in a quiet mode that attempts to limit the amount
+   Runs ``mongodump`` in a quiet mode that attempts to limit the amount
    of output.
 
    This option suppresses:
@@ -58,7 +56,7 @@ This page describes the |tool-binary| options.
 
 .. option:: --version
 
-   Returns the :program:`mongodump` release number.
+   Returns the ``mongodump`` release number.
 
 .. option:: --config=<filename>
 
@@ -93,7 +91,7 @@ This page describes the |tool-binary| options.
    *Default*: localhost:27017
 
    Specifies the resolvable hostname of the MongoDB deployment. By
-   default, :program:`mongodump` attempts to connect to a MongoDB
+   default, ``mongodump`` attempts to connect to a MongoDB
    instance running on the localhost on port number ``27017``.
    
    To connect to a replica set, specify the
@@ -104,7 +102,7 @@ This page describes the |tool-binary| options.
    
       --host=<replSetName>/<hostname1><:port>,<hostname2><:port>,<...>
    
-   When specifying the replica set list format, :program:`mongodump` always connects to
+   When specifying the replica set list format, ``mongodump`` always connects to
    the :term:`primary <Primary>`. 
    
    You can also connect to any single member of the replica set by specifying
@@ -154,7 +152,7 @@ This page describes the |tool-binary| options.
    and key. Specify the file name of the :file:`.pem` file using relative
    or absolute paths.
    
-   This option is required when using the :option:`--ssl` option to connect
+   This option is required when using the ``--ssl`` option to connect
    to a :binary:`~bin.mongod` or :binary:`~bin.mongos` that has
    :setting:`~net.ssl.CAFile` enabled *without*
    :setting:`~net.ssl.allowConnectionsWithoutCertificates`.
@@ -166,12 +164,12 @@ This page describes the |tool-binary| options.
 .. option:: --sslPEMKeyPassword=<value>
 
    Specifies the password to de-crypt the certificate-key file (i.e.
-   :option:`--sslPEMKeyFile`). Use the :option:`--sslPEMKeyPassword` option only if the
-   certificate-key file is encrypted. In all cases, the :program:`mongodump` will
+   ``--sslPEMKeyFile``). Use the ```--sslPEMKeyPassword` option only if the
+   certificate-key file is encrypted. In all cases, the ``mongodump`` will
    redact the password from all logging and reporting output.
    
    If the private key in the PEM file is encrypted and you do not specify
-   the :option:`--sslPEMKeyPassword` option, the :program:`mongodump` will prompt for a passphrase. See
+   the ``--sslPEMKeyPassword`` option, the ``mongodump`` will prompt for a passphrase. See
    :ref:`ssl-certificate-password`.
 
    .. include:: /includes/extracts/uri-used-with-sslpemkeypassword.rst
@@ -204,7 +202,7 @@ This page describes the |tool-binary| options.
 .. option:: --sslAllowInvalidHostnames
 
    Disables the validation of the hostnames in TLS/SSL certificates. Allows
-   :program:`mongodump` to connect to MongoDB instances even if the hostname in their
+   ``mongodump`` to connect to MongoDB instances even if the hostname in their
    certificates do not match the specified hostname.
 
    .. include:: /includes/extracts/uri-used-with-sslallowinvalidhostnames.rst
@@ -214,8 +212,8 @@ This page describes the |tool-binary| options.
 .. option:: --username=<username>, -u=<username>
 
    Specifies a username with which to authenticate to a MongoDB database
-   that uses authentication. Use in conjunction with the :option:`--password <mongodump --password>` and
-   :option:`--authenticationDatabase <mongodump --authenticationDatabase>` options.
+   that uses authentication. Use in conjunction with the ``--password <mongodump --password>`` and
+   ``--authenticationDatabase <mongodump --authenticationDatabase>`` options.
 
    .. include:: /includes/extracts/uri-used-with-username.rst
 
@@ -225,12 +223,12 @@ This page describes the |tool-binary| options.
 
    Specifies a password with which to authenticate to a MongoDB database
    that uses authentication. Use in conjunction with the 
-   :option:`--username <mongodump --username>` and
-   :option:`--authenticationDatabase <mongodump --authenticationDatabase>` options.
+  ``--username <mongodump --username>`` and
+  ``--authenticationDatabase <mongodump --authenticationDatabase>`` options.
 
-   To prompt the user for the password, pass the :option:`--username <mongodump --username>`
-   option without :option:`--password <mongodump --password>` or specify an empty string as the
-   :option:`--password <mongodump --password>` value, as in ``--password ""`` .
+   To prompt the user for the password, pass the ``--username <mongodump --username>``
+   option without ``--password <mongodump --password>`` or specify an empty string as the
+  ``--password <mongodump --pas`sword>`` value, as in ``--password ""`` .
 
    .. include:: /includes/extracts/uri-used-with-password.rst
 
@@ -244,14 +242,14 @@ This page describes the |tool-binary| options.
 
 .. option:: --authenticationDatabase=<dbname>
 
-   Specifies the authentication database where the specified :option:`--username <mongodump --username>` has been created.
+   Specifies the authentication database where the specified ``--username <mongodump --username>`` has been created.
    See :ref:`user-authentication-database`.
 
-   If you do not specify an authentication database, :program:`mongodump`
+   If you do not specify an authentication database, ``mongodump``
    assumes that the database specified to export holds the user's credentials.
 
    If you do not specify an authentication database or a database to
-   export, :program:`mongodump` assumes the ``admin`` database holds the user's
+   export, ``mongodump`` assumes the ``admin`` database holds the user's
    credentials.
 
    .. include:: /includes/fact-auth-database-use-external.rst
@@ -262,12 +260,12 @@ This page describes the |tool-binary| options.
 
    *Default*: SCRAM-SHA-1
 
-   Specifies the authentication mechanism the :program:`mongodump` instance uses to
+   Specifies the authentication mechanism the ``mongodump`` instance uses to
    authenticate to the :binary:`~bin.mongod` or :binary:`~bin.mongos`.
 
    .. versionchanged:: 100.1.0
    
-      Starting in version ``100.1.0``, :program:`mongodump` adds support for
+      Starting in version ``100.1.0``, ``mongodump`` adds support for
       the ``MONGODB-AWS`` authentication mechanism when connecting
       to a :atlas:`MongoDB Atlas <?tck=docs_server>` cluster.
 
@@ -296,7 +294,7 @@ This page describes the |tool-binary| options.
 .. option:: --db=<database>, -d=<database>
 
    Specifies a database to backup. If you do not specify a database,
-   :binary:`~bin.mongodump` copies all databases in this instance into the dump
+   ``mongodump`` copies all databases in this instance into the dump
    files.
    
    .. include:: /includes/extracts/uri-used-with-db.rst
@@ -310,9 +308,9 @@ This page describes the |tool-binary| options.
 .. option:: --query=<json>, -q=<json>
 
    Provides a :term:`JSON document` as a query that optionally limits
-   the documents included in the output of :binary:`~bin.mongodump`. To
+   the documents included in the output of ``mongodump``. To
    use the ``--query`` option, you must also specify the
-   :option:`--collection <mongodump --collection>` option.
+   ``--collection <mongodump --collection>`` option.
 
    .. include:: /includes/fact-quote-command-line-query.rst
 
@@ -341,7 +339,7 @@ This page describes the |tool-binary| options.
 
    Specifies the path to a file containing a JSON document as a query
    filter that limits the documents included in the output of
-   :binary:`~bin.mongodump`. :option:`--queryFile` enables you to create
+   ``mongodump``. ``--queryFile`` enables you to create
    query filters that are too large to fit in your terminal's buffer.
 
    .. note::
@@ -355,7 +353,7 @@ This page describes the |tool-binary| options.
    *Default*: :readmode:`primary`
 
    Specifies the :ref:`read preference<replica-set-read-preference>` for
-   :program:`mongodump`. The :option:`--readPreference` option can take:
+   ``mongodump``. The ``--readPreference`` option can take:
    
    - A string if specifying only the read preference mode:
    
@@ -375,40 +373,40 @@ This page describes the |tool-binary| options.
      If specifying the :ref:`maxStalenessSeconds
      <replica-set-read-preference-max-staleness>`, the value must be greater than or equal to 90.
    
-   :program:`mongodump` defaults to :readmode:`primary`
+   ``mongodump`` defaults to :readmode:`primary`
    :ref:`read preference <replica-set-read-preference>`.
    
    If the read preference is also included in the
-   :option:`--uri connection string <--uri>`, the command-line
-   :option:`--readPreference` overrides the read preference specified in
+   ``--uri connection string <--uri>``, the command-line
+   ``--readPreference`` overrides the read preference specified in
    the URI string.
 
 .. option:: --gzip
    
-   Compresses the output. If :binary:`~bin.mongodump` outputs to the dump
+   Compresses the output. If ``mongodump`` outputs to the dump
    directory, the new feature compresses the individual files. The files
    have the suffix ``.gz``.
    
-   If :binary:`~bin.mongodump` outputs to an archive file or the standard
+   If ``mongodump`` outputs to an archive file or the standard
    out stream, the new feature compresses the archive file or the data
    output to the stream.
    
 .. option:: --out=<path>, -o=<path>
 
-   Specifies the directory where :binary:`~bin.mongodump` will write
+   Specifies the directory where ``mongodump`` will write
    :term:`BSON` files for the dumped databases. By default,
-   :binary:`~bin.mongodump` saves output files in a directory named
+   ``mongodump`` saves output files in a directory named
    ``dump`` in the current working directory.
    
    To send the database dump to standard output, specify "``-``" instead of
    a path. Write to standard output if you want process the output before
    saving it, such as to use ``gzip`` to compress the dump. When writing
-   standard output, :binary:`~bin.mongodump` does not write the metadata that
+   standard output, ``mongodump`` does not write the metadata that
    writes in a ``<dbname>.metadata.json`` file when writing to files
    directly.
    
    You cannot use the ``--archive`` option with the
-   :option:`--out` option.
+   ``--out`` option.
    
 .. option:: --archive=<file>
    
@@ -416,44 +414,44 @@ This page describes the |tool-binary| options.
    file is unspecified, writes to the standard output (``stdout``).
    
    - To output the dump to an archive file, run
-     :binary:`~bin.mongodump` with the :option:`--archive <mongodump
-     --archive>` option and the archive filename.
+     ``mongodump`` with the ``--archive <mongodump
+     --archive>`` option and the archive filename.
 
      .. code-block:: javascript
 
         mongodump --archive=<file>
 
    - To output the dump to the standard output stream in order to pipe
-     to another process, run :binary:`~bin.mongodump` with the
-     :option:`--archive <mongodump --archive>` option but *omit* the
+     to another process, run ``mongodump`` with the
+     ``--archive <mongodump --archive>`` option but *omit* the
      filename.
    
      .. code-block:: javascript
 
         mongodump --archive
 
-   You cannot use the :option:`--archive <mongodump --archive>` option
-   with the :option:`--out <mongodump --out>` option.
+   You cannot use the ``--archive <mongodump --archive>`` option
+   with the ``--out <mongodump --out>`` option.
 
 .. option:: --oplog
 
    Creates a file named :file:`oplog.bson` as part of the
-   :binary:`~bin.mongodump` output. The :file:`oplog.bson` file, located in
+   ``mongodump`` output. The :file:`oplog.bson` file, located in
    the top level of the output directory, contains oplog entries that
-   occur during the :binary:`~bin.mongodump` operation. This file provides
+   occur during the ``mongodump`` operation. This file provides
    an effective point-in-time snapshot of the state of a
    :binary:`~bin.mongod` instance. To restore to a specific point-in-time
    backup, use the output created with this option in conjunction with
    :option:`mongorestore --oplogReplay`.
    
-   Without :option:`--oplog`, if there are write operations during the dump
+   Without ``--oplog``, if there are write operations during the dump
    operation, the dump will not reflect a single moment in time. Changes
    made to the database during the update process can affect the output of
    the backup.
    
    .. important::
       
-      A :binary:`~bin.mongodump` running with :option:`--oplog` fails if
+      A ``mongodump`` running with ``--oplog`` fails if
       a client issues any of the listed operations during the dump
       process.
 
@@ -461,25 +459,25 @@ This page describes the |tool-binary| options.
       - :method:`db.collection.renameCollection()`
       - :method:`db.collection.aggregate()` with :pipeline:`$out`
 
-   :option:`--oplog` has no effect when running :binary:`~bin.mongodump`
+   ``--oplog`` has no effect when running ``mongodump``
    against a :binary:`~bin.mongos` instance to dump the entire contents of a
-   sharded cluster. However, you can use :option:`--oplog` to dump
+   sharded cluster. However, you can use ``--oplog`` to dump
    individual shards.
    
-   :option:`--oplog` only works against nodes that maintain an
+   ``--oplog`` only works against nodes that maintain an
    :term:`oplog`. This includes all members of a replica set.
    
-   :option:`--oplog` does not dump the oplog collection.
+   ``--oplog`` does not dump the oplog collection.
    
    .. note::
    
-      To use :binary:`~bin.mongodump` with :option:`--oplog`, you must create a full dump of
-      a :term:`replica set` member. :binary:`~bin.mongodump` with  :option:`--oplog` fails
+      To use ``mongodump`` with ``--oplog``, you must create a full dump of
+      a :term:`replica set` member. ``mongodump`` with  ``--oplog`` fails
       if you use any of the following options to limit the data to be dumped:
    
-      - :option:`--db`
-      - :option:`--collection`
-      - :option:`--dumpDbUsersAndRoles`
+      - ``--db``
+      - ``--collection``
+      - ``--dumpDbUsersAndRoles``
    
    .. seealso:: 
    
@@ -488,50 +486,55 @@ This page describes the |tool-binary| options.
 .. option:: --dumpDbUsersAndRoles
 
    Includes user and role definitions in the database's dump directory
-   when performing :binary:`~bin.mongodump` on a specific database. This
+   when performing ``mongodump`` on a specific database. This
    option applies only when you specify a database in the
-   :option:`--db` option. MongoDB always includes user and role
-   definitions when :binary:`~bin.mongodump` applies to an entire instance
+   ``--db`` option. MongoDB always includes user and role
+   definitions when ``mongodump`` applies to an entire instance
    and not just a specific database.
    
 .. option:: --excludeCollection=<string>
 
-   Excludes the specified collection from the :program:`mongodump` output.
-   To exclude multiple collections, specify the :option:`--excludeCollection` multiple times.
+   Excludes the specified collection from the ``mongodump`` output.
+   To exclude multiple collections, specify the ``--excludeCollection`` multiple times.
 
 .. option:: --excludeCollectionsWithPrefix=<string>
 
-   Excludes all collections with a specified prefix from the :program:`mongodump`
-   outputs. To specify multiple prefixes, specify the :option:`--excludeCollectionsWithPrefix` multiple
+   Excludes all collections with a specified prefix from the ``mongodump``
+   outputs. To specify multiple prefixes, specify the ``--excludeCollectionsWithPrefix`` multiple
    times.
 
 .. option:: --numParallelCollections=<int>, -j=<int>
 
    *Default*: 4
 
-   Number of collections :program:`mongodump` should export
+   Number of collections ``mongodump`` should export
    in parallel.
 
 .. option:: --viewsAsCollections
 
-   When specified, :program:`mongodump` exports :ref:`views
+   When specified, ``mongodump`` exports :ref:`views
    <views-landing-page>` as collections.
    
    .. note::
    
-      Only views are exported. By default, :binary:`~bin.mongodump` only
+      Only views are exported. By default, ``mongodump`` only
       exports a view's metadata. To export the documents in a view, use
       the ``--viewsAsCollections`` option.
    
-   For each view, :program:`mongodump` creates a BSON file containing
+   For each view, ``mongodump`` creates a BSON file containing
    the documents in the view. If you use :binary:`~bin.mongorestore`
-   with a BSON file created by :program:`mongodump`, the view is
+   with a BSON file created by ``mongodump``, the view is
    restored as a :term:`collection`.
    
-   If you do *not* include :option:`--viewsAsCollections`,
-   :program:`mongodump` captures each view's metadata. If you include a
+   If you do *not* include ``--viewsAsCollections``,
+   ``mongodump`` captures each view's metadata. If you include a
    view's metadata file in a :binary:`~bin.mongorestore` operation, the view
    is recreated.
 
 Learn More
 ----------
+
+- :ref:`mongodump`
+- :ref:`mongodump-compatibility-and-installation`
+- :ref:`mongodump-behavior`
+- :ref:`mongodump-examples`
