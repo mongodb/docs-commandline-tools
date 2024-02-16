@@ -66,5 +66,4 @@ Learn More
 
 - :ref:`mongodump`
 - :ref:`mongodump-behavior`
-- :ref:`mongodump-options`
 - :ref:`mongodump-examples`

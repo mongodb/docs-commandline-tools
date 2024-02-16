@@ -249,5 +249,4 @@ Learn More
 
 - :ref:`mongodump`
 - :ref:`mongodump-compatibility-and-installation`
-- :ref:`mongodump-options`
 - :ref:`mongodump-behavior`
