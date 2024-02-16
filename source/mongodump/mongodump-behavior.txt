@@ -14,8 +14,6 @@ mongodump Behavior, Access, and Usage
    :name: genre
    :values: reference
 
-.. binary:: mongodump
-
 .. program:: mongodump
 
 .. contents:: On this page
