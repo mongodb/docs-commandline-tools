@@ -355,7 +355,7 @@ Options
 .. option:: --sslPEMKeyPassword=<value>
 
    Specifies the password to de-crypt the certificate-key file (i.e.
-   ``--sslPEMKeyFile``). Use the ```--sslPEMKeyPassword` option only if the
+   ``--sslPEMKeyFile``). Use the ```--sslPEMKeyPassword`` option only if the
    certificate-key file is encrypted. In all cases, ``mongodump`` will
    redact the password from all logging and reporting output.
    
