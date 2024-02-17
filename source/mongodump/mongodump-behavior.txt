@@ -126,7 +126,7 @@ Working Set
 ~~~~~~~~~~~
 
 ``mongodump`` can adversely affect performance of the
-:binary:`~bin.mongod`. If your data is larger than system memory, the
+:binary:`~bin.mongod`. If your data is larger than system memory,
 ``mongodump`` will push the working set out of memory.
 
 FIPS

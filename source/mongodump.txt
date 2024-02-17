@@ -356,12 +356,12 @@ Options
 
    Specifies the password to de-crypt the certificate-key file (i.e.
    ``--sslPEMKeyFile``). Use the ```--sslPEMKeyPassword` option only if the
-   certificate-key file is encrypted. In all cases, the ``mongodump`` will
+   certificate-key file is encrypted. In all cases, ``mongodump`` will
    redact the password from all logging and reporting output.
    
-   If the private key in the PEM file is encrypted and you do not specify
-   the ``--sslPEMKeyPassword`` option, the ``mongodump`` will prompt for a passphrase. See
-   :ref:`ssl-certificate-password`.
+   If the private key in the PEM file is encrypted and you do not
+   specify the ``--sslPEMKeyPassword`` option, ``mongodump`` will
+   prompt for a passphrase. See :ref:`ssl-certificate-password`.
 
    .. include:: /includes/extracts/uri-used-with-sslpemkeypassword.rst
 
@@ -414,13 +414,14 @@ Options
 .. option:: --password=<password>, -p=<password>
 
    Specifies a password with which to authenticate to a MongoDB database
-   that uses authentication. Use in conjunction with the 
-   ``--username <mongodump --username>`` and
-   ``--authenticationDatabase <mongodump --authenticationDatabase>`` options.
+   that uses authentication. Use in conjunction with the ``--username
+   <mongodump --username>`` and ``--authenticationDatabase <mongodump
+   --authenticationDatabase>`` options.
 
-   To prompt the user for the password, pass the ``--username <mongodump --username>``
-   option without ``--password <mongodump --password>`` or specify an empty string as the
-   ``--password <mongodump --pas`sword>`` value, as in ``--password ""`` .
+   To prompt the user for the password, pass the ``--username <mongodump
+   --username>`` option without ``--password <mongodump --password>`` or
+   specify an empty string as the ``--password <mongodump --password>``
+   value, as in ``--password ""`` .
 
    .. include:: /includes/extracts/uri-used-with-password.rst
 
@@ -434,8 +435,9 @@ Options
 
 .. option:: --authenticationDatabase=<dbname>
 
-   Specifies the authentication database where the specified ``--username <mongodump --username>`` has been created.
-   See :ref:`user-authentication-database`.
+   Specifies the authentication database where the specified
+   ``--username <mongodump --username>`` has been created. See
+   :ref:`user-authentication-database`.
 
    If you do not specify an authentication database, ``mongodump``
    assumes that the database specified to export holds the user's credentials.
