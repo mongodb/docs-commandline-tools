@@ -47,7 +47,8 @@ a database's contents. ``mongodump`` can export data from:
 ``mongodump`` can connect to :binary:`~bin.mongod` and
 :binary:`~bin.mongos` instances.
 
-.. include:: /includes/extracts/require-cmd-line-mongodump.rst
+ Run ``mongodump`` from the system command line, not the
+ :binary:`~bin.mongo` shell.
 
 .. seealso::
 
@@ -64,9 +65,6 @@ Syntax
 .. code-block:: sh
 
    mongodump <options> <connection-string>
-
- Run ``mongodump`` from the system command line, not the
- :binary:`~bin.mongo` shell.
 
 Connect to a MongoDB Instance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
