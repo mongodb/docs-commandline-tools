@@ -65,7 +65,8 @@ Syntax
 
    mongodump <options> <connection-string>
 
-.. include:: /includes/extracts/require-cmd-line-mongodump.rst
+ Run ``mongodump`` from the system command line, not the
+ :binary:`~bin.mongo` shell.
 
 Connect to a MongoDB Instance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
