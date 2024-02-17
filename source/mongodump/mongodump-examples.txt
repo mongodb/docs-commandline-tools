@@ -27,6 +27,9 @@ mongodump Examples
 
 This page shows examples for |tool-binary|.
 
+Run ``mongodump`` from the system command line, not the
+:binary:`~bin.mongo` shell.
+
 Use ``mongodump`` with a Collection
 -----------------------------------
 
