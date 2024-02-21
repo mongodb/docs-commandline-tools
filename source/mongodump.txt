@@ -109,7 +109,7 @@ Syntax
 
       Stub
 
-    .. tab:: Connect to a Sharded Cluster
+   .. tab:: Connect to a Sharded Cluster
       :tabid: connect-to-a-sharded-cluster
 
       Stub
