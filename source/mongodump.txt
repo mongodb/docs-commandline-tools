@@ -66,42 +66,54 @@ Syntax
 
    mongodump <options> <connection-string>
 
-Connect to a MongoDB Instance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. tabs::
 
-To connect to a local MongoDB instance running on port 27017 and use
-the default settings to export the content, run
-``mongodump`` without any command-line options:
+   .. tab:: Connect to a MongoDB Instance
+      :tabid: connect-to-a-MongoDB-instance
 
-.. code-block:: sh
+      To connect to a local MongoDB instance running on port 27017 and use
+      the default settings to export the content, run
+      ``mongodump`` without any command-line options:
 
-   mongodump
+      .. code-block:: sh
 
-To specify a host and/or port of the MongoDB instance, you can either:
+         mongodump
 
-- Specify the hostname and port in the :option:`--uri connection string
-  <mongodump --uri>`:
+      To specify a host and/or port of the MongoDB instance, you can either:
 
-  .. code-block:: sh
+      - Specify the hostname and port in the :option:`--uri connection string
+      <mongodump --uri>`:
 
-     mongodump --uri="mongodb://mongodb0.example.com:27017" [additional options]
+      .. code-block:: sh
 
-- Specify the hostname and port in the :option:`--host <mongodump
-  --host>`:
+         mongodump --uri="mongodb://mongodb0.example.com:27017" [additional options]
 
-  .. code-block:: sh
+      - Specify the hostname and port in the :option:`--host <mongodump
+      --host>`:
 
-     mongodump --host="mongodb0.example.com:27017"  [additional options]
-  
-- Specify the hostname and port in the :option:`--host <mongodump
-  --host>` and :option:`--port <mongodump --port>`:
+      .. code-block:: sh
 
-  .. code-block:: sh
+         mongodump --host="mongodb0.example.com:27017"  [additional options]
+      
+      - Specify the hostname and port in the :option:`--host <mongodump
+      --host>` and :option:`--port <mongodump --port>`:
 
-     mongodump --host="mongodb0.example.com" --port=27017 [additional options]
+      .. code-block:: sh
 
-For more information on the options available, see :ref:`mongodump-options`.
+         mongodump --host="mongodb0.example.com" --port=27017 [additional options]
 
+      For more information on the options available, see :ref:`mongodump-options`.
+
+   .. tab:: Connect to a Replica Set
+      :tabid: connect-to-a-replica-set
+
+      Stub
+
+    .. tab:: Connect to a Sharded Cluster
+      :tabid: connect-to-a-sharded-cluster
+
+      Stub
+           
 Connect to a Replica Set
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
