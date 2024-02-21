@@ -71,9 +71,9 @@ Syntax
    .. tab:: Connect to a MongoDB Instance
       :tabid: connect-to-a-MongoDB-instance
 
-      To connect to a local MongoDB instance running on port 27017 and use
-      the default settings to export the content, run
-      ``mongodump`` without any command-line options:
+      To connect to a local MongoDB instance running on port 27017 and
+      use the default settings to export the content, run ``mongodump``
+      without any command-line options:
 
       .. code-block:: sh
 
@@ -82,25 +82,25 @@ Syntax
       To specify a host and/or port of the MongoDB instance, you can either:
 
       - Specify the hostname and port in the :option:`--uri connection string
-      <mongodump --uri>`:
+        <mongodump --uri>`:
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --uri="mongodb://mongodb0.example.com:27017" [additional options]
+           mongodump --uri="mongodb://mongodb0.example.com:27017" [additional options]
 
       - Specify the hostname and port in the :option:`--host <mongodump
-      --host>`:
+        --host>`:
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --host="mongodb0.example.com:27017"  [additional options]
-      
+           mongodump --host="mongodb0.example.com:27017"  [additional options]
+         
       - Specify the hostname and port in the :option:`--host <mongodump
-      --host>` and :option:`--port <mongodump --port>`:
+        --host>` and :option:`--port <mongodump --port>`:
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --host="mongodb0.example.com" --port=27017 [additional options]
+           mongodump --host="mongodb0.example.com" --port=27017 [additional options]
 
       For more information on the options available, see :ref:`mongodump-options`.
 
