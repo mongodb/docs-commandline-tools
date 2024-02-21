@@ -145,16 +145,16 @@ Syntax
 
            mongodump --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017" --readPreference=secondary [additional options]
 
-      Or, the command-line option can take a quote-enclosed document 
-      ``'{ mode: <mode>, tagSets: [ <tag1>, ... ], maxStalenessSeconds:<num>}'`` 
-      to specify the mode, the optional :ref:`read preference tag
-      sets <configure-read-pref-tags>`, and the optional
-      :ref:`maxStalenessSeconds
-      <replica-set-read-preference-max-staleness>`:
+        Or, the command-line option can take a quote-enclosed document 
+        ``'{ mode: <mode>, tagSets: [ <tag1>, ... ], maxStalenessSeconds:<num>}'`` 
+        to specify the mode, the optional :ref:`read preference tag
+        sets <configure-read-pref-tags>`, and the optional
+        :ref:`maxStalenessSeconds
+        <replica-set-read-preference-max-staleness>`:
       
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017" --readPreference='{mode: "secondary", tagSets: [ { "region": "east" } ]}' [additional options]
+           mongodump --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017" --readPreference='{mode: "secondary", tagSets: [ { "region": "east" } ]}' [additional options]
 
    .. tab:: Connect to a Sharded Cluster
       :tabid: connect-to-a-sharded-cluster
@@ -194,7 +194,7 @@ Syntax
 
       - You can specify the read preference using the
         :option:`--readPreference <mongodump --readPreference>` command-line
-        option.  The command-line option takes a string if specifying only the read preference mode:
+        option. The command-line option takes a string if specifying only the read preference mode:
 
         .. code-block:: sh
       
@@ -322,8 +322,6 @@ Options
 
    .. include:: /includes/extracts/uri-used-with-ssl.rst
 
-   .. include:: /includes/extracts/ssl-facts-see-more.rst
-
 .. option:: --sslCAFile=<filename>
 
    Specifies the :file:`.pem` file that contains the root certificate chain
@@ -331,8 +329,6 @@ Options
    :file:`.pem` file using relative or absolute paths.
 
    .. include:: /includes/extracts/uri-used-with-sslcafile.rst
-
-   .. include:: /includes/extracts/ssl-facts-see-more.rst
 
 .. option:: --sslPEMKeyFile=<filename>
 
@@ -346,8 +342,6 @@ Options
    :setting:`~net.ssl.allowConnectionsWithoutCertificates`.
 
    .. include:: /includes/extracts/uri-used-with-sslpemkeyfile.rst
- 
-   .. include:: /includes/extracts/ssl-facts-see-more.rst
 
 .. option:: --sslPEMKeyPassword=<value>
 
@@ -362,8 +356,6 @@ Options
 
    .. include:: /includes/extracts/uri-used-with-sslpemkeypassword.rst
 
-   .. include:: /includes/extracts/ssl-facts-see-more.rst
-
    .. include:: /includes/fact-warning-sslpemkeypassword-config.rst
 
 .. option:: --sslCRLFile=<filename>
@@ -371,8 +363,6 @@ Options
    Specifies the :file:`.pem` file that contains the Certificate
    Revocation List. Specify the file name of the :file:`.pem` file using
    relative or absolute paths.
-   
-   .. include:: /includes/extracts/ssl-facts-see-more.rst
 
 .. option:: --sslAllowInvalidCertificates
 
@@ -384,8 +374,6 @@ Options
    .. include:: /includes/extracts/ssl-facts-invalid-cert-warning-clients.rst
 
    .. include:: /includes/extracts/uri-used-with-sslallowinvalidcertificates.rst
-
-   .. include:: /includes/extracts/ssl-facts-see-more.rst
    
 .. option:: --sslAllowInvalidHostnames
 
@@ -394,8 +382,6 @@ Options
    hostname in their certificates do not match the specified hostname.
 
    .. include:: /includes/extracts/uri-used-with-sslallowinvalidhostnames.rst
-
-   .. include:: /includes/extracts/ssl-facts-see-more.rst
 
 .. option:: --username=<username>, -u=<username>
 
@@ -725,9 +711,13 @@ Options
 Learn More
 ----------
 
+For more information about ``mongodump``, see:
+
 - :ref:`mongodump-compatibility-and-installation`
 - :ref:`mongodump-behavior`
 - :ref:`mongodump-examples`
+
+.. include:: /includes/extracts/ssl-facts-see-more.rst
 
 .. toctree::
    :maxdepth: 1
