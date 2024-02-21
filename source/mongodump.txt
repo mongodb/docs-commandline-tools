@@ -68,8 +68,8 @@ Syntax
 
 .. tabs::
 
-   .. tab:: Connect to a MongoDB Instance
-      :tabid: connect-to-a-MongoDB-instance
+   .. tab:: Connect to an Instance
+      :tabid: connect-to-an-instance
 
       To connect to a local MongoDB instance running on port 27017 and
       use the default settings to export the content, run ``mongodump``
@@ -109,43 +109,43 @@ Syntax
 
       - Specify the replica set name and members in the :option:`--uri connection string <mongodump --uri>`:
 
-      .. code-block:: sh
+        .. code-block:: sh
       
-         mongodump --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?replicaSet=myReplicaSetName" [additional options]
+           mongodump --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?replicaSet=myReplicaSetName" [additional options]
 
       - Specify the replica set name and members in the :option:`--host <mongodump --host>`:
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com" [additional options]
+           mongodump --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com" [additional options]
 
       By default, ``mongodump`` reads from the primary of the
       replica set. To override the default, you can specify the :ref:`read
       preference <replica-set-read-preference>`:
 
       - You can specify the read preference in the
-      :option:`--uri connection string <mongodump --uri>`
+        :option:`--uri connection string <mongodump --uri>`
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?replicaSet=myReplicaSetName&readPreference=secondary" [additional options]
+           mongodump --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?replicaSet=myReplicaSetName&readPreference=secondary" [additional options]
 
-      If specifying the read preference tags, include the
-      :urioption:`readPreferenceTags` option:
+        If specifying the read preference tags, include the
+        :urioption:`readPreferenceTags` option:
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?replicaSet=myReplicaSetName&readPreference=secondary&readPreferenceTags=region:east" [additional options]
+           mongodump --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?replicaSet=myReplicaSetName&readPreference=secondary&readPreferenceTags=region:east" [additional options]
 
       - You can specify the read preference using the
-      :option:`--readPreference <mongodump --readPreference>` command-line
-      option. The command-line option takes a string if specifying only the read preference mode:
+        :option:`--readPreference <mongodump --readPreference>` command-line
+        option. The command-line option takes a string if specifying only the read preference mode:
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017" --readPreference=secondary [additional options]
+           mongodump --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017" --readPreference=secondary [additional options]
 
-      Or, the command-line option can takes a quote-enclosed document 
+      Or, the command-line option can take a quote-enclosed document 
       ``'{ mode: <mode>, tagSets: [ <tag1>, ... ], maxStalenessSeconds:<num>}'`` 
       to specify the mode, the optional :ref:`read preference tag
       sets <configure-read-pref-tags>`, and the optional
@@ -185,12 +185,12 @@ Syntax
       
            mongodump --uri="mongodb://mongos0.example.com:27017/?readPreference=secondary" [additional options]
 
-      If specifying the read preference tags, include the
-      :urioption:`readPreferenceTags` option:
+        If specifying the read preference tags, include the
+        :urioption:`readPreferenceTags` option:
 
-      .. code-block:: sh
+        .. code-block:: sh
       
-         mongodump --uri="mongodb://mongos0.example.com:27017/?readPreference=secondary&readPreferenceTags=region:east" [additional options]
+           mongodump --uri="mongodb://mongos0.example.com:27017/?readPreference=secondary&readPreferenceTags=region:east" [additional options]
 
       - You can specify the read preference using the
         :option:`--readPreference <mongodump --readPreference>` command-line
@@ -200,16 +200,16 @@ Syntax
       
            mongodump --host="mongos0.example.com:27017" --readPreference=secondary [additional options]
 
-      Or, the command-line option can takes a quote-enclosed document 
-      ``'{ mode: <mode>, tagSets: [ <tag1>, ... ], maxStalenessSeconds: <num>}'`` 
-      to specify the mode, the optional :ref:`read preference tag
-      sets <configure-read-pref-tags>`, and the optional
-      :ref:`maxStalenessSeconds
-      <replica-set-read-preference-max-staleness>`:
+        Or, the command-line option can take a quote-enclosed document 
+        ``'{ mode: <mode>, tagSets: [ <tag1>, ... ], maxStalenessSeconds: <num>}'`` 
+        to specify the mode, the optional :ref:`read preference tag
+        sets <configure-read-pref-tags>`, and the optional
+        :ref:`maxStalenessSeconds
+        <replica-set-read-preference-max-staleness>`:
 
-      .. code-block:: sh
+        .. code-block:: sh
 
-         mongodump --host="mongos0.example.com:27017" --readPreference='{mode: "secondary", tagSets: [ { "region": "east" } ]}' [additional options]
+           mongodump --host="mongos0.example.com:27017" --readPreference='{mode: "secondary", tagSets: [ { "region": "east" } ]}' [additional options]
 
 .. _mongodump-options:
 
