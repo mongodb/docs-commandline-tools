@@ -35,8 +35,8 @@ Use ``mongodump`` with a Collection
 
 The following operation creates a dump file that contains only the
 collection named ``records`` in the database named ``test``. In
-this case the database is running on the local interface on port
-``27017``:
+the example, the database is running on the local interface on port
+``27017``.
 
 .. code-block:: sh
 
@@ -178,7 +178,7 @@ using the :option:`--username <mongodump --username>`,
 
    mongodump 'mongodb+srv://cluster0.example.com/testdb?authSource=$external&authMechanism=MONGODB-AWS' --username <aws access key id> --password <aws secret access key> --awsSessionToken <aws session token> <other options>
 
-When provided as command line parameters, these three options do not
+When provided as command line parameters, the previous three options do not
 require percent encoding.
 
 You may also set these credentials on your platform using standard
