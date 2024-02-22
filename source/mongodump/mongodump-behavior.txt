@@ -60,7 +60,7 @@ option or in the :option:`--uri connection string <mongodump --uri>`.
 
 If read preference is specified in both the URI string and the
 :option:`--readPreference <mongodump --readPreference>`
-option, the :option:`--readPreference <mongodump --readPreference>`
+option, the ``--readPreference``
 value overrides the read preference specified in the URI string.
 
 Data Exclusion
@@ -91,7 +91,7 @@ Metadata Format
 ``mongodump`` uses :manual:`Extended
 JSON v2.0 (Canonical) </reference/mongodb-extended-json>` format
 for the metadata files. To parse these files for restore, use
-:binary:`~bin.mongorestore`, which supports :manual:`Extended
+``mongorestore``, which supports :manual:`Extended
 JSON v2.0 (Canonical or Relaxed mode)
 </reference/mongodb-extended-json>` format.
 
@@ -118,7 +118,7 @@ folders or files.
 Data Compression Handling
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When run against a :binary:`~bin.mongod` instance that uses the
+When run against a ``mongod`` instance that uses the
 :manual:`WiredTiger </core/wiredtiger>` storage engine,
 ``mongodump`` outputs uncompressed data.
 
@@ -126,14 +126,14 @@ Working Set
 ~~~~~~~~~~~
 
 ``mongodump`` can adversely affect performance of the
-:binary:`~bin.mongod`. If your data is larger than system memory,
+``mongod``. If your data is larger than system memory,
 ``mongodump`` will push the working set out of memory.
 
 FIPS
 ~~~~
 
 ``mongodump`` automatically creates FIPS-compliant
-connections to a :binary:`~bin.mongod`/:binary:`~bin.mongos` that is
+connections to a ``mongod``/``mongos`` that is
 :manual:`configured to use FIPS mode </tutorial/configure-fips>`.
 
 Required Access
@@ -153,12 +153,12 @@ Standalone Deployments and Replica Sets
 
 For standalone or a replica set, ``mongodump`` can be a part
 of a :ref:`backup strategy <backup-with-mongodump>` with
-:binary:`~bin.mongorestore` for partial backups based on a query,
+``mongorestore`` for partial backups based on a query,
 syncing from production to staging or development environments, or
 changing the storage engine of a standalone.
 
 For details on using ``mongodump`` with
-:binary:`~bin.mongorestore` as part of a backup and recovery strategy,
+``mongorestore`` as part of a backup and recovery strategy,
 see:
 
 - :manual:`Back Up and Restore with MongoDB Tools</tutorial/backup-and-restore-tools>`
