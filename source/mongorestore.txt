@@ -39,8 +39,10 @@ into a :binary:`~bin.mongod` or :binary:`~bin.mongos` instance.
 
 .. seealso::
 
-   :binary:`~bin.mongodump` which provides the corresponding
+   :binary:`~bin.mongodump`, which provides the corresponding
    binary data export capability.
+
+You can't run ``mongorestore`` concurrently with ``mongodump``.
 
 .. |tool-command| replace:: ``mongorestore``
 
