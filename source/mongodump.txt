@@ -302,8 +302,37 @@ value overrides the read preference specified in the URI string.
 Data Exclusion
 ~~~~~~~~~~~~~~
 
-:binary:`~bin.mongodump` excludes the content of the ``local`` database
-in its output.
+If you specify both the :option:`--db <mongodump --db>` and
+:option:`--collection <mongodump --collection>` options, ``mongodump``
+dumps everything and doesn't exclude anything in the collection except
+the following:
+
+- The ``admin.system.keys`` collection 
+- The collection that starts with ``system.`` in all databases except
+  for the collection named ``system.js``
+
+If you don't specify the :option:`--db <mongodump --db>` option,
+:binary:`~bin.mongodump` excludes the following in its output:  
+
+- The entire ``local`` database 
+- The entire ``admin`` database if you are connected to an Atlas
+  cluster. 
+
+  .. note:: ``mongodump`` returns an error if you specify the 
+   ``admin`` database as value for the ``--db`` option. 
+
+If you specify the ``config`` database as value for the ``--db`` option,
+``mongodump`` dumps everything in that database. If you don't explicitly
+specify the ``config`` database as value for the  ``--db`` option,
+``mongodump`` only includes the following collections in the output: 
+
+- ``chunks``
+- ``collections``
+- ``databases``
+- ``settings``
+- ``shards``
+- ``tags``
+- ``version``
 
 :binary:`~bin.mongodump` output:
 
