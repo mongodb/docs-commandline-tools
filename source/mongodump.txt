@@ -309,23 +309,30 @@ dumps the specified collection.
 If you only specify the :option:`--db <mongodump --db>` option,
 ``mongodump`` dumps that database with the following exclusions:
 
-- If the value of ``--db`` is ``admin``, ``mongodump`` excludes the
-  ``system.keys`` collection. 
+- If the value of ``--db`` is ``admin``:
+  - If you aren't connected to an Atlas Proxy, ``mongodump`` dumps the database but 
+    excludes the ``system.keys`` collection. 
+  - If you're connected to an Atlas Proxy, ``mongodump`` attempts to dump the database 
+    but errors out.
 - If the value of ``--db`` is ``config``, ``mongodump`` dumps all
   collections in that database. 
+  - If the value of ``--db`` is ``local``, ``mongodump`` dumps all collections in that database. 
   
-  If you don't explicitly specify the ``config`` database as the value
-  for the  ``--db`` option or if you omit the ``--db`` option,
-  ``mongodump`` only includes the following collections in the output
-  for the ``config`` database: 
+  If you omit the ``--db`` option:
+  - ``mongodump`` excludes the ``local`` database.
+  - ``mongodump`` only includes the following collections in the output
+    for the ``config`` database: 
 
-  - ``chunks``
-  - ``collections``
-  - ``databases``
-  - ``settings``
-  - ``shards``
-  - ``tags``
-  - ``version``
+    - ``chunks``
+    - ``collections``
+    - ``databases``
+    - ``settings``
+    - ``shards``
+    - ``tags``
+    - ``version``
+    
+  - If you're connected to an Atlas Proxy, ``mongodump`` excludes the ``admin`` 
+    database.
   
 - For all other databases, ``mongodump`` excludes all collections that
   start with ``system.``, except for ``system.js``. 
