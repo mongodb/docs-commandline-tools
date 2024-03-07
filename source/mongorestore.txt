@@ -868,8 +868,7 @@ Options
 
    Creates all :manual:`hashed indexes 
    </core/indexes/index-types/index-hashed/>` on dotted fields as 
-   single field ascending indexes on the destination database if
-   enabled. 
+   single field ascending indexes on the destination database.
 
 .. option:: --noOptionsRestore
 
