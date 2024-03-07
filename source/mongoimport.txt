@@ -521,7 +521,7 @@ Options
 .. option:: --drop
 
    Modifies the import process so that the target instance drops
-   the collection and any associated indexes before importing 
+   the collection and any associated :term:`index` before importing 
    data from the input.
    
 
