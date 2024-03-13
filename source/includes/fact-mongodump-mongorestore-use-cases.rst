@@ -1,10 +1,8 @@
-:binary:`~bin.mongoimport` in conjunction with
-:binary:`~bin.mongoexport` is not a recommended method for the
-following use cases:
+:binary:`~bin.mongoimport` and :binary:`~bin.mongoexport` are not
+intended for the following use cases:
 
 - backing up and restoring data
-- transforming data from one format to another and then back to the
-  original format
+- sending data from a MongoDB instance to another instance and then back
+  to the original instance
 
-For these cases, use :binary:`~bin.mongodump` or
-:binary:`~bin.mongorestore`. 
+Instead, use :binary:`~bin.mongodump` or :binary:`~bin.mongorestore`. 
