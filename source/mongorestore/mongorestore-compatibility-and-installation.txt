@@ -63,4 +63,5 @@ Learn More
 ----------
 
 - :ref:`mongorestore`
+- :ref:`mongorestore-behavior-access-usage`
 - :ref:`mongorestore-examples`
