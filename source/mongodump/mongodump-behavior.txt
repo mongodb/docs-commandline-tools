@@ -66,7 +66,6 @@ value overrides the read preference specified in the URI string.
 Data Exclusion
 ~~~~~~~~~~~~~~
 
-
 If you specify both the :option:`--db <mongodump --db>` and the
 :option:`--collection <mongodump --collection>` options, ``mongodump``
 dumps the specified collection.
