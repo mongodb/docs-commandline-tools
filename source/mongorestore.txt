@@ -861,7 +861,6 @@ Learn More
    :maxdepth: 1
    :hidden:
 
-   Compatibility and Installation
-   </mongorestore/mongorestore-compatibility-and-installation>
+   Compatibility and Installation </mongorestore/mongorestore-compatibility-and-installation>
    Behavior, Access, and Usage </mongorestore/mongorestore-behavior-access-usage>
    Examples </mongorestore/mongorestore-examples>
