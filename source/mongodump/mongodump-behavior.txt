@@ -85,6 +85,22 @@ If you're using :ref:`views <views-landing-page>`:
 - To export the documents in a view, use
   :option:`--viewsAsCollections <mongodump --viewsAsCollections>`.
 
+Metadata Output
+~~~~~~~~~~~~~~~
+
+If :binary:`~bin.mongodump` outputs to a directory, the output contains
+collection metadata which includes the following properties: 
+
+- Collection names
+- Collection types
+- Collection configuration options
+- UUIDs
+- Indexes
+
+If :binary:`~bin.mongodump` outputs to standard output (``stdout``), the
+output does not include metadata. For more information, see the
+:option:`--out` option. 
+
 Metadata Format
 ~~~~~~~~~~~~~~~
 
