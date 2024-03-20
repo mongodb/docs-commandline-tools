@@ -176,7 +176,7 @@ Syntax
         .. code-block:: sh
 
            mongodump --host="mongos0.example.com:27017" [additional options]
-
+           
       By default, ``mongodump`` reads from the primary of the
       shard replica set. To override the default, you can specify the :ref:`read
       preference <replica-set-read-preference>`:
@@ -591,7 +591,8 @@ Options
 .. option:: --archive=<file>
    
    Writes the output to a specified archive file or, if the archive
-   file is unspecified, writes to the standard output (``stdout``).
+   file is unspecified, writes to the standard output (``stdout``). An
+   archive file is a single-file alternative to multiple BSON files. 
    
    - To output the dump to an archive file, run
      ``mongodump`` with the ``--archive <mongodump
@@ -612,6 +613,13 @@ Options
 
    You cannot use the ``--archive <mongodump --archive>`` option
    with the ``--out <mongodump --out>`` option.
+
+   .. note::
+
+      If :binary:`~bin.mongodump` writes to an archive file,
+      ``mongodump`` performance can improve. For more information on
+      ``mongodump`` performance impacts, see :ref:`Output Format
+      Considerations <considerations-output-format>`. 
 
 .. option:: --oplog
 

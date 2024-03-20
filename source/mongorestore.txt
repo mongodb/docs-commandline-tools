@@ -39,8 +39,11 @@ into a :binary:`~bin.mongod` or :binary:`~bin.mongos` instance.
 
 .. seealso::
 
-   :binary:`~bin.mongodump` which provides the corresponding
+   :binary:`~bin.mongodump`, which provides the corresponding
    binary data export capability.
+
+MongoDB doesn't support running multiple ``mongorestore`` programs concurrently 
+for the same collection. 
 
 .. |tool-command| replace:: ``mongorestore``
 
@@ -214,6 +217,23 @@ Time Series Collections
 Starting in MongoDB 5.0, you can use ``mongorestore`` to restore 
 :ref:`timeseries collections <manual-timeseries-landing>`.
 For details, see :ref:`mongorestore-example-time-series`.
+
+Using ``mongorestore`` on Atlas Free and Shared Tier Clusters 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On free (``M0``) and shared (``M2`` and ``M5``) tier Atlas clusters, the
+following limitations apply:
+
+- You can't run ``mongorestore`` on the ``admin`` database. By default,
+  ``mongorestore`` skips this database. If you use the :option:`--db
+  <mongorestore --db>` option to set the destination database to
+  ``admin``, the program returns an error.
+
+- You can't use the following options with the ``mongorestore`` program:
+
+  - :option:`--restoreDbUsersAndRoles`
+  - :option:`--oplogReplay <mongorestore --oplogReplay>`
+  - :option:`--preserveUUID <mongorestore --preserveUUID>`
 
 .. _mongorestore-required-access:
 
@@ -847,6 +867,12 @@ Options
    specified in the corresponding :binary:`~bin.mongodump` output.
 
 
+.. option:: --fixDottedHashIndex 
+
+   Creates all :manual:`hashed indexes 
+   </core/indexes/index-types/index-hashed/>` on dotted fields as 
+   single field ascending indexes on the destination database.
+
 .. option:: --noOptionsRestore
 
    Prevents ``mongorestore`` from setting the collection options,
@@ -1176,7 +1202,7 @@ namespaces. The following operation
 
 .. code-block:: sh
 
-   mongorestore --nsInclude='data.*' --nsFrom='data.$prefix$_$customer$' --nsTo='$customer$.$prefix$'
+   mongorestore --nsInclude="data.*" --nsFrom="data.$prefix$_$customer$" --nsTo="$customer$.$prefix$"
 
 .. _mongorestore-example-copy-clone-database:
 
@@ -1254,7 +1280,7 @@ options with the ``--gzip`` option.
 
 .. code-block:: sh
 
-   mongorestore --gzip --nsFrom='data.$prefix$_$customer$' --nsTo='$customer$.$prefix$'
+   mongorestore --gzip --nsFrom="data.$prefix$_$customer$" --nsTo="$customer$.$prefix$"
 
 .. _mongorestore-example-archive-stdin:
 
@@ -1327,7 +1353,7 @@ namespace:
 
 .. code-block:: sh
 
-   mongorestore --host localhost --port 27017 --nsFrom='test.*' --nsTo='mongorestore.*' dump/
+   mongorestore --host localhost --port 27017 --nsFrom="test.*" --nsTo="mongorestore.*" dump/
 
 .. note::
 
