@@ -1,7 +1,7 @@
 .. _mongorestore-compatibility-and-installation:
 
 ================================================
-``mongorestore`` Compatibility and Installation
+mongorestore Compatibility and Installation
 ================================================
 
 .. default-domain:: mongodb

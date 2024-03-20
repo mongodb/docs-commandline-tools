@@ -1,7 +1,7 @@
 .. _mongorestore-behavior-access-usage:
 
 ============================================
-``mongorestore`` Behavior, Access, and Usage
+mongorestore Behavior, Access, and Usage
 ============================================
 
 .. default-domain:: mongodb
