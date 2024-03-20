@@ -66,10 +66,48 @@ value overrides the read preference specified in the URI string.
 Data Exclusion
 ~~~~~~~~~~~~~~
 
-``mongodump`` excludes the content of the ``local`` database
-in its output.
 
-``mongodump`` output:
+If you specify both the :option:`--db <mongodump --db>` and the
+:option:`--collection <mongodump --collection>` options, ``mongodump``
+dumps the specified collection.
+
+If you only specify the :option:`--db <mongodump --db>` option,
+``mongodump`` dumps that database with the following exclusions:
+
+- If the value of ``--db`` is ``admin``:
+
+  - If you aren't connected to an Atlas Proxy, ``mongodump`` dumps the
+    database but excludes the ``system.keys`` collection. 
+  - If you're connected to an Atlas Proxy, ``mongodump`` attempts to
+    dump the database but errors out.
+
+- If the value of ``--db`` is ``config``, ``mongodump`` dumps all
+  collections in that database. 
+
+- If the value of ``--db`` is ``local``, ``mongodump`` dumps all
+  collections in that database.  
+  
+- For all other databases, ``mongodump`` excludes all collections that
+  start with ``system.``, except for ``system.js``. 
+
+If you omit the ``--db`` option, the following exclusions apply: 
+
+- ``mongodump`` excludes the ``local`` database.
+- ``mongodump`` only includes the following collections in the output
+  for the ``config`` database:   
+
+  - ``chunks``
+  - ``collections``
+  - ``databases``
+  - ``settings``
+  - ``shards``
+  - ``tags``
+  - ``version``
+    
+- If you're connected to an Atlas Proxy, ``mongodump`` excludes the
+  ``admin`` database.
+
+:binary:`~bin.mongodump` output:
 
 - Contains the documents in the database and the index definitions.
 - Does not contain the index data.
@@ -79,8 +117,8 @@ indexes after restoring data.
 
 If you're using :ref:`views <views-landing-page>`:
 
-- By default, ``mongodump`` only exports a view's metadata.
-  ``mongodump`` doesn't create a binary export of the
+- By default, :binary:`~bin.mongodump` only exports a view's metadata.
+  :binary:`~bin.mongodump` doesn't create a binary export of the
   documents included in the view.
 - To export the documents in a view, use
   :option:`--viewsAsCollections <mongodump --viewsAsCollections>`.
@@ -151,6 +189,22 @@ FIPS
 ``mongodump`` automatically creates FIPS-compliant
 connections to a ``mongod``/``mongos`` that is
 :manual:`configured to use FIPS mode </tutorial/configure-fips>`.
+
+Using ``mongodump`` on Atlas Free and Shared Tier Clusters 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On free (``M0``) and shared (``M2`` and ``M5``) tier Atlas clusters, the
+following limitations apply: 
+
+- You can't run ``mongodump`` on the ``admin`` database. By default,
+  ``mongodump`` skips this database. If you use the :option:`--db
+  <mongodump --db>` option to set the destination database to ``admin``,
+  the program returns an error.
+
+- You can't use the following options with the ``mongodump`` program:
+
+  - :option:`--dumpDbUsersAndRoles`
+  - :option:`--oplog <mongodump --oplog>`
 
 Required Access
 ---------------
