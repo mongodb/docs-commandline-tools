@@ -24,6 +24,8 @@
 .. |tool-binary| replace:: ``mongorestore``
 .. |tool-command| replace:: ``mongorestore``
 
+This documentation is for version ``{+release+}`` of |tool-binary|.
+
 Synopsis
 --------
 
@@ -43,11 +45,6 @@ MongoDB doesn't support running multiple ``mongorestore`` programs concurrently
 for the same collection.
 
 .. include:: /includes/fact-migrate-atlas.rst
-
-Software Version
-~~~~~~~~~~~~~~~~
-
-This documentation is for version ``{+release+}`` of |tool-binary|. 
 
 Syntax
 ------

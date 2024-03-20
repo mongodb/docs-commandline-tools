@@ -24,13 +24,8 @@ mongorestore Compatibility and Installation
 .. |tool-binary| replace:: ``mongorestore``
 .. |app-name| replace:: ``mongorestore``
 
-This page describes software compatibility and installation for
-|tool-binary|.
-
-Software Version
-----------------
-
-This documentation is for version ``{+release+}`` of |tool-binary|. 
+This page describes software compatibility and installation for version 
+``{+release+}`` of |tool-binary|.
 
 
 MongoDB Server Compatibility
