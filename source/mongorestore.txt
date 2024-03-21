@@ -45,8 +45,6 @@ into a :binary:`~bin.mongod` or :binary:`~bin.mongos` instance.
 MongoDB doesn't support running multiple ``mongorestore`` programs concurrently 
 for the same collection. 
 
-.. |tool-command| replace:: ``mongorestore``
-
 .. include:: /includes/fact-migrate-atlas.rst
 
 Versioning
@@ -184,7 +182,7 @@ Rebuild Indexes
    computed value instead. If you want to resolve the index issue after
    restoring the data, you can disable the default index key length
    validation on the target database by setting the :binary:`~bin.mongod`
-   instance's :parameter:`failIndexKeyTooLong` parameter to false.
+   instance's ``failIndexKeyTooLong`` parameter to false.
 
 
 Exclude ``system.profile`` Collection
