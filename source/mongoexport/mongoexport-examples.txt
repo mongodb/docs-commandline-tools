@@ -25,18 +25,16 @@ mongoexport Examples
 
 This page shows examples for |tool-binary|.
 
-Examples
---------
-
-.. include:: /includes/extracts/require-cmd-line-mongoexport.rst
+Run |tool-binary| from the system command line, not the 
+:binary:`~bin.mongo` shell.
 
 Export in CSV Format
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 .. _mongoexport-fields-example:
 
 Export Data in CSV Format using ``--fields`` option
-```````````````````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the following example, ``mongoexport`` exports data from the
 collection ``contacts`` collection in the ``users`` database in :term:`CSV`
@@ -64,7 +62,7 @@ The output would then resemble:
 .. _mongoexport-fieldFile-example:
 
 Use a File to Specify the Fields to Export in CSV Format
-````````````````````````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For CSV exports only, you can also specify the fields in a file
 containing the line-separated list of fields to export. The file must
@@ -88,7 +86,7 @@ the file:
 .. _mongoexport-noHeaderLine-example:
 
 Exclude Field Names from CSV Output
-```````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The :option:`--noHeaderLine <mongoexport --noHeaderLine>` option can be
 used to exclude field names in a CSV export. The following example
@@ -109,7 +107,7 @@ The CSV output would then resemble:
    Charles Yu, 345 Sample Street
 
 Export in JSON Format
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 This example creates an export of the ``contacts`` collection from the
 MongoDB instance running on the localhost port number ``27017``. This
@@ -120,7 +118,7 @@ writes the export to the ``contacts.json`` file in :term:`JSON` format.
    mongoexport --db=sales --collection=contacts --out=contacts.json
 
 Export from Remote Host Running with Authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------
 
 The following example exports the ``contacts`` collection in the
 ``marketing`` database from a remote MongoDB instance that requires
@@ -164,7 +162,7 @@ Alternatively, you use the :option:`--uri <mongoexport --uri>` option to specify
    mongoexport --uri='mongodb://someUser@mongodb0.example.com:27017/marketing?authsource=admin' --collection=contacts --out=mdb1-examplenet.json
 
 Export Query Results
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 You can export only the results of a query by supplying a query filter with
 the :option:`--query <mongoexport --query>` option, and limit the results to a single
 database using the ":option:`--db <mongoexport --db>`" option.
@@ -184,7 +182,7 @@ ISODate("2018-01-01") (using the :ref:`canonical format for dates
 .. _mongoexport-example-connect-using-aws-iam:
 
 Connect to a MongoDB Atlas Cluster using AWS IAM Credentials
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------------
 
 .. versionadded:: 100.1.0
 
