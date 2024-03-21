@@ -56,8 +56,6 @@ Syntax
 
    mongorestore <options> <connection-string> <directory or file to restore>
 
-.. include:: /includes/extracts/require-cmd-line-mongorestore.rst
-
 For example, to restore from a ``dump`` directory to a local
 :binary:`~bin.mongod` instance running on port ``27017``:
 
