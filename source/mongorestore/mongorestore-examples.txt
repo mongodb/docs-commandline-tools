@@ -25,6 +25,9 @@ mongorestore Examples
 
 This page shows examples for |tool-binary|.
 
+Run |tool-binary| from the system command line, not the 
+:binary:`~bin.mongo` shell.
+
 Restore with Access Control
 ---------------------------
 
