@@ -50,7 +50,7 @@ for the same collection.
 Syntax
 ------
 
-The ``mongorestore`` command has the following syntax:
+``mongorestore`` syntax:
 
 .. code-block:: sh
 
