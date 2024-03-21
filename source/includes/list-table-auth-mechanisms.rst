@@ -1,5 +1,3 @@
-.. |mongodb-aws-example| replace:: :ref:`mongorestore-example-connect-using-aws-iam`
-  
 .. list-table::
    :header-rows: 1
    :widths: 20 40
