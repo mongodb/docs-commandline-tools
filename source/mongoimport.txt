@@ -54,14 +54,12 @@ The ``mongoimport`` command has the following syntax:
 
    mongoimport <options> <connection-string> <file>
 
-.. include:: /includes/extracts/require-cmd-line-mongoimport.rst
-
 Options
 -------
 
 .. option:: --help
 
-   Returns information on the options and use of :program:`mongoimport`.
+   Returns information on the options and use of ``mongoimport``.
 
 
 .. option:: --verbose, -v
@@ -74,7 +72,7 @@ Options
 
 .. option:: --quiet
 
-   Runs :program:`mongoimport` in a quiet mode that attempts to limit the amount
+   Runs ``mongoimport`` in a quiet mode that attempts to limit the amount
    of output.
 
    This option suppresses:
@@ -90,7 +88,7 @@ Options
 
 .. option:: --version
 
-   Returns the :program:`mongoimport` release number.
+   Returns the ``mongoimport`` release number.
 
 
 .. option:: --config=<filename>
@@ -129,7 +127,7 @@ Options
    *Default*: localhost:27017
 
    Specifies the resolvable hostname of the MongoDB deployment. By
-   default, :program:`mongoimport` attempts to connect to a MongoDB
+   default, ``mongoimport`` attempts to connect to a MongoDB
    instance running on the localhost on port number ``27017``.
    
    To connect to a replica set, specify the
@@ -140,7 +138,7 @@ Options
    
       --host=<replSetName>/<hostname1><:port>,<hostname2><:port>,<...>
    
-   When specifying the replica set list format, :program:`mongoimport` always connects to
+   When specifying the replica set list format, ``mongoimport`` always connects to
    the :term:`primary <Primary>`. 
    
    You can also connect to any single member of the replica set by specifying
@@ -211,10 +209,10 @@ Options
 
    Specifies the password to de-crypt the certificate-key file (i.e.
    :option:`--sslPEMKeyFile`). Use the :option:`--sslPEMKeyPassword` option only if the
-   certificate-key file is encrypted. In all cases, the :program:`mongoimport` redacts the password from all logging and reporting output.
+   certificate-key file is encrypted. In all cases, the ``mongoimport`` redacts the password from all logging and reporting output.
    
    If the private key in the PEM file is encrypted and you do not specify
-   the :option:`--sslPEMKeyPassword` option, the :program:`mongoimport` 
+   the :option:`--sslPEMKeyPassword` option, the ``mongoimport`` 
    prompts for a passphrase. See :ref:`ssl-certificate-password`.
    
    .. include:: /includes/extracts/uri-used-with-sslpemkeypassword.rst
@@ -252,7 +250,7 @@ Options
 .. option:: --sslAllowInvalidHostnames
 
    Disables the validation of the hostnames in TLS/SSL certificates. Allows
-   :program:`mongoimport` to connect to MongoDB instances even if the hostname in their
+   ``mongoimport`` to connect to MongoDB instances even if the hostname in their
    certificates do not match the specified hostname.
    
    .. include:: /includes/extracts/uri-used-with-sslallowinvalidhostnames.rst
@@ -307,12 +305,12 @@ Options
 
    *Default*: SCRAM-SHA-1
 
-   Specifies the authentication mechanism the :program:`mongoimport` instance uses to
+   Specifies the authentication mechanism the ``mongoimport`` instance uses to
    authenticate to the :binary:`~bin.mongod` or :binary:`~bin.mongos`.
 
    .. versionchanged:: 100.1.0
    
-      Starting in version ``100.1.0``, :program:`mongoimport` adds support
+      Starting in version ``100.1.0``, ``mongoimport`` adds support
       for the ``MONGODB-AWS`` authentication mechanism when connecting
       to a :atlas:`MongoDB Atlas <?tck=docs_server>` cluster.
 
@@ -343,7 +341,7 @@ Options
 
 .. option:: --db=<database>, -d=<database>
 
-   Specifies the name of the database on which to run the :program:`mongoimport`.
+   Specifies the name of the database on which to run the ``mongoimport``.
    
    .. include:: /includes/extracts/uri-used-with-db.rst
 
@@ -366,7 +364,7 @@ Options
    :option:`--fields` with :option:`--columnsHaveTypes`.
 
    If you attempt to include :option:`--fields` when importing JSON data,
-   :program:`mongoimport` returns an error. :option:`--fields` is only for :term:`CSV`
+   ``mongoimport`` returns an error. :option:`--fields` is only for :term:`CSV`
    or :term:`TSV` imports.
 
 
@@ -381,7 +379,7 @@ Options
    :option:`--fieldFile` with :option:`--columnsHaveTypes`.
 
    If you attempt to include :option:`--fieldFile` when importing JSON data,
-   :program:`mongoimport` returns an error. :option:`--fieldFile` is only for :term:`CSV`
+   ``mongoimport`` returns an error. :option:`--fieldFile` is only for :term:`CSV`
    or :term:`TSV` imports.
 
 
@@ -393,7 +391,7 @@ Options
    
 
    If you attempt to include :option:`--ignoreBlanks` when importing JSON data,
-   :program:`mongoimport` returns an error. :option:`--ignoreBlanks` is only for :term:`CSV`
+   ``mongoimport`` returns an error. :option:`--ignoreBlanks` is only for :term:`CSV`
    or :term:`TSV` imports.
 
 
@@ -435,7 +433,7 @@ Options
    
 
    If you attempt to include :option:`--headerline` when importing JSON data,
-   :program:`mongoimport` returns an error. :option:`--headerline` is only for :term:`CSV`
+   ``mongoimport`` returns an error. :option:`--headerline` is only for :term:`CSV`
    or :term:`TSV` imports.
 
 
@@ -476,7 +474,7 @@ Options
    is interpreted as a document key, and not an array index.
 
    If using the :option:`--ignoreBlanks` option with
-   :option:`--useArrayIndexFields`, :program:`mongoimport` returns an
+   :option:`--useArrayIndexFields`, ``mongoimport`` returns an
    error if you attempt to import a document that contains a
    blank value (e.g. ``""``) for an array index field.
 
@@ -492,7 +490,7 @@ Options
    Specifies how the import process should handle existing documents
    in the database that match documents in the import file.
    
-   By default, :program:`mongoimport` uses the ``_id`` field to match documents in
+   By default, ``mongoimport`` uses the ``_id`` field to match documents in
    the collection with documents in the import file.
    To specify the fields against which to match existing
    documents for the ``upsert``, ``merge``, and ``delete`` modes,
@@ -508,7 +506,7 @@ Options
       * - ``insert``
    
         - Insert the documents in the import file.
-          :program:`mongoimport` returns an error if you attempt to
+          ``mongoimport`` returns an error if you attempt to
           import a document that contains a duplicate value for a field
           with a :ref:`unique index <index-type-unique>`, such as ``_id``.
    
@@ -516,21 +514,21 @@ Options
    
         - Replace existing documents in the database with matching
           documents from the
-          import file. :program:`mongoimport` inserts all other
+          import file. ``mongoimport`` inserts all other
           documents. :ref:`ex-mongoimport-upsert` describes how to
           use :option:`--mode` ``upsert``.
    
       * - ``merge``
    
         - Merge existing documents that match a document in the import file with
-          the new document. :program:`mongoimport` inserts all other documents.
+          the new document. ``mongoimport`` inserts all other documents.
           :ref:`ex-mongoimport-merge` describes how to use :option:`--mode`
           ``merge``.
 
       * - ``delete``
    
         - Delete existing documents in the database that match a
-          document in the import file. :program:`mongoimport` takes
+          document in the import file. ``mongoimport`` takes
           *no action* on non-matching documents.
           :ref:`ex-mongoimport-delete` describes how to use
           :option:`--mode` ``delete``.
@@ -558,7 +556,7 @@ Options
 
 .. option:: --stopOnError
 
-   Forces :program:`mongoimport` to halt the insert operation at the
+   Forces ``mongoimport`` to halt the insert operation at the
    first error rather than continuing the operation despite errors.
    
    By default, ``mongoimport`` continues an operation
@@ -613,7 +611,7 @@ Options
 
    *Default*: false
    
-   If specified, :program:`mongoimport` inserts the documents in the
+   If specified, ``mongoimport`` inserts the documents in the
    order of their appearance in the input source. That is, both the
    bulk write batch order and document order within the batches are
    maintained. 
@@ -623,7 +621,7 @@ Options
    :option:`numInsertionWorkers <mongoimport --numInsertionWorkers>` to
    1.
    
-   If unspecified, :program:`mongoimport` may perform the insertions in
+   If unspecified, ``mongoimport`` may perform the insertions in
    an arbitrary order.
 
 
@@ -642,7 +640,7 @@ Options
 
    *Default*: majority
 
-   Specifies the :term:`write concern` for each write operation that :program:`mongoimport`
+   Specifies the :term:`write concern` for each write operation that ``mongoimport``
    performs.
    
    Specify the write concern as a document with :ref:`w options <wc-w>`:
@@ -660,14 +658,14 @@ Options
 
 .. option:: --bypassDocumentValidation
 
-   Enables :program:`mongoimport` to bypass :manual:`document validation </core/schema-validation>`
+   Enables ``mongoimport`` to bypass :manual:`document validation </core/schema-validation>`
    during the operation. This lets you insert documents that do not
    meet the validation requirements.
 
 
 .. option:: --columnsHaveTypes
 
-   Instructs :program:`mongoimport` that the
+   Instructs ``mongoimport`` that the
    field list specified in :option:`--fields`, :option:`--fieldFile`,
    or :option:`--headerline` specifies the types of each field.
    
@@ -741,7 +739,7 @@ Options
    See :ref:`example-csv-import-types` for sample usage.
 
    If you attempt to include :option:`--columnsHaveTypes` when importing JSON data,
-   :program:`mongoimport` returns an error. :option:`--columnsHaveTypes` is only for :term:`CSV`
+   ``mongoimport`` returns an error. :option:`--columnsHaveTypes` is only for :term:`CSV`
    or :term:`TSV` imports.
 
 
@@ -749,7 +747,7 @@ Options
 
    *Default*: stop
 
-   Specifies how :program:`mongoimport` handles type coercion failures when importing
+   Specifies how ``mongoimport`` handles type coercion failures when importing
    CSV or TSV files with :option:`--columnsHaveTypes`.
    
    :option:`--parseGrace` has no effect when importing JSON documents.
@@ -764,19 +762,19 @@ Options
       * - ``autoCast``
         - Assigns a type based on the value of the field.
           For example, if a field is defined as a ``double`` and the
-          value for that field was ``"foo"``, :program:`mongoimport` would make
+          value for that field was ``"foo"``, ``mongoimport`` would make
           that field value a string type.
    
       * - ``skipField``
-        - For the row being imported, :program:`mongoimport` does not include the
+        - For the row being imported, ``mongoimport`` does not include the
           field whose type does not match the expected type.
    
       * - ``skipRow``
-        - :program:`mongoimport` does not import rows containing a value whose
+        - ``mongoimport`` does not import rows containing a value whose
           type does not match the expected type.
    
       * - ``stop``
-        - :program:`mongoimport` returns an error that ends the import.
+        - ``mongoimport`` returns an error that ends the import.
 
    
 Learn More
