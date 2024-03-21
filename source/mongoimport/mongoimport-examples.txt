@@ -25,10 +25,11 @@ mongoimport Examples
 
 This page shows examples for |tool-binary|.
 
+Run ``mongoimport`` from the system command line, not the 
+:binary:`~bin.mongo` shell.
+
 Examples
 --------
-
-.. include:: /includes/extracts/require-cmd-line-mongoimport.rst
 
 Simple Import
 ~~~~~~~~~~~~~
