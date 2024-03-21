@@ -48,7 +48,7 @@ Run ``mongoimport`` from the system command line, not the
 Syntax
 ------
 
-The :binary:`~bin.mongoimport` command has the following syntax:
+The ``mongoimport`` command has the following syntax:
 
 .. code-block:: sh
 
@@ -351,7 +351,7 @@ Options
 .. option:: --collection=<collection>, -c=<collection>
 
    Specifies the collection to import. If you do not specify
-   :option:`--collection`, :binary:`~bin.mongoimport` reads the
+   :option:`--collection`, ``mongoimport`` reads the
    collection name from the input filename, omitting the file's
    extension if it has one.
 
@@ -388,7 +388,7 @@ Options
 .. option:: --ignoreBlanks
 
    Ignores empty fields in :term:`CSV` and :term:`TSV` exports. If not
-   specified, :binary:`~bin.mongoimport` creates fields without values in
+   specified, ``mongoimport`` creates fields without values in
    imported documents.
    
 
@@ -413,7 +413,7 @@ Options
 .. option:: --file=<filename>
 
    Specifies the location and name of a file containing the data to import.
-   If you do not specify a file, :binary:`~bin.mongoimport` reads data from
+   If you do not specify a file, ``mongoimport`` reads data from
    standard input (e.g. "stdin").
    
 
@@ -430,7 +430,7 @@ Options
 
    If using :option:`--type csv <mongoimport --type>` or :option:`--type
    tsv <mongoimport --type>`, uses the first line as field names.
-   Otherwise, :binary:`~bin.mongoimport` imports the first line as a
+   Otherwise, ``mongoimport`` imports the first line as a
    distinct document.
    
 
@@ -561,7 +561,7 @@ Options
    Forces :program:`mongoimport` to halt the insert operation at the
    first error rather than continuing the operation despite errors.
    
-   By default, :binary:`~bin.mongoimport` continues an operation
+   By default, ``mongoimport`` continues an operation
    when it encounters duplicate key and document validation errors. 
    To ensure that the program stops on these errors, specify
    :option:`--stopOnError <mongoimport --stopOnError>`.
@@ -585,9 +585,9 @@ Options
    .. tip::
 
       In general, the versions of :binary:`~bin.mongoexport` and
-      :binary:`~bin.mongoimport` should match. That is, to import
+      ``mongoimport`` should match. That is, to import
       data created from :binary:`~bin.mongoexport`, you should use
-      the corresponding version of :binary:`~bin.mongoimport`.
+      the corresponding version of ``mongoimport``.
 
    For example, if the import data is in v1 format:
    
