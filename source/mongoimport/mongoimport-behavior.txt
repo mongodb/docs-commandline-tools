@@ -19,6 +19,8 @@ mongoimport Behavior, Access, and Usage
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongoimport``
 
+.. include:: /includes/warning-tools-dot-dollar-import-export-restriction.rst
+   
 Behavior
 --------
 
@@ -82,8 +84,6 @@ with the :option:`--auth <mongod.--auth>` option, you must use the
 <mongoimport --password>` options. The connecting user must
 possess, at a minimum, the :authrole:`readWrite` role on the database
 into which they are importing data.
-
-.. include:: /includes/warning-tools-dot-dollar-import-export-restriction.rst
 
 Learn More
 ----------
