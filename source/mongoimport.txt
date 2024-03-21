@@ -22,7 +22,7 @@
 
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongoimport``
-.. |tool-command| replace:: the {+dbtools+}
+
 .. |mongodb-aws-example| replace:: :ref:`mongoimport-example-connect-using-aws-iam`   
 
 This documentation is for version ``{+release+}`` of |tool-binary|.

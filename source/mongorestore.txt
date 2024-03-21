@@ -45,8 +45,6 @@ into a :binary:`~bin.mongod` or :binary:`~bin.mongos` instance.
 MongoDB doesn't support running multiple ``mongorestore`` programs concurrently 
 for the same collection. 
 
-.. |tool-command| replace:: ``mongorestore``
-
 .. include:: /includes/fact-migrate-atlas.rst
 
 Versioning
