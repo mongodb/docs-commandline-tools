@@ -25,14 +25,11 @@ mongoimport Examples
 
 This page shows examples for |tool-binary|.
 
-Run ``mongoimport`` from the system command line, not the 
+Run |tool-binary| from the system command line, not the 
 :binary:`~bin.mongo` shell.
 
-Examples
---------
-
 Simple Import
-~~~~~~~~~~~~~
+-------------
 
 :binary:`~bin.mongoimport` restores a database from a backup taken with
 :binary:`~bin.mongoexport`. Most of the arguments to ``mongoexport`` also
@@ -49,7 +46,7 @@ the :term:`JSON` data from the ``contacts.json`` file into the collection
 .. _ex-mongoimport-upsert:
 
 Replace Matching Documents during Import
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
 
 With :option:`--mode <mongoimport --mode>` ``upsert``, ``mongoimport`` replaces
 existing documents in the database that match a document in the
@@ -105,7 +102,7 @@ the fields from the imported document, as in the following:
 .. _ex-mongoimport-merge:
 
 Merge Matching Documents during Import
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 With :option:`--mode <mongoimport --mode>` ``merge``, ``mongoimport`` enables you to
 merge fields from a new record with an existing document in the
@@ -172,7 +169,7 @@ the value from the imported document, as in the following:
 .. _ex-mongoimport-delete:
 
 Delete Matching Documents
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 .. versionadded:: 100.0.0
 
@@ -234,7 +231,7 @@ specify the ``employee_id`` field, which also matches between the
 database and the input file.
 
 Import ``JSON`` to Remote Host Running with Authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------
 
 In the following example, ``mongoimport`` imports data from the
 file ``/opt/backups/mdb1-examplenet.json`` into the ``contacts`` collection
@@ -251,10 +248,10 @@ option to have ``mongoimport`` prompt for the password:
    mongoimport --host=mongodb1.example.net --port=37017 --username=user --collection=contacts --db=marketing --file=/opt/backups/mdb1-examplenet.json
 
 ``CSV`` Import
-~~~~~~~~~~~~~~
+--------------
 
 General CSV Import
-``````````````````
+~~~~~~~~~~~~~~~~~~
 
 In the following example, ``mongoimport`` imports the :term:`CSV`
 formatted data in the ``/opt/backups/contacts.csv`` file into the
@@ -281,7 +278,7 @@ unspecified. The following example is therefore equivalent:
 .. _example-csv-import-types:
 
 Import CSV with Specified Field Types
-`````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When specifying the field name, you can also specify the data type. To
 specify field names and type, include
@@ -314,7 +311,7 @@ data.
       --file=/example/file.csv
 
 Ignore Blank Fields
-```````````````````
+~~~~~~~~~~~~~~~~~~~
 
 Use the :option:`--ignoreBlanks <mongoimport --ignoreBlanks>` option
 to ignore blank fields. For :term:`CSV` and :term:`TSV` imports, this
@@ -331,7 +328,7 @@ any blank fields:
 .. _mongoimport-example-connect-using-aws-iam:
 
 Connect to a MongoDB Atlas Cluster using AWS IAM Credentials
-````````````````````````````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. versionadded:: 100.1.0
 
