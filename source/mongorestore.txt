@@ -184,7 +184,7 @@ Rebuild Indexes
    computed value instead. If you want to resolve the index issue after
    restoring the data, you can disable the default index key length
    validation on the target database by setting the :binary:`~bin.mongod`
-   instance's :parameter:`failIndexKeyTooLong` parameter to false.
+   instance's ``failIndexKeyTooLong`` parameter to false.
 
 
 Exclude ``system.profile`` Collection
