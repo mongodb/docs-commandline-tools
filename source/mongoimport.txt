@@ -48,7 +48,7 @@ Run ``mongoimport`` from the system command line, not the
 Syntax
 ------
 
-The ``mongoimport`` command has the following syntax:
+``mongoimport`` syntax:
 
 .. code-block:: sh
 
