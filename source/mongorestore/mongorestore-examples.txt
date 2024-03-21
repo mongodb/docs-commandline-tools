@@ -22,7 +22,6 @@ mongorestore Examples
 
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongorestore``
-.. |mongodb-aws-example| replace:: :ref:`mongorestore-example-connect-using-aws-iam`
 
 This page shows examples for |tool-binary|.
 
