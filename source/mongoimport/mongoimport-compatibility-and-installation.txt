@@ -1,4 +1,4 @@
-. _mongoimport-compatibility-and-installation:
+.. _mongoimport-compatibility-and-installation:
 
 ================================================
 mongoimport Compatibility and Installation

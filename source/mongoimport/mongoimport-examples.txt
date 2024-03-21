@@ -22,7 +22,6 @@ mongoimport Examples
 
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongoimport``
-.. |mongodb-aws-example| replace:: :ref:`mongoimport-example-connect-using-aws-iam`
 
 This page shows examples for |tool-binary|.
 
@@ -363,7 +362,7 @@ as well, provide it with the ``AWS_SESSION_TOKEN``
 Alternatively, the AWS access key ID, secret access key, and optionally
 session token can each be provided outside of the connection string
 using the :option:`--username <mongoimport --username>`, :option:`--password <mongoimport --password>`, and
-:option:`--awsSessionToken` options instead, like so:
+:option:`--awsSessionToken <mongoimport --awsSessionToken>` options instead, like so:
 
 .. code-block:: none
 
