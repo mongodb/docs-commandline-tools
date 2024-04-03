@@ -140,10 +140,10 @@ As an alternative, users can use ``mongodump`` and
 
    Piping ``mongodump`` output directly into ``mongorestore`` is subject 
    to the data buffers of the read/write operations. This means for 
-   larger scale dumps, or dump operations directly from MongoDB Atlas 
+   larger scale dumps, or dump operations directly from MongoDB Atlas, 
    piping the dump data into restore in a single command can fail. For 
-   best results on large dumps, consider dumping data to a file and 
-   then using restore in separate commands.
+   best results on large dumps, consider using ``mongodump`` to dump 
+   data to a file and then using ``mongorestore`` in separate commands.
 
 .. _mongodump-example-connect-using-aws-iam:
 
