@@ -1,8 +1,8 @@
 .. _bsondump:
 
-========
-bsondump
-========
+============
+``bsondump``
+============
 
 .. default-domain:: mongodb
 

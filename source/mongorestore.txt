@@ -852,7 +852,7 @@ Learn More
 ----------
 
 - :ref:`mongorestore-compatibility-and-installation`
-- :ref:`Behavior <mongorestore-behavior-access-usage>`
+- :ref:`Behavior <mongorestore-behavior>`
 - :ref:`mongorestore-examples`
 
 .. toctree::
@@ -860,5 +860,5 @@ Learn More
    :hidden:
 
    Compatibility and Installation </mongorestore/mongorestore-compatibility-and-installation>
-   Behavior </mongorestore/mongorestore-behavior-access-usage>
+   Behavior </mongorestore/mongorestore-behavior>
    Examples </mongorestore/mongorestore-examples>

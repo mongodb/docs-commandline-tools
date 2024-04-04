@@ -9,6 +9,7 @@ toc_landing_pages = [
    "/bsondump",
    "/mongodump",
    "/mongoexport",
+   "/mongofiles",
    "/mongoimport",
    "/mongorestore",
    "/mongostat",

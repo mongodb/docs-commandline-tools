@@ -278,4 +278,4 @@ Learn More
 
 - :ref:`mongoexport`
 - :ref:`mongoexport-compatibility-and-installation`
-- :ref:`mongoexport Behavior <mongoexport-behavior-access-usage>`
+- :ref:`mongoexport Behavior <mongoexport-behavior>`

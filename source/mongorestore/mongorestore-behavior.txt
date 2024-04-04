@@ -1,4 +1,4 @@
-.. _mongorestore-behavior-access-usage:
+.. _mongorestore-behavior:
 
 ============================================
 mongorestore Behavior, Access, and Usage

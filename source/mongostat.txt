@@ -649,7 +649,7 @@ Learn More
 ----------
 
 - :ref:`mongostat-compatibility-and-installation`
-- :ref:`mongostat Behavior <mongostat-behavior-access-usage>`
+- :ref:`mongostat Behavior <mongostat-behavior>`
 - :ref:`mongostat-examples`
 
 .. toctree::

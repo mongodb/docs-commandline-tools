@@ -1,7 +1,7 @@
-.. _mongostat-compatibility-and-installation:
+.. _mongofiles-compatibility-and-installation:
 
 ================================================
-mongostat Compatibility and Installation
+mongofiles Compatibility and Installation
 ================================================
 
 .. default-domain:: mongodb
@@ -21,8 +21,8 @@ mongostat Compatibility and Installation
    :values: shell
 
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: ``mongostat``
-.. |app-name| replace:: ``mongostat``
+.. |tool-binary| replace:: ``mongofiles``
+.. |app-name| replace:: ``mongofiles``
 
 This page describes software compatibility and installation for version 
 ``{+release+}`` of |tool-binary|.
@@ -56,6 +56,6 @@ Installation
 Learn More
 ----------
 
-- :ref:`mongostat`
-- :ref:`mongostat Behavior <mongostat-behavior>`
-- :ref:`mongostat-examples`
+- :ref:`mongofiles`
+- :ref:`mongofiles Behavior <mongofiles-behavior>`
+- :ref:`mongofiles-examples`

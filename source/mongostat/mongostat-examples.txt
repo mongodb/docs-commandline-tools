@@ -356,4 +356,4 @@ Learn More
 
 - :ref:`mongostat`
 - :ref:`mongostat-compatibility-and-installation`
-- :ref:`mongostat Behavior <mongostat-behavior-access-usage>`
+- :ref:`mongostat Behavior <mongostat-behavior>`
