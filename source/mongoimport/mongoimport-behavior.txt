@@ -1,4 +1,4 @@
-.. _mongoimport-behavior-access-usage:
+.. _mongoimport-behavior:
 
 ============================================
 mongoimport Behavior, Access, and Usage

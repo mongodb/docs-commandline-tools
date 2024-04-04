@@ -57,5 +57,5 @@ Learn More
 ----------
 
 - :ref:`mongostat`
-- :ref:`mongostat Behavior <mongostat-behavior-access-usage>`
+- :ref:`mongostat Behavior <mongostat-behavior>`
 - :ref:`mongostat-examples`

@@ -444,4 +444,4 @@ Learn More
 
 - :ref:`mongorestore`
 - :ref:`mongorestore-compatibility-and-installation`
-- :ref:`Behavior <mongorestore-behavior-access-usage>`
+- :ref:`Behavior <mongorestore-behavior>`

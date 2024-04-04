@@ -57,5 +57,5 @@ Learn More
 ----------
 
 - :ref:`mongofiles`
-- :ref:`mongofiles Behavior <mongofiles-behavior-access-usage>`
+- :ref:`mongofiles Behavior <mongofiles-behavior>`
 - :ref:`mongofiles-examples`

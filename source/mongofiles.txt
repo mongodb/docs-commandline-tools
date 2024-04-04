@@ -532,7 +532,7 @@ Learn More
 ----------
 
 - :ref:`mongofiles-compatibility-and-installation`
-- :ref:`mongofiles Behavior <mongofiles-behavior-access-usage>`
+- :ref:`mongofiles Behavior <mongofiles-behavior>`
 - :ref:`mongofiles-examples`
 
 .. toctree::

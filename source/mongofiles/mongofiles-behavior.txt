@@ -1,4 +1,4 @@
-.. _mongofiles-behavior-access-usage:
+.. _mongofiles-behavior:
 
 ============================================
 mongofiles Behavior, Access, and Usage

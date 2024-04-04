@@ -1,4 +1,4 @@
-.. _mongoexport-behavior-access-usage:
+.. _mongoexport-behavior:
 
 ============================================
 mongoexport Behavior, Access, and Usage

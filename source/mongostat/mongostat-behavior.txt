@@ -1,4 +1,4 @@
-.. _mongostat-behavior-access-usage:
+.. _mongostat-behavior:
 
 ============================================
 mongostat Behavior, Access, and Usage

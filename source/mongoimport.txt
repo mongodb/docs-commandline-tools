@@ -789,7 +789,7 @@ Learn More
 ----------
 
 - :ref:`mongoimport-compatibility-and-installation`
-- :ref:`mongoimport Behavior <mongoimport-behavior-access-usage>`
+- :ref:`mongoimport Behavior <mongoimport-behavior>`
 - :ref:`mongoimport-examples`
 
 .. toctree::
