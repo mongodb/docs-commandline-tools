@@ -781,7 +781,7 @@ Learn More
 ----------
 
 - :ref:`mongoimport-compatibility-and-installation`
-- :ref:`mongoimport-behavior-access-usage`
+- :ref:`mongoimport Behavior <mongoimport-behavior-access-usage>`
 - :ref:`mongoimport-examples`
 
 .. toctree::
@@ -789,5 +789,5 @@ Learn More
    :hidden:
 
    Compatibility and Installation </mongoimport/mongoimport-compatibility-and-installation>
-   Behavior, Access, and Usage </mongoimport/mongoimport-behavior>
+   Behavior </mongoimport/mongoimport-behavior>
    Examples </mongoimport/mongoimport-examples>
