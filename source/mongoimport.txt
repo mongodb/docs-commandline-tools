@@ -45,6 +45,7 @@ Run ``mongoimport`` from the system command line, not the
 
 .. include:: /includes/fact-migrate-atlas.rst
 
+
 Syntax
 ------
 
@@ -108,7 +109,11 @@ Options
    .. code-block:: none
    
       --uri "mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]"
-   
+
+   .. note:: 
+
+      .. include:: /includes/fact-default-no-db-or-uri.rst
+
    .. include:: /includes/extracts/uri-positional-mongoimport.rst
 
    For information on the components of the connection string, see
@@ -345,6 +350,9 @@ Options
    
    .. include:: /includes/extracts/uri-used-with-db.rst
 
+   .. note:: 
+
+      .. include:: /includes/fact-default-no-db-or-uri.rst
 
 .. option:: --collection=<collection>, -c=<collection>
 
