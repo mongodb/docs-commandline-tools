@@ -28,13 +28,9 @@ This page shows examples for |tool-binary|.
 Run |tool-binary| from the system command line, not the 
 :binary:`~bin.mongo` shell.
 
-Examples
---------
-
-.. include:: /includes/extracts/require-cmd-line-mongostat.rst
 
 Specify ``mongostat`` Collection Period and Frequency
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 In the first example, ``mongostat`` will return data every
 second for 20 seconds. ``mongostat`` collects data from the
@@ -75,7 +71,7 @@ behavior:
 .. _ex-mongostat-append-columns:
 
 Add Fields to ``mongostat`` Output
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 :option:`-O <mongostat -O>` allows you to specify fields from the
 :dbcommand:`serverStatus` output to add to the default
@@ -110,7 +106,7 @@ The :serverstatus:`network.numRequests` field has a custom field name,
 .. _ex-mongostat-specify-columns:
 
 Specify ``mongostat`` Output Fields
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 :option:`-o <mongostat -o>` specifies the columns
 ``mongostat`` includes in its output. You can specify any
@@ -158,7 +154,7 @@ The counters and corresponding custom field names are:
 .. _ex-mongostat-rate:
 
 View Rate of Change for a Field with :method:`.rate()`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 :method:`.rate()` enables you to view the rate per second at which a
 numerical field has changed from one ``mongostat`` call to the
@@ -190,7 +186,7 @@ The output would then resemble:
 .. _ex-mongostat-diff:
 
 View Field Changes with :method:`.diff()`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 :method:`.diff()` returns the difference between the current
 :dbcommand:`serverStatus` field value and the value from the previous
@@ -217,7 +213,7 @@ The output would then resemble:
    localhost:27017       64           978    28333
 
 View Statistics for a Replica Set or Sharded Cluster
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 In many cases, using the :option:`--discover <mongostat --discover>` option
 will help provide a more complete snapshot of the state of an entire
@@ -233,7 +229,7 @@ members of the cluster:
 .. _example-mongostat-interactive:
 
 View Statistics in an Interactive Interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 Use the :option:`--interactive <mongostat --interactive>` option to
 view statistics in a non-scrolling `ncurses <https://www.gnu.org/software/ncurses/>`_ -style
@@ -264,7 +260,7 @@ The output for a sharded cluster would then resemble:
 .. _mongostat-example-connect-using-aws-iam:
 
 Connect to a MongoDB Atlas Cluster using AWS IAM Credentials
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 .. versionadded:: 100.1.0
 
@@ -296,7 +292,7 @@ as well, provide it with the ``AWS_SESSION_TOKEN``
 Alternatively, the AWS access key ID, secret access key, and optionally
 session token can each be provided outside of the connection string
 using the :option:`--username <mongostat --username>`, :option:`--password <mongostat --password>`, and
-:option:`--awsSessionToken` options instead, like so:
+:option:`--awsSessionToken <mongostat --awsSessionToken>` options instead, like so:
 
 .. code-block:: none
 

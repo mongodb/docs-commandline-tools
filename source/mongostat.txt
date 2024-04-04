@@ -22,6 +22,7 @@
 
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongostat``
+.. |mongodb-aws-example| replace:: :ref:`mongostat-example-connect-using-aws-iam`
 
 This documentation is for version ``{+release+}`` of |tool-binary|.
 
@@ -51,7 +52,6 @@ Syntax
 
    mongostat <options> <connection-string> <polling interval in seconds>
 
-.. include:: /includes/extracts/require-cmd-line-mongostat.rst
 
 Options
 -------
