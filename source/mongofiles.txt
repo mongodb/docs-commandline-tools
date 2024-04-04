@@ -1,14 +1,14 @@
+.. _mongofiles:
+
+===============
+``mongofiles``
+===============
+
 .. default-domain:: mongodb
 
 .. binary:: mongofiles
 
 .. program:: mongofiles
-
-.. _mongofiles:
-
-==============
-``mongofiles``
-==============
 
 .. contents:: On this page
    :local:
@@ -16,14 +16,21 @@
    :depth: 1
    :class: singlecol
 
+.. facet::
+   :name: genre
+   :values: reference
+
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongofiles``
-.. |mongodb-aws-example| replace:: :ref:`mongofiles-example-connect-using-aws-iam`
+
+.. |mongodb-aws-example| replace:: :ref:`mongofiles-example-connect-using-aws-iam`   
+
+This documentation is for version ``{+release+}`` of |tool-binary|.
 
 Synopsis
 --------
 
-The ``mongofiles`` utility makes it possible to manipulate files
+``mongofiles`` makes it possible to manipulate files
 stored in your MongoDB instance in :term:`GridFS` objects from the
 command line. It is particularly useful as it provides an interface
 between objects stored in your file system and GridFS.
