@@ -61,5 +61,5 @@ Learn More
 ----------
 
 - :ref:`mongodump`
-- :ref:`mongodump-behavior`
+- :ref:`mongodump Behavior <mongodump-behavior>`
 - :ref:`mongodump-examples`
