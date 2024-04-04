@@ -36,11 +36,4 @@ inherit:
   ref: _require-cmd-line
 replacement:
   command: :binary:`~bin.mongotop`
----
-ref: require-cmd-line-mongofiles
-inherit:
-  file: extracts-run-from-cmd.yaml
-  ref: _require-cmd-line
-replacement:
-  command: :binary:`~bin.mongofiles`
 ...

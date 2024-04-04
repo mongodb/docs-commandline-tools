@@ -1,0 +1,78 @@
+.. _mongofiles-behavior-access-usage:
+
+============================================
+mongofiles Behavior, Access, and Usage
+============================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+.. facet::
+   :name: genre
+   :values: reference
+
+.. |arrow| unicode:: U+27A4
+.. |tool-binary| replace:: ``mongofiles``
+   
+Behavior
+--------
+
+FIPS
+~~~~
+
+``mongofiles`` automatically creates FIPS-compliant
+connections to a :binary:`~bin.mongod`/:binary:`~bin.mongos` that is
+:manual:`configured to use FIPS mode </tutorial/configure-fips>`.
+
+Read Preference
+~~~~~~~~~~~~~~~
+
+By default, ``mongofiles`` uses read preference
+:readmode:`primary`. To override the default, you can specify the
+:ref:`read preference <replica-set-read-preference>` in the
+:option:`--readPreference <mongofiles --readPreference>` command line
+option or in the :option:`--uri connection string <mongofiles --uri>`.
+
+If you specify read preference in the URI
+string and the :option:`--readPreference <mongofiles --readPreference>`,
+the :option:`--readPreference <mongofiles --readPreference>` value
+overrides the read preference specified in the URI string.
+
+Write Concern
+~~~~~~~~~~~~~
+
+You can specify both the
+:option:`--writeConcern <mongofiles --writeConcern>` and the
+:option:`--uri connection string <mongofiles --uri>` option. If write
+concern is specified using both options, the
+:option:`--writeConcern <mongofiles --writeConcern>` value overrides
+the write concern specified in the URI string.
+
+
+Required Access
+---------------
+
+In order to connect to a :binary:`~bin.mongod` that enforces authorization
+with the :option:`--auth <mongod.--auth>` option, you must use the
+:option:`--username <mongofiles --username>` and :option:`--password
+<mongofiles --password>` options. The connecting user must possess, at a
+minimum:
+
+- the :authrole:`read` role for the accessed database when using the
+  ``list``, ``search`` or ``get`` commands,
+
+- the :authrole:`readWrite` role for the accessed database when using
+  the ``put`` or ``delete`` commands.
+
+
+Learn More
+----------
+
+- :ref:`mongofiles`
+- :ref:`mongofiles-compatibility-and-installation`
+- :ref:`mongofiles-examples`
