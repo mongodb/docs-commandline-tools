@@ -109,6 +109,7 @@ The ``mongorestore`` outputs the following messages:
    2019-07-08T14:38:15.142-0400	0 document(s) restored successfully. 0 document(s) failed to restore.
 
 For more examples, see :ref:`mongorestore-examples`.
+
    
 .. _mongorestore-options:
 
