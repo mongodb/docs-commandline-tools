@@ -34,8 +34,6 @@ Run |tool-binary| from the system command line, not the
 Examples
 --------
 
-.. include:: /includes/extracts/require-cmd-line-mongotop.rst
-
 By default ``mongotop`` connects to the MongoDB instance
 running on the localhost port ``27017``. However, ``mongotop`` can optionally
 connect to remote :binary:`~bin.mongod`

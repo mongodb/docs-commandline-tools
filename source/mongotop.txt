@@ -43,8 +43,6 @@ Syntax
 
    mongotop <options> <connection-string> <polling interval in seconds>
 
-.. include:: /includes/extracts/require-cmd-line-mongotop.rst
-
 Running ``mongotop`` without any command-line options will
 connect to the :binary:`~bin.mongod` instance running on localhost over
 port ``27017``, and will return values every second by default.
