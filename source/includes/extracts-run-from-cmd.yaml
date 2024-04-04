@@ -37,13 +37,6 @@ inherit:
 replacement:
   command: :binary:`~bin.mongoexport`
 ---
-ref: require-cmd-line-mongostat
-inherit:
-  file: extracts-run-from-cmd.yaml
-  ref: _require-cmd-line
-replacement:
-  command: :binary:`~bin.mongostat`
----
 ref: require-cmd-line-mongotop
 inherit:
   file: extracts-run-from-cmd.yaml
