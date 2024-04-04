@@ -1,18 +1,10 @@
-.. _mongodump-compatibility-and-installation:
+.. _mongoimport-compatibility-and-installation:
 
-========================================
-mongodump Compatibility and Installation
-========================================
+================================================
+mongoimport Compatibility and Installation
+================================================
 
 .. default-domain:: mongodb
-
-.. facet::
-   :name: programming_language
-   :values: shell
-
-.. facet::
-   :name: genre
-   :values: reference
 
 .. contents:: On this page
    :local:
@@ -20,9 +12,17 @@ mongodump Compatibility and Installation
    :depth: 1
    :class: singlecol
 
+.. facet::
+   :name: genre
+   :values: reference
+
+.. facet::
+   :name: programming_language
+   :values: shell
+
 .. |arrow| unicode:: U+27A4
-.. |tool-binary| replace:: ``mongodump``
-.. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
+.. |tool-binary| replace:: ``mongoimport``
+.. |app-name| replace:: ``mongoimport``
 
 This page describes software compatibility and installation for version 
 ``{+release+}`` of |tool-binary|.
@@ -39,27 +39,25 @@ MongoDB Server Compatibility
 
 .. include:: /includes/extracts/dbtools-compatibility-single.rst
 
+
 Platform Support
 ~~~~~~~~~~~~~~~~
 
-|tool-binary| version ``{+release+}`` is supported on these platforms:
+|tool-binary| version ``{+release+}`` is supported on the following
+platforms:
 
 .. include:: /includes/fact-platform-support.rst
 
-Additional Considerations for Ubuntu 18.04
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. |app-name| replace:: ``mongodump``
-.. include:: /includes/ubuntu-connection.rst
 
 Installation
 ------------
 
 .. include:: /includes/fact-see-install-guide.rst
 
+
 Learn More
 ----------
 
-- :ref:`mongodump`
-- :ref:`mongodump-behavior`
-- :ref:`mongodump-examples`
+- :ref:`mongoimport`
+- :ref:`mongoimport Behavior <mongoimport-behavior-access-usage>`
+- :ref:`mongoimport-examples`

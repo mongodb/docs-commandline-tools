@@ -8,7 +8,9 @@ toc_landing_pages = [
    "/installation/installation",
    "/bsondump",
    "/mongodump",
-   "/mongoexport"
+   "/mongoexport",
+   "/mongoimport",
+   "/mongorestore"
 ]
 
 [constants]
