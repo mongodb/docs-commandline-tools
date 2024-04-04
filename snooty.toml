@@ -12,7 +12,8 @@ toc_landing_pages = [
    "/mongofiles",
    "/mongoimport",
    "/mongorestore",
-   "/mongostat"
+   "/mongostat",
+   "/mongotop"
 ]
 
 [constants]
