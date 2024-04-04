@@ -761,5 +761,5 @@ Learn More
    :hidden:
 
    Compatibility and Installation </mongoexport/mongoexport-compatibility-and-installation>
-   Behavior, Access, and Usage </mongoexport/mongoexport-behavior>
+   Behavior </mongoexport/mongoexport-behavior>
    Examples </mongoexport/mongoexport-examples>
