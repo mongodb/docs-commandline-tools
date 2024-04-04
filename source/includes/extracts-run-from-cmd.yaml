@@ -9,26 +9,12 @@ inherit:
 replacement:
   command: :binary:`~bin.mongodump`
 ---
-ref: require-cmd-line-mongorestore
-inherit:
-  file: extracts-run-from-cmd.yaml
-  ref: _require-cmd-line
-replacement:
-  command: :binary:`~bin.mongorestore`
----
 ref: require-cmd-line-bsondump
 inherit:
   file: extracts-run-from-cmd.yaml
   ref: _require-cmd-line
 replacement:
   command: :binary:`~bin.bsondump`
----
-ref: require-cmd-line-mongoimport
-inherit:
-  file: extracts-run-from-cmd.yaml
-  ref: _require-cmd-line
-replacement:
-  command: :binary:`~bin.mongoimport`
 ---
 ref: require-cmd-line-mongoexport
 inherit:
