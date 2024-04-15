@@ -345,6 +345,12 @@ namespace:
        You cannot restore the ``system.buckets.weather.bson`` file
        by itself. Attempting to do so results in an error.
 
+Restore a Database to a Specific Point in Time
+----------------------------------------------
+
+To restore a database to a specific point in time using an oplog backup,
+see :ref:`backup-restore-oplogreplay`.
+
 .. _mongorestore-example-connect-using-aws-iam:
 
 Connect to a MongoDB Atlas Cluster using AWS IAM Credentials
