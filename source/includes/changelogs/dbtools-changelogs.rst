@@ -1,5 +1,3 @@
-For the current version, see :ref:`dbtools-current-changelog`
-
 Changelogs for older versions are available on these pages. Database Tools are
 compatible with the listed MongoDB Server version and prior MongoDB Server
 releases.

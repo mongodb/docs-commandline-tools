@@ -20,7 +20,9 @@ Database Tools |tool-version| Changelogs
 
 
 All Releases
------------------
+------------
+
+For the current version, see :ref:`dbtools-current-changelog`
 
 .. include:: /includes/changelogs/dbtools-changelogs.rst
 
