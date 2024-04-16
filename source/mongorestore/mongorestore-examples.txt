@@ -349,8 +349,8 @@ Back Up and Restore a Database to a Specific Point in Time
 ----------------------------------------------------------
 
 To back up a database to a specific point in time to an :term:`oplog`
-file, use :option:`mongodump --oplog`. To restore the database to the
-point in time with the oplog file, use :option:`mongorestore
+file, use :option:`mongodump --oplog`. To restore the database to a
+point in time with an oplog file, use :option:`mongorestore
 --oplogReplay`. For more details, see :ref:`backup-restore-oplogreplay`.
 
 .. _mongorestore-example-connect-using-aws-iam:
