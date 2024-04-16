@@ -1,12 +1,14 @@
-For the current database tools version, see :ref:`dbtools-current-changelog`
+For the current version, see :ref:`dbtools-current-changelog`
 
-Changelogs for older Database Tools versions are available on these pages:
+Changelogs for older versions are available on these pages. Database Tools are
+compatible with the listed MongoDB Server versions and prior MongoDB Server
+releases.
 
 .. list-table::
   :header-rows: 1
   :widths: 30 30 40
 
-  * - Version
+  * - Versions
     - Dates
     - MongoDB Server Support
 
