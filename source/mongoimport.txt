@@ -41,8 +41,7 @@ tool.
 Run ``mongoimport`` from the system command line, not the 
 :binary:`~bin.mongo` shell.
 
-:binary:`~bin.mongoexport` provides the corresponding
-structured data export capability.
+:binary:`~bin.mongoexport` provides data export capability.
 
 .. include:: /includes/fact-migrate-atlas.rst
 
