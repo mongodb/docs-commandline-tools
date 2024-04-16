@@ -2,11 +2,15 @@
 
 .. _dbtools-1.5-changelog:
 
-=======================================
-Database Tools |tool-version| Changelog
-=======================================
+========================================
+Database Tools |tool-version| Changelogs
+========================================
 
 .. default-domain:: mongodb
+
+.. facet::
+   :name: genre
+   :values: reference
 
 .. contents:: On this page
    :local:
