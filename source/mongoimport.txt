@@ -50,7 +50,7 @@ structured data export capability.
 
    You can also import and export data using the graphical user 
    interface tool MongoDB Compass. For details, see 
-   :ref:`compass-import-export`.
+   :ref:`MongoDB Compass Import and Export <compass-import-export>`.
 
 Syntax
 ------
@@ -797,7 +797,7 @@ Learn More
 - :ref:`mongoimport-compatibility-and-installation`
 - :ref:`mongoimport Behavior <mongoimport-behavior-access-usage>`
 - :ref:`mongoimport-examples`
-- :ref:`MongoDB Compass import and export <compass-import-export>`
+- :ref:`MongoDB Compass Import and Export <compass-import-export>`
 
 .. toctree::
    :maxdepth: 1
