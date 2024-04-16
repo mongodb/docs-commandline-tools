@@ -48,8 +48,9 @@ structured data export capability.
 
 .. tip::
 
-   You can also import and export data using MongoDB Compass. For details, 
-   see :ref:`compass-import-export`.
+   You can also import and export data using the graphical user 
+   interface tool MongoDB Compass. For details, see 
+   :ref:`compass-import-export`.
 
 Syntax
 ------
