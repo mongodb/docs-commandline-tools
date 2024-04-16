@@ -1,4 +1,6 @@
-Changelogs for DBTools versions are available on these pages:
+For the current database tools version, see :ref:`dbtools-current-changelog`
+
+Changelogs for other Database Tools versions are available on these pages:
 
 - :ref:`DBTools 1.9.0 <dbtools-1.9-changelog>` *(Released October - December 2023)*
 - :ref:`DBTools 1.8.0 <dbtools-1.8-changelog>` *(Released August 2023)* 

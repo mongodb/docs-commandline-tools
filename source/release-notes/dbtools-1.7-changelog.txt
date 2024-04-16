@@ -16,13 +16,13 @@ Database Tools |tool-version| Changelog
 
 
 All Releases
------------------
+------------
 
 .. include:: /includes/changelogs/dbtools-changelogs.rst
 
 
-DBTools |tool-version|
-----------------------
+Database Tools |tool-version|
+-----------------------------
 
 .. include:: /includes/changelogs/releases/100.7.5.rst   
 
