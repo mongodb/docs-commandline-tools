@@ -350,9 +350,9 @@ Back Up and Restore a Database to a Specific Point in Time
 
 To back up a database to a specific point in time to an oplog file , use
 :option:`mongodump --oplog`. To restore the database to the point in
-time with the oplog file, use :binary:`mongorestore --oplogReplay
-<~bin.mongorestore>`. For more details, see
-:ref:`backup-restore-oplogreplay`.
+time with the oplog file, use :option:`mongorestore --oplogReplay`. For
+more details, see :ref:`backup-restore-oplogreplay`.
+:option:`mongorestore --oplogReplay``.
 
 .. _mongorestore-example-connect-using-aws-iam:
 
@@ -361,7 +361,7 @@ Connect to a MongoDB Atlas Cluster using AWS IAM Credentials
 
 .. versionadded:: 100.1.0
 
-To connect to a :atlas:`MongoDB Atlas <?tck=docs_server>` cluster which
+To connect to a :atlas:`MongoDB Atlas <?tck=docs_server>` cluster that
 has been configured to support authentication via `AWS IAM credentials
 <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html>`__,
 provide a :option:`connection string <mongorestore --uri>` to
@@ -410,7 +410,7 @@ use the ``MONGODB-AWS``
 - ``AWS_SESSION_TOKEN``
 
 If set, these credentials do not need to be specified in the connection
-string or via their explicit options.
+string or through their explicit options.
 
 .. note::
 
