@@ -18,17 +18,7 @@ Database Tools |tool-version| Changelog
 All Releases
 -----------------
 
-Changelogs for DBTools versions are available on these pages:
-
-- :ref:`DBTools 1.9.0 *(Released October - December 2023)* <dbtools-1.9-changelog>`
-- :ref:`DBTools 1.8.0 *(Released August 2023)* <dbtools-1.8-changelog>`
-- :ref:`DBTools 1.7.0 - 1.7.5 *(Released March - August 2023)* <dbtools-1.7-changelog>`
-- :ref:`DBTools 1.6.0 - 1.6.1 *(Released August - November 2022)* <dbtools-1.6-changelog>`
-- :ref:`DBTools 1.5.0 - 1.5.4 *(Released August 2021 - July 2022)* <dbtools-1.5-changelog>`
-- :ref:`DBTools 1.4.0 - 1.4.1 *(Released July 2021)* <dbtools-1.4-changelog>`
-- :ref:`DBTools 1.2.0 - 1.2.1 *(Released October - November 2020)* <dbtools-1.2-changelog>`
-- :ref:`DBTools 1.1.0 - 1.1.1 *(Released July 2020)* <dbtools-1.1-changelog>`
-- :ref:`DBTools 1.0.0 - 1.0.2 *(Released July 2020)* <dbtools-1.0-changelog>`
+.. include:: /includes/changelogs/dbtools-changelogs.rst
 
 
 DBTools |tool-version|
