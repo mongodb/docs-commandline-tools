@@ -345,11 +345,11 @@ namespace:
        You cannot restore the ``system.buckets.weather.bson`` file
        by itself. Attempting to do so results in an error.
 
-Back Up and Restore a Database to a Specific Point in Time
+Back Up and Restore a Database at a Specific Point in Time
 ----------------------------------------------------------
 
-To back up a database to a specific point in time to an :term:`oplog`
-file, use :option:`mongodump --oplog`. To restore the database to a
+To back up a database at a specific point in time to an :term:`oplog`
+file, use :option:`mongodump --oplog`. To restore the database at a
 point in time with an oplog file, use :option:`mongorestore
 --oplogReplay`. For more details, see :ref:`backup-restore-oplogreplay`.
 
