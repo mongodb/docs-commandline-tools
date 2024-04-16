@@ -9,7 +9,7 @@ releases.
   :widths: 30 30 40
 
   * - Versions
-    - Dates
+    - Release Dates
     - MongoDB Server Support
 
   * - :ref:`Database Tools 1.8.0 <dbtools-1.8-changelog>`
