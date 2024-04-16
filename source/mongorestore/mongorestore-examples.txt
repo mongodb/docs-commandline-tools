@@ -60,7 +60,7 @@ To restore a specific collection, use :option:`--nsInclude
 <mongorestore --nsInclude>`, passing in the full namespace
 (``<database>.<collection>``) of the collection.
 
-For example, the following restores the collection named
+The following example restores the collection named
 ``purchaseorders`` in the database ``test`` from the corresponding
 files located in the ``dump/`` directory.
 
@@ -345,11 +345,14 @@ namespace:
        You cannot restore the ``system.buckets.weather.bson`` file
        by itself. Attempting to do so results in an error.
 
-Restore a Database to a Specific Point in Time
-----------------------------------------------
+Back Up and Restore a Database to a Specific Point in Time
+----------------------------------------------------------
 
-To restore a database to a specific point in time using an oplog backup,
-see :ref:`backup-restore-oplogreplay`.
+To back up a database to a specific point in time to an oplog file , use
+:option:`mongodump --oplog`. To restore the database to the point in
+time with the oplog file, use :binary:`mongorestore --oplogReplay
+<~bin.mongorestore>`. For more details, see
+:ref:`backup-restore-oplogreplay`.
 
 .. _mongorestore-example-connect-using-aws-iam:
 
@@ -451,3 +454,4 @@ Learn More
 - :ref:`mongorestore`
 - :ref:`mongorestore-compatibility-and-installation`
 - :ref:`Behavior <mongorestore-behavior-access-usage>`
+- :ref:`manual-tutorial-backup-and-restore`
