@@ -353,6 +353,11 @@ file, use :option:`mongodump --oplog`. To restore the database at a
 point in time with an oplog file, use :option:`mongorestore
 --oplogReplay`. For more details, see :ref:`backup-restore-oplogreplay`.
 
+``mongodump`` can run in the background, and ``mongorestore`` can
+restore data from the database dump. However, you cannot use
+``mongorestore`` to specify a specific point in time from that dump. For
+example, you cannot specify restore data from two days ago.
+
 .. _mongorestore-example-connect-using-aws-iam:
 
 Connect to a MongoDB Atlas Cluster using AWS IAM Credentials
