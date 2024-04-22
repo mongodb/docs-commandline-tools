@@ -648,11 +648,16 @@ Options
       - :method:`db.collection.renameCollection()`
       - :method:`db.collection.aggregate()` with :pipeline:`$out`
 
-   ``--oplog`` has no effect when running ``mongodump``
-   against a ``mongos`` instance to dump the entire contents of a
-   sharded cluster. However, you can use ``--oplog`` to dump
-   individual shards.
-   
+   However, in our back up a sharded cluster with database dumps tutorial,
+   we recommend pausing writes on the cluster in order to take a consistent
+   backup. With this in mind, attempting to use --oplog to dump individual
+   shards without pausing writes on the cluster risks having an
+   inconsistent backup.
+
+   We should ideally remove mention of using --oplog to dump individual
+   shards. We can also link to the tutorial about backing up sharded
+   clusters from the main mongodump docs page.
+
    ``--oplog`` only works against nodes that maintain an
    :term:`oplog`. This includes all members of a replica set.
    
