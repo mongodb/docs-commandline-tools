@@ -628,8 +628,8 @@ Options
 
    .. warning::
 
-      Use caution when using ``oplogLimit`` because it might cause
-      corruption and inconsistencies in the oplog file.
+      ``oplogLimit`` might cause corruption and inconsistencies in the
+      restored data.
    
    You must use :option:`--oplogLimit` in conjunction with the
    :option:`--oplogReplay` option.
@@ -646,8 +646,8 @@ Options
 
    .. warning::
 
-      Use caution when using ``oplogFile`` because it might cause
-      corruption and inconsistencies in the oplog file.
+      ``oplogFile`` might cause corruption and inconsistencies in the
+      restored data.
    
 .. option:: --convertLegacyIndexes
 
