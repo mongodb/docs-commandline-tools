@@ -630,7 +630,7 @@ Options
    occur during the ``mongodump`` operation.
    
    The ``oplog.bson`` file is a snapshot of the data at the time the
-   file was created. To restore the data as it was at the time the
+   file was created. To restore the data as it was when the time the
    ``oplog.bson``  file was created, use :option:`mongorestore
    --oplogReplay`. You cannot use
    ``mongorestore`` to restore data to any other time. For example, you
