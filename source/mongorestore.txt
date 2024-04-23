@@ -625,6 +625,11 @@ Options
    ``<time_t>`` is the seconds since the UNIX epoch, and ``<ordinal>``
    represents a counter of operations in the oplog that occurred in the
    specified second.
+
+   .. warning::
+
+      Use caution when using ``oplogLimit`` because it might cause
+      corruption and inconsistencies in the oplog file.
    
    You must use :option:`--oplogLimit` in conjunction with the
    :option:`--oplogReplay` option.
@@ -639,7 +644,11 @@ Options
    file at the top level of the dump directory, ``mongorestore`` returns an 
    error.
 
+   .. warning::
 
+      Use caution when using ``oplogFile`` because it might cause
+      corruption and inconsistencies in the oplog file.
+   
 .. option:: --convertLegacyIndexes
 
    .. versionadded:: 100.0.0
