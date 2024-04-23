@@ -627,10 +627,11 @@ Options
    Creates a file named :file:`oplog.bson` as part of the
    ``mongodump`` output. The ``oplog.bson`` file, located in
    the top level of the output directory, contains oplog entries that
-   occur during the ``mongodump`` operation. This file provides
-   an effective point-in-time snapshot of the state of a
-   ``mongod`` instance. To restore to a specific point-in-time
-   backup, use the output created with this option in conjunction with
+   occur during the ``mongodump`` operation.
+   
+   The ``oplog.bson`` file is a snapshot of the state of a
+   ``mongod`` instance at the time the file was created. To restore the
+   data as it was at the time the ``oplog.bson``  file was created, use
    :option:`mongorestore --oplogReplay`.
    
    Without ``--oplog``, if there are write operations during the dump
@@ -638,6 +639,13 @@ Options
    made to the database during the update process can affect the output of
    the backup.
    
+   To create a consistent ``oplog.bson`` file, pause writes on the
+   cluster. If you use ``--oplog`` to dump an individual shard's data
+   without pausing writes, the ``oplog.bson`` file will be inconsistent.
+
+   For complete tutorial to back up sharded clusters, see
+   :ref:`backup-sharded-dumps`.
+
    .. important::
       
       A ``mongodump`` running with ``--oplog`` fails if
@@ -647,16 +655,6 @@ Options
       - :dbcommand:`renameCollection`
       - :method:`db.collection.renameCollection()`
       - :method:`db.collection.aggregate()` with :pipeline:`$out`
-
-   However, in our back up a sharded cluster with database dumps tutorial,
-   we recommend pausing writes on the cluster in order to take a consistent
-   backup. With this in mind, attempting to use --oplog to dump individual
-   shards without pausing writes on the cluster risks having an
-   inconsistent backup.
-
-   We should ideally remove mention of using --oplog to dump individual
-   shards. We can also link to the tutorial about backing up sharded
-   clusters from the main mongodump docs page.
 
    ``--oplog`` only works against nodes that maintain an
    :term:`oplog`. This includes all members of a replica set.
@@ -733,6 +731,8 @@ For more information about ``mongodump``, see:
 - :ref:`mongodump-compatibility-and-installation`
 - :ref:`mongodump-behavior`
 - :ref:`mongodump-examples`
+
+For a tutorial, see :ref:`backup-sharded-dumps`.
 
 .. include:: /includes/extracts/ssl-facts-see-more.rst
 
