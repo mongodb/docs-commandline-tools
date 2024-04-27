@@ -624,29 +624,25 @@ Options
 
 .. option:: --oplog
 
-   Creates a file named :file:`oplog.bson` as part of the
-   ``mongodump`` output. The ``oplog.bson`` file, located in
-   the top level of the output directory, contains oplog entries that
-   occur during the ``mongodump`` operation.
+   Creates a file named :file:`oplog.bson` as part of the ``mongodump``
+   output. The ``oplog.bson`` file, located in the top level of the
+   output directory, contains oplog entries that occur during the
+   ``mongodump`` operation.
    
-   The ``oplog.bson`` file is a snapshot of the data at the time the
-   file was created. To restore the data as it was when the
-   ``oplog.bson``  file was created, use :option:`mongorestore
-   --oplogReplay`. You cannot use
-   ``mongorestore`` to restore data to any other time. For example, you
-   cannot specify a request to restore data from two days ago.
-   
+   To apply oplog entries the ``oplog.bson`` file in the restore, use
+   :option:`mongorestore --oplogReplay`. You can use ``mongodump
+   --oplog`` together with ``mongorestore --oplogReplay`` to ensure the
+   data is current and has all the writes that occurred during the dump.
+   However, if any writes occur after ``mongodump`` completes, those
+   writes are not captured in that dump.
+
    Without ``--oplog``, if there are write operations during the dump
    operation, the dump will not reflect a single moment in time. Changes
    made to the database during the update process can affect the output of
    the backup.
-   
-   To create a consistent ``oplog.bson`` file, pause writes on the
-   cluster. If you use ``--oplog`` to dump an individual shard's data
-   without pausing writes, the ``oplog.bson`` file will be inconsistent.
 
-   For complete tutorial to back up sharded clusters, see
-   :ref:`backup-sharded-dumps`.
+   To back up individual replica sets, use ``--oplog``. To back up
+   sharded clusters with ``mongodump``, see :ref:`backup-sharded-dumps`.
 
    .. important::
       
@@ -657,6 +653,9 @@ Options
       - :dbcommand:`renameCollection`
       - :method:`db.collection.renameCollection()`
       - :method:`db.collection.aggregate()` with :pipeline:`$out`
+
+   ``--oplog`` has no effect when running ``mongodump`` on a ``mongos``
+   instance to dump the entire contents of a sharded cluster.
 
    ``--oplog`` only works against nodes that maintain an
    :term:`oplog`. This includes all members of a replica set.

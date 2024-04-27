@@ -552,13 +552,14 @@ Options
 
    After restoring the database dump, replays the :term:`oplog` entries
    from an ``oplog.bson`` file.
-   When used in conjunction with :option:`mongodump --oplog`,
-   :binary:`mongorestore --oplogReplay <~bin.mongorestore>`
-   restores the database to the time the ``oplog.bson`` file was created
-   with the ``mongodump --oplog`` command. You cannot use
-   ``mongorestore`` to restore data to any other time. For example, you
-   cannot specify a request to restore data from two days ago.
    
+   To apply oplog entries from the ``oplog.bson`` file in the restore,
+   use ``mongorestore --oplogReplay``. You can use :option:`mongodump
+   --oplogReplay` together with ``mongorestore --oplogReplay`` to ensure
+   the data is current and has all the writes that occurred during the
+   dump. However, if any writes occur after ``mongodump`` completes,
+   those writes are not captured in that dump.
+
    ``mongorestore`` searches for any valid source  for the bson file
    in the following locations:
    
@@ -628,9 +629,10 @@ Options
 
    .. warning::
 
-      ``oplogLimit`` might cause corruption and inconsistencies in the
+      Use ``oplogLimit`` with caution: manually specifying the oplog
+      entries to apply might cause corruption and inconsistencies in the
       restored data.
-   
+
    You must use :option:`--oplogLimit` in conjunction with the
    :option:`--oplogReplay` option.
 
@@ -646,7 +648,8 @@ Options
 
    .. warning::
 
-      ``oplogFile`` might cause corruption and inconsistencies in the
+      Use ``oplogFile`` with caution: manually specifying the oplog
+      entries to apply might cause corruption and inconsistencies in the
       restored data.
    
 .. option:: --convertLegacyIndexes

@@ -353,10 +353,17 @@ To back up a database to an :term:`oplog` ``oplog.bson`` file, use
 ``oplog.bson`` file, use :option:`mongorestore --oplogReplay`. For more
 details, see :ref:`backup-restore-oplogreplay`.
 
-You can only use ``mongorestore`` to restore data as it was when the
-``oplog.bson`` file was created. You cannot use ``mongorestore`` to
-restore data to any other time. For example, you cannot specify a
-request to restore data from two days ago.
+``mongodump`` creates a file named :file:`oplog.bson` as part of the
+``mongodump`` output. The ``oplog.bson`` file, located in the top level
+of the output directory, contains oplog entries that occur during the
+``mongodump`` operation.
+
+To apply the oplog entries in the restore, use
+:option:`mongorestore --oplogReplay`. You can use :option:`mongodump
+--oplog` together with ``mongorestore --oplogReplay`` to ensure the
+data is current and has all the writes that occurred during the dump.
+However, if any writes occur after ``mongodump`` completes, those
+writes are not captured in that dump.
 
 For more information, see :option:`mongodump --oplog`. For a tutorial,
 see :ref:`backup-sharded-dumps`.
