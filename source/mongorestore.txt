@@ -555,10 +555,10 @@ Options
    
    To apply oplog entries from the ``oplog.bson`` file in the restore,
    use ``mongorestore --oplogReplay``. You can use :option:`mongodump
-   --oplog` together with ``mongorestore --oplogReplay`` to ensure
-   the data is current and has all the writes that occurred during the
-   dump. However, if any writes occur after ``mongodump`` completes,
-   those writes are not captured in that dump.
+   --oplog` together with ``mongorestore --oplogReplay`` to ensure the
+   data is current and has all the writes that occurred during the dump
+   operation. However, if any writes occur after ``mongodump``
+   completes, those writes aren't captured in that dump operation.
 
    ``mongorestore`` searches for any valid source  for the bson file
    in the following locations:

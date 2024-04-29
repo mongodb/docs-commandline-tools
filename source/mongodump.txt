@@ -629,12 +629,12 @@ Options
    output directory, contains oplog entries that occur during the
    ``mongodump`` operation.
    
-   To apply oplog entries the ``oplog.bson`` file in the restore, use
-   :option:`mongorestore --oplogReplay`. You can use ``mongodump
-   --oplog`` together with ``mongorestore --oplogReplay`` to ensure the
-   data is current and has all the writes that occurred during the dump.
-   However, if any writes occur after ``mongodump`` completes, those
-   writes are not captured in that dump.
+   To apply oplog entries from the ``oplog.bson`` file in the restore
+   operation, use :option:`mongorestore --oplogReplay`. You can use
+   ``mongodump --oplog`` together with ``mongorestore --oplogReplay`` to
+   ensure the data is current and has all the writes that occurred
+   during the dump. However, if any writes occur after ``mongodump``
+   completes, those writes aren't captured in that dump operation.
 
    Without ``--oplog``, if there are write operations during the dump
    operation, the dump will not reflect a single moment in time. Changes
