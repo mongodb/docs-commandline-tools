@@ -18,7 +18,7 @@ To change your feature compatibility version, see
    MongoDB deployments running the same version or one major version
    later than the source deployment. To learn about supported upgrade
    paths, see the :manual:`upgrade documentation
-   </release-notes/{+release+}-upgrade>`.
+   </release-notes/{+server-version+}-upgrade>`.
 
    This guarantee does not apply to metadata, archive, or oplog replay 
    files. If you try to restore these files using different 
