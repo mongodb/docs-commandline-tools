@@ -15,12 +15,9 @@ To change your feature compatibility version, see
 .. note::
 
    You can restore the BSON files generated from ``mongodump`` into
-   MongoDB deployments that run the same version or one major version
-   later than the source deployment. For example, to restore to a
-   MongoDB {+server-version+} deployment from a source deployment that
-   is lower than MongoDB {+server-previous-version+}, you must
-   successively upgrade the major release of the source deployment until
-   you upgrade to {+server-previous-version+}-series. To learn how to
+   MongoDB deployments running the same or newer version as the source
+   deployment. However, restoring files into a newer version deployment
+   is not a suitable way to upgrade your deployment. To learn how to
    upgrade your deployment, see the :manual:`upgrade documentation
    </release-notes/{+server-version+}-upgrade>`.
 

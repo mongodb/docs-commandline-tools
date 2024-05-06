@@ -1,4 +1,6 @@
 You can restore the BSON files generated from ``mongodump`` into MongoDB
-deployments that run the same version or one major version later than
-the source deployment. For more information see
-:ref:`mongodump-matching-server-version`.
+deployments running the same or newer version as the source deployment.
+However, restoring files into a newer version deployment is not a
+suitable way to upgrade your deployment. To learn how to upgrade your
+deployment, see the :manual:`upgrade documentation
+</release-notes/{+server-version+}-upgrade>`.
