@@ -348,11 +348,6 @@ namespace:
 Use mongorestore --oplogReplay and mongodump --oplog 
 ----------------------------------------------------
 
-To back up a database to an :term:`oplog` ``oplog.bson`` file, use
-:option:`mongodump --oplog`. To restore the database with an
-``oplog.bson`` file, use :option:`mongorestore --oplogReplay`. For more
-details, see :ref:`backup-restore-oplogreplay`.
-
 ``mongodump`` creates a file named :file:`oplog.bson` as part of the
 ``mongodump`` output. The ``oplog.bson`` file, located in the top level
 of the output directory, contains oplog entries that occur during the
