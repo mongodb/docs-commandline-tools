@@ -641,8 +641,9 @@ Options
    made to the database during the update process can affect the output of
    the backup.
 
-   To back up individual replica sets, use ``--oplog``. To back up
-   sharded clusters with ``mongodump``, see :ref:`backup-sharded-dumps`.
+   To back up individual replica sets while still accepting writes, use
+   ``--oplog``. To back up sharded clusters with ``mongodump``, see
+   :ref:`backup-sharded-dumps`.
 
    .. important::
       
