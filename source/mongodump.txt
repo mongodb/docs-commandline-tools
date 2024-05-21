@@ -60,6 +60,63 @@ Run ``mongodump`` from the system command line, not the
 
 .. include:: /includes/fact-online-archive-callout.rst
 
+``mongodump`` exports data from collections, along with collection
+options and index definitions. Optionally, ``mongodump`` can export
+writes that occur while the export is ongoing.
+
+``mongodump`` exports data to a directory or an archive.
+
+Directory Export
+~~~~~~~~~~~~~~~~
+
+For a directory export:
+
+- ``mongodump`` has a root directory where the exported data is
+  stored. By default, the root directory is called ``dump`` but you can set
+  the name using the ``--out`` option.
+- ``mongodump`` creates one subdirectory in the root directory for each
+  database.
+- Inside each database directory mongodump creates a .metadata.json file
+  for each collection. If the collection is called foo, the file will be
+  foo.metadata.json. This file contains an Extended JSON (v2) document
+  which describes the options and indexes of the collection.
+- Regular collections will also have a BSON file containing all the
+  documents dumped for the collection.
+- A view will only have a .metadata.json file and will not have a BSON
+  file.
+
+Example directory dump structure:
+
+.. code-block:: none
+
+   dump
+   ├── db1
+   │    ├── coll1.bson
+   │    ├── coll1.metadata.json
+   │    └── view1.metadata.json 
+   ├── db2
+   │    ├── coll1.bson
+   │    ├── coll1.metadata.json
+   │    └── view1.metadata.json
+   └── oplog.bson
+
+If the dump was created with the --gzip option, then the bson files and
+the .metadata.json files will be gzipped. Their extensions will be
+.bson.gz and .metadata.json.gz.
+
+Archive Export
+~~~~~~~~~~~~~~
+
+For an archive export:
+
+Archive dumps are binary files in a custom MongoDB format. It is
+possible to edit archives. However, editing archives is prone to error
+and you could accidentally corrupt your archive. We recommend reaching
+out to MongoDB Support if you need to edit your archive file.
+
+:option:`--out=<path>, -o=<path>`
+:option:`--archive=<file>`
+
 Syntax
 ------
 
