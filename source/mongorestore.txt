@@ -657,7 +657,7 @@ Options
 
    - *Legacy index key values* are any values for
      :ref:`index type <index-types>` that are
-     :ref:`no longer supported<3.4-index-validation>`. For example,
+     no longer supported. For example,
      ``1`` and ``-1`` are valid index key values, but ``0`` or an empty
      string are legacy values. With ``--convertLegacyIndexes``
      specified, any legacy index key values found are rewritten as
