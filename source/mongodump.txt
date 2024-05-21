@@ -66,26 +66,26 @@ writes that occur while the export is ongoing.
 
 ``mongodump`` exports data to a directory or an archive.
 
-Directory Export
-~~~~~~~~~~~~~~~~
+Export Data to a Directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For a directory export:
 
-- ``mongodump`` has a root directory where the exported data is
-  stored. By default, the root directory is called ``dump`` but you can set
-  the name using the ``--out`` option.
+- ``mongodump`` has a root directory where the exported data is stored.
+  By default, the root directory is called ``dump`` but you can set the
+  name using the ``mongodump`` :option:`--out <mongodump --out>`
+  option.
 - ``mongodump`` creates one subdirectory in the root directory for each
   database.
-- Inside each database directory mongodump creates a .metadata.json file
-  for each collection. If the collection is called foo, the file will be
-  foo.metadata.json. This file contains an Extended JSON (v2) document
-  which describes the options and indexes of the collection.
-- Regular collections will also have a BSON file containing all the
-  documents dumped for the collection.
-- A view will only have a .metadata.json file and will not have a BSON
-  file.
+- Each database directory ``mongodump`` creates a .metadata.json file for
+  each collection. If the collection is called ``sales``, the file will
+  be ``sales.metadata.json`. The file has an Extended JSON (v2) document
+  with details for the collection options and indexes.
+- Collections also have a BSON file containing all the
+  documents stored by the collection.
+- A view only has a .metadata.json file and doesn't have a BSON file.
 
-Example directory dump structure:
+Example directory export structure:
 
 .. code-block:: none
 
@@ -100,22 +100,17 @@ Example directory dump structure:
    │    └── view1.metadata.json
    └── oplog.bson
 
-If the dump was created with the --gzip option, then the bson files and
-the .metadata.json files will be gzipped. Their extensions will be
-.bson.gz and .metadata.json.gz.
+If you use the ``mongodump`` :option:`--gzip <mongodump --gzip>` option,
+the BSON files and the ``.metadata.json`` files are compressed using
+``gzip``. The file extensions are ``.bson.gz`` and
+``.metadata.json.gz``.
 
-Archive Export
-~~~~~~~~~~~~~~
+Export Data to an Archive File
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For an archive export:
-
-Archive dumps are binary files in a custom MongoDB format. It is
-possible to edit archives. However, editing archives is prone to error
-and you could accidentally corrupt your archive. We recommend reaching
-out to MongoDB Support if you need to edit your archive file.
-
-:option:`--out <mongodump --out>`
-:option:`--archive <mongodump --archive>`
+To export data to an archive file, use the ``mongodump``
+:option:`--archive <mongodump --archive>` option. ``mongodump`` creates
+a custom MongoDB format binary file. 
 
 Syntax
 ------
