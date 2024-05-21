@@ -60,9 +60,14 @@ Run ``mongodump`` from the system command line, not the
 
 .. include:: /includes/fact-online-archive-callout.rst
 
-``mongodump`` exports data from collections, along with collection
-options and index definitions. Optionally, ``mongodump`` can export
-writes that occur while the export is ongoing.
+``mongodump`` exports:
+
+- Collection data
+- Collection options
+- Index definitions
+
+Optionally, ``mongodump`` can export writes that occur while the export
+is ongoing.
 
 ``mongodump`` exports data to a directory or an archive.
 
