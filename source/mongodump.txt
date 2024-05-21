@@ -114,8 +114,8 @@ possible to edit archives. However, editing archives is prone to error
 and you could accidentally corrupt your archive. We recommend reaching
 out to MongoDB Support if you need to edit your archive file.
 
-:option:`--out=<path>, -o=<path>`
-:option:`--archive=<file>`
+:option:`--out <mongodump --out>`
+:option:`--archive <mongodump --archive>`
 
 Syntax
 ------
