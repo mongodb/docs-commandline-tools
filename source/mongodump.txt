@@ -87,7 +87,7 @@ For a directory export, ``mongodump`` creates:
   collection.
 - A ``.metadata.json`` file for each view. A view doesn't have a BSON
   file.
-- CAn optional :term:`oplog` ``oplog.bson`` file, located in the root
+- An optional :term:`oplog` ``oplog.bson`` file, located in the root
   directory, which contains write operations that occur during the
   ``mongodump`` run.
 
