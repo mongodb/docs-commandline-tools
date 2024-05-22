@@ -76,32 +76,36 @@ Export Data to a Directory
 
 For a directory export:
 
-- ``mongodump`` has a root directory where the exported data is stored.
-  By default, the root directory is called ``dump`` but you can set the
-  name using the ``mongodump`` :option:`--out <mongodump --out>`
-  option.
-- ``mongodump`` creates one subdirectory in the root directory for each
+- ``mongodump`` has a root directory where the exported files are stored
+  in subdirectories. By default, the root directory is named ``dump``
+  and is created in the directory where you run ``mongodump``, but you
+  can set the name with the ``mongodump`` :option:`--out <mongodump
+  --out>` option.
+- ``mongodump`` creates a subdirectory in the root directory for each
   database.
-- Each database directory ``mongodump`` creates a .metadata.json file for
-  each collection. If the collection is called ``sales``, the file will
-  be ``sales.metadata.json`. The file has an Extended JSON (v2) document
-  with details for the collection options and indexes.
-- Collections also have a BSON file containing all the
-  documents stored by the collection.
-- A view only has a .metadata.json file and doesn't have a BSON file.
+- Each database directory contains a ``.metadata.json`` file for each
+  collection. For example, if the collection is ``sales``, the file is
+  ``sales.metadata.json`. The BSON file is an Extended JSON (v2) format
+  file, and contains a document with the exported collection options and
+  indexes.
+- Each collection also has a corresponding BSON file with the collection
+  documents.
+- A view only has a ``.metadata.json`` file and doesn't have a BSON
+  file.
+- op log file XXX
 
-Example directory export structure:
+Example directory export structure and files:
 
 .. code-block:: none
 
    dump
-   ├── db1
-   │    ├── coll1.bson
-   │    ├── coll1.metadata.json
+   ├── database1
+   │    ├── collection1.bson
+   │    ├── collection2.metadata.json
    │    └── view1.metadata.json 
-   ├── db2
-   │    ├── coll1.bson
-   │    ├── coll1.metadata.json
+   ├── database2
+   │    ├── collection1.bson
+   │    ├── collection2.metadata.json
    │    └── view1.metadata.json
    └── oplog.bson
 
