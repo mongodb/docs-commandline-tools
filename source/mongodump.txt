@@ -78,14 +78,14 @@ For a directory export, ``mongodump`` creates:
   set the root directory name with the ``mongodump`` :option:`--out
   <mongodump --out>` option.
 - A subdirectory in the root directory for each database.
-- A ``.metadata.json`` file for each collection in each database
+- A ``metadata.json`` file for each collection in each database
   directory. For example, if a collection name is ``sales``, the
   metadata file is ``sales.metadata.json``. The file is an extended
   JSON v2 formatted file, and contains a document with the exported
   collection metadata, options, and indexes.
 - A corresponding BSON file with the collection documents for each
   collection.
-- A ``.metadata.json`` file for each view. A view doesn't have a BSON
+- A ``metadata.json`` file for each view. A view doesn't have a BSON
   file.
 - An optional :term:`oplog` ``oplog.bson`` file, located in the root
   directory, which contains write operations that occurred during the
@@ -108,7 +108,8 @@ Example directory export structure and files:
 
 If you use the ``mongodump`` :option:`--gzip <mongodump --gzip>` option,
 the BSON files and JSON metadata files are compressed using ``gzip``.
-The exported file extensions are ``.bson.gz`` and ``.metadata.json.gz``.
+The exported files have ``bson.gz`` and ``metadata.json.gz`` at the end
+of the names.
 
 Export Data to an Archive File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
