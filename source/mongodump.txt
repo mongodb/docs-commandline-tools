@@ -80,7 +80,7 @@ For a directory export, ``mongodump`` creates:
 - A subdirectory in the root directory for each database.
 - A ``.metadata.json`` file for each collection in each database
   directory. For example, if a collection name is ``sales``, the
-  metadata file is ``sales.metadata.json`. The file is an extended
+  metadata file is ``sales.metadata.json``. The file is an extended
   JSON v2 formatted file, and contains a document with the exported
   collection metadata, options, and indexes.
 - A corresponding BSON file with the collection documents for each
