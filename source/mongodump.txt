@@ -71,7 +71,7 @@ Run ``mongodump`` from the system command line, not the
 Export Data to a Directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Example directory export structure and files:
+Example ``mongodump`` directory export structure and files:
 
 .. code-block:: none
 
