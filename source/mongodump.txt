@@ -60,14 +60,11 @@ Run ``mongodump`` from the system command line, not the
 
 .. include:: /includes/fact-online-archive-callout.rst
 
-``mongodump`` exports:
+``mongodump`` can export:
 
-- Collection data
-- Collection options
+- Collection documents, metadata, and options
 - Index definitions
-
-Optionally, ``mongodump`` can export writes that occur while the export
-is ongoing.
+- Writes that occur during the export
 
 ``mongodump`` exports data to a directory or an archive.
 
@@ -76,18 +73,18 @@ Export Data to a Directory
 
 For a directory export:
 
-- ``mongodump`` has a root directory where the exported files are stored
-  in subdirectories. By default, the root directory is named ``dump``
-  and is created in the directory where you run ``mongodump``, but you
-  can set the name with the ``mongodump`` :option:`--out <mongodump
-  --out>` option.
+- ``mongodump`` stores the exported files in a root directory that
+  contains subdirectories. By default, the root directory is named
+  ``dump`` and is created in the directory where you run ``mongodump``,
+  but you can set the root directory name with the ``mongodump``
+  :option:`--out <mongodump --out>` option.
 - ``mongodump`` creates a subdirectory in the root directory for each
   database.
 - Each database directory contains a ``.metadata.json`` file for each
-  collection. For example, if the collection is ``sales``, the file is
-  ``sales.metadata.json`. The BSON file is an Extended JSON (v2) format
-  file, and contains a document with the exported collection options and
-  indexes.
+  collection. For example, if a collection is named ``sales``, the
+  metadata file is ``sales.metadata.json`. The BSON file is an Extended
+  JSON v2 formatted file, and contains a document with the exported
+  collection metadata, options, and indexes.
 - Each collection also has a corresponding BSON file with the collection
   documents.
 - A view only has a ``.metadata.json`` file and doesn't have a BSON
