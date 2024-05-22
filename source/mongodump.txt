@@ -107,9 +107,8 @@ Example directory export structure and files:
    └── oplog.bson
 
 If you use the ``mongodump`` :option:`--gzip <mongodump --gzip>` option,
-the BSON files and JSON metadata files are compressed using ``gzip``.
-The exported files have ``bson.gz`` and ``metadata.json.gz`` at the end
-of the names.
+the BSON files and JSON metadata files are compressed. The exported
+files have ``bson.gz`` and ``metadata.json.gz`` at the end of the names.
 
 Export Data to an Archive File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
