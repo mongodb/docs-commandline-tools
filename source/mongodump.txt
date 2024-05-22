@@ -62,34 +62,14 @@ Run ``mongodump`` from the system command line, not the
 
 ``mongodump`` can export:
 
-- Collection documents, metadata, and options
-- Index definitions
-- Writes that occur during the export
+- Collection documents, metadata, and options.
+- Index definitions.
+- Writes that occur during the export.
 
-``mongodump`` exports data to a directory or an archive.
+``mongodump`` exports data to a directory or a binary archive file.
 
 Export Data to a Directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-For a directory export, ``mongodump`` creates:
-
-- A root directory. By default, the root directory is named ``dump`` and
-  is created in the directory where you run ``mongodump``, but you can
-  set the root directory name with the ``mongodump`` :option:`--out
-  <mongodump --out>` option.
-- A subdirectory in the root directory for each database.
-- A BSON file with documents for each collection. For example, if a
-  collection name is ``sales``, the BSON file is ``sales.bson``.
-- A metadata JSON file for each collection in each database directory.
-  For example, a metadata ``sales.metadata.json`` file. The file
-  contains a document with the exported collection metadata, options,
-  and indexes.
-- A metadata JSON file for each view. For example, a metadata
-  ``salesByMonthView.metadata.json`` file. A view doesn't have a BSON
-  file.
-- An optional :term:`oplog` ``oplog.bson`` file, located in the root
-  directory, which contains write operations that occurred during the
-  ``mongodump`` run.
 
 Example directory export structure and files:
 
@@ -106,17 +86,39 @@ Example directory export structure and files:
    │    └── salesByMonthView.metadata.json
    └── oplog.bson
 
+For a directory export, ``mongodump`` creates:
+
+- A root directory. By default, the root directory is named ``dump`` and
+  is created in the directory where you run ``mongodump``, but you can
+  set the root directory name with the ``mongodump`` :option:`--out
+  <mongodump --out>` option.
+- A subdirectory in the root directory for each database. For example,
+  if a database name is ``easternSalesDatabase``, the subdirectory name
+  is also ``easternSalesDatabase``.
+- A BSON file with documents for each collection. For example, if a
+  collection name is ``sales``, the BSON file is ``sales.bson``.
+- A metadata JSON file for each collection in each database directory.
+  For example, a metadata ``sales.metadata.json`` file. The file
+  contains a document with the exported collection metadata, options,
+  and indexes.
+- A metadata JSON file for each view. For example, a metadata
+  ``salesByMonthView.metadata.json`` file. A view doesn't have a BSON
+  file.
+- An optional :term:`oplog` ``oplog.bson`` file, located in the root
+  directory, which contains write operations that occurred during the
+  ``mongodump`` run.
+
 If you use the ``mongodump`` :option:`--gzip <mongodump --gzip>` option,
 the BSON files and JSON metadata files are compressed. The compressed
 exported files have ``bson.gz`` and ``metadata.json.gz`` at the end of
 the names.
 
-Export Data to an Archive File
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Export Data to a Binary Archive File
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To export data to an archive file, use the ``mongodump``
+To export data to a binary archive file, use the ``mongodump``
 :option:`--archive <mongodump --archive>` option. ``mongodump`` creates
-a custom MongoDB format binary file. 
+a custom MongoDB formatted binary file that contains the archived data.
 
 Syntax
 ------
