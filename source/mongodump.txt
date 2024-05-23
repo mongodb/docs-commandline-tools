@@ -88,10 +88,8 @@ Example ``mongodump`` directory export structure and files:
 
 For a directory export, ``mongodump`` creates:
 
-- A root directory. By default, the root directory is named ``dump`` and
-  is created in the directory where you run ``mongodump``, but you can
-  set the root directory name with the ``mongodump`` :option:`--out
-  <mongodump --out>` option.
+- A root directory with the default name ``dump``. You can set the name
+  with the ``mongodump`` :option:`--out <mongodump --out>` option.
 - A subdirectory in the root directory for each database. For example,
   if a database name is ``easternSalesDatabase``, the subdirectory name
   is also ``easternSalesDatabase``.
