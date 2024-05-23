@@ -116,7 +116,7 @@ Export Data to a Binary Archive File
 
 To export data to a binary archive file, use the ``mongodump``
 :option:`--archive <mongodump --archive>` option. ``mongodump`` creates
-a custom MongoDB formatted binary file that contains the archived data.
+a binary file that contains the archived data.
 
 Syntax
 ------
