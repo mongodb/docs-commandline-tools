@@ -104,7 +104,8 @@ For a directory export, ``mongodump`` creates:
   file.
 - An optional :term:`oplog` ``oplog.bson`` file, located in the root
   directory, which contains write operations that occurred during the
-  ``mongodump`` run.
+  ``mongodump`` run. To output an ``oplog.bson`` file, use the
+  ``mongodump`` :option:`--oplog <mongodump --oplog>` option.
 
 If you use the ``mongodump`` :option:`--gzip <mongodump --gzip>` option,
 the BSON files and JSON metadata files are compressed. The compressed
