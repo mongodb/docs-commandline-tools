@@ -60,14 +60,14 @@ Run ``mongodump`` from the system command line, not the
 
 .. include:: /includes/fact-online-archive-callout.rst
 
-``mongodump`` exports:
+``mongodump`` dumps:
 
 - Collection documents, metadata, and options.
 - Index definitions.
 - Writes that occur during the export, if run with the ``mongodump``
   :option:`--oplog <mongodump --oplog>` option.
 
-``mongodump`` exports data to a directory or a binary archive file.
+``mongodump`` dumps data to a directory or a binary archive file.
 
 Export Data to a Directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
