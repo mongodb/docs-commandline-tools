@@ -373,6 +373,10 @@ the writes that occurred during the dump operation. However, if any
 writes occur after ``mongodump`` completes, those writes aren't captured
 in that dump operation.
 
+For a tutorial on backing up shards, see :ref:`backup-sharded-dumps`.
+See :atlas:`MongoDB Atlas <?tck=docs_server>` live migrate. See
+:ref:`c2c-mongosync`.
+
 .. _mongorestore-example-connect-using-aws-iam:
 
 Connect to a MongoDB Atlas Cluster using AWS IAM Credentials
