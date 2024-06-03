@@ -331,8 +331,47 @@ namespace:
        You cannot restore the ``system.buckets.weather.bson`` file
        by itself. Attempting to do so results in an error.
 
-Use mongorestore --oplogReplay and mongodump --oplog 
-----------------------------------------------------
+Create and Restore a Consistent Backup File
+-------------------------------------------
+
+To create a consistent backup file bases on the oplog, use
+:option:`mongodump --oplog`.
+
+To restore the file, use :option:`mongorestore
+--oplogReplay`.
+
+mongodump --oplog
+
+Creates a file named :file:`oplog.bson` as part of the ``mongodump``
+output. The ``oplog.bson`` file, located in the top level of the
+output directory, contains oplog entries that occur during the
+``mongodump`` operation.
+
+To apply oplog entries from the ``oplog.bson`` file in the restore
+operation, use :option:`mongorestore --oplogReplay`. You can use
+``mongodump --oplog`` together with ``mongorestore --oplogReplay`` to
+ensure the data is current and has all the writes that occurred
+during the dump.
+
+Without ``--oplog``, if there are write operations during the dump
+operation, the dump will not reflect a single moment in time. Changes
+made to the database during the update process can affect the output of
+the backup.
+
+To back up individual replica sets while still accepting writes, use
+``--oplog``. To back up sharded clusters with ``mongodump``, see
+:ref:`backup-sharded-dumps`.
+
+mongorestore --oplogReplay
+
+After restoring the database dump, replays the :term:`oplog` entries
+from an ``oplog.bson`` file.
+
+To apply oplog entries from the ``oplog.bson`` file in the restore,
+use ``mongorestore --oplogReplay``. You can use :option:`mongodump
+--oplog` together with ``mongorestore --oplogReplay`` to ensure the
+data is current and has all the writes that occurred during the dump
+operation.
 
 ``mongodump`` creates a file named :file:`oplog.bson` as part of the
 ``mongodump`` output. The ``oplog.bson`` file, located in the top level
