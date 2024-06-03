@@ -334,43 +334,31 @@ namespace:
 Create and Restore a Consistent Backup File
 -------------------------------------------
 
-To create a consistent backup file bases on the oplog, use
-:option:`mongodump --oplog`.
+To create a consistent backup file using the oplog, use the
+:option:`mongodump --oplog` option. To restore the file, use
+:option:`mongorestore --oplogReplay` option.
 
-To restore the file, use :option:`mongorestore
---oplogReplay`.
-
-mongodump --oplog
-
-Creates a file named :file:`oplog.bson` as part of the ``mongodump``
-output. The ``oplog.bson`` file, located in the top level of the
-output directory, contains oplog entries that occur during the
-``mongodump`` operation.
+The ``mongodump --oplog`` option creates a file named :file:`oplog.bson`
+as part of the ``mongodump`` output. The ``oplog.bson`` file, located in
+the top level of the output directory, contains oplog entries that occur
+during the ``mongodump`` operation.
 
 To apply oplog entries from the ``oplog.bson`` file in the restore
-operation, use :option:`mongorestore --oplogReplay`. You can use
-``mongodump --oplog`` together with ``mongorestore --oplogReplay`` to
-ensure the data is current and has all the writes that occurred
-during the dump.
+operation, use ``mongorestore --oplogReplay``. You can use ``mongodump
+--oplog`` together with ``mongorestore --oplogReplay`` to ensure the
+data is current and has all the writes that occurred during the dump.
 
-Without ``--oplog``, if there are write operations during the dump
-operation, the dump will not reflect a single moment in time. Changes
-made to the database during the update process can affect the output of
-the backup.
-
-To back up individual replica sets while still accepting writes, use
+To back up individual replica sets and still accept writes, use
 ``--oplog``. To back up sharded clusters with ``mongodump``, see
 :ref:`backup-sharded-dumps`.
 
-mongorestore --oplogReplay
-
-After restoring the database dump, replays the :term:`oplog` entries
+The ``mongorestore --oplogReplay`` option restores the oplog entries
 from an ``oplog.bson`` file.
 
 To apply oplog entries from the ``oplog.bson`` file in the restore,
 use ``mongorestore --oplogReplay``. You can use :option:`mongodump
 --oplog` together with ``mongorestore --oplogReplay`` to ensure the
-data is current and has all the writes that occurred during the dump
+data is current and has all the writes that occur during the dump
 operation.
 
 ``mongodump`` creates a file named :file:`oplog.bson` as part of the
@@ -384,9 +372,6 @@ To apply the oplog entries in the restore, use :option:`mongorestore
 the writes that occurred during the dump operation. However, if any
 writes occur after ``mongodump`` completes, those writes aren't captured
 in that dump operation.
-
-For more information, see :option:`mongodump --oplog`. For a tutorial,
-see :ref:`backup-sharded-dumps`.
 
 .. _mongorestore-example-connect-using-aws-iam:
 
