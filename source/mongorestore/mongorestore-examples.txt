@@ -363,10 +363,10 @@ To back up sharded clusters with ``mongodump``, see
 Use mongorestore with the oplogReplay Option
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To apply oplog entries from the ``oplog.bson`` file in the restore, use
+To restore oplog entries from the ``oplog.bson`` file, use
 the ``mongorestore --oplogReplay`` option. Use ``mongodump --oplog``
 together with ``mongorestore --oplogReplay`` to ensure the data is
-current and has all the writes that occurred during the ``mongodump``
+current and has all writes that occurred during the ``mongodump``
 run.
 
 Other Backup Methods
