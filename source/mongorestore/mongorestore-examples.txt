@@ -371,10 +371,11 @@ current and has all writes that occurred during the ``mongodump`` run.
 Other Backup Methods
 ````````````````````
 
-You can use these other backup methods:
+You can use these other migration and backup methods:
 
 - :atlas:`MongoDB Atlas <?tck=docs_server>` live migrate.
 - :atlas:`Migrate or Import Data </import>` in the Atlas documentation.
+- :atlas:`Backup restore cluster data </backup-restore-cluster>` in the Atlas documentation.
 - `mongosync
   <https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync>`__.
 
