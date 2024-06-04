@@ -375,7 +375,6 @@ in that dump operation.
 
 For a tutorial on backing up shards, see :ref:`backup-sharded-dumps`.
 See :atlas:`MongoDB Atlas <?tck=docs_server>` live migrate.
-See :ref:`mongosync <c2c-mongosync>`.
 
 For more information, see `mongosync
 <https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync>`__.
