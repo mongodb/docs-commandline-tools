@@ -349,7 +349,7 @@ option.
   ``mongodump --oplog`` option.
 
 Use mongodump with the oplog Option
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```````````````````````````````````
 
 The ``mongodump --oplog`` option creates a file named :file:`oplog.bson`
 in the top level of the ``mongodump`` output directory. The file
@@ -361,7 +361,7 @@ To back up sharded clusters with ``mongodump``, see
 :ref:`backup-sharded-dumps`.
 
 Use mongorestore with the oplogReplay Option
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````````````````````````
 
 To restore oplog entries from the ``oplog.bson`` file, use the
 ``mongorestore --oplogReplay`` option. Use ``mongodump --oplog``
@@ -369,7 +369,7 @@ together with ``mongorestore --oplogReplay`` to ensure the database is
 current and has all writes that occurred during the ``mongodump`` run.
 
 Other Backup Methods
-~~~~~~~~~~~~~~~~~~~~
+````````````````````
 
 You can use these other backup methods:
 
