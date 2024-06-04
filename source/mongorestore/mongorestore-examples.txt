@@ -346,10 +346,13 @@ as part of the ``mongodump`` output. The ``oplog.bson`` file, located in
 the top level of the output directory, contains oplog entries that occur
 during the ``mongodump`` operation.
 
-To apply oplog entries from the ``oplog.bson`` file in the restore
-operation, use ``mongorestore --oplogReplay``. You can use ``mongodump
---oplog`` together with ``mongorestore --oplogReplay`` to ensure the
-data is current and has all the writes that occurred during the dump.
+
+To apply the oplog entries in the restore, use :option:`mongorestore
+--oplogReplay`. You can use :option:`mongodump --oplog` together with
+``mongorestore --oplogReplay`` to ensure the data is current and has all
+the writes that occurred during the dump operation. However, if any
+writes occur after ``mongodump`` completes, those writes aren't captured
+in that dump operation.
 
 To back up individual replica sets and still accept writes, use
 ``--oplog``. To back up sharded clusters with ``mongodump``, see
@@ -361,26 +364,11 @@ Use mongorestore with the oplogReplay Option
 The ``mongorestore --oplogReplay`` option restores the oplog entries
 from an ``oplog.bson`` file.
 
-To apply oplog entries from the ``oplog.bson`` file in the restore,
-use ``mongorestore --oplogReplay``. You can use :option:`mongodump
---oplog` together with ``mongorestore --oplogReplay`` to ensure the
-data is current and has all the writes that occur during the dump
-operation.
-
-``mongodump`` creates a file named :file:`oplog.bson` as part of the
-``mongodump`` output. The ``oplog.bson`` file, located in the top level
-of the output directory, contains oplog entries that occur during the
-``mongodump`` operation.
-
-To apply the oplog entries in the restore, use :option:`mongorestore
---oplogReplay`. You can use :option:`mongodump --oplog` together with
-``mongorestore --oplogReplay`` to ensure the data is current and has all
-the writes that occurred during the dump operation. However, if any
-writes occur after ``mongodump`` completes, those writes aren't captured
-in that dump operation.
-
 For a tutorial on backing up shards, see :ref:`backup-sharded-dumps`.
 See :atlas:`MongoDB Atlas <?tck=docs_server>` live migrate.
+
+To learn more, see :atlas:`Migrate or Import Data </import>` in the
+Atlas documentation.
 
 For more information, see `mongosync
 <https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync>`__.
