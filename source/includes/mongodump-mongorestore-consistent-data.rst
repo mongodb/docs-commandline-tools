@@ -31,15 +31,3 @@ To restore oplog entries from the ``oplog.bson`` file, use the
 ``mongorestore --oplogReplay`` option. Use ``mongodump --oplog``
 together with ``mongorestore --oplogReplay`` to ensure the database is
 current and has all writes that occurred during the ``mongodump`` run.
-
-Other Backup and Restore Methods
-````````````````````````````````
-
-For other migration and backup methods, see:
-
-- :atlas:`Migrate or import data </import>` in Atlas.
-- :atlas:`Back up, restore, and archive data </backup-restore-cluster>`
-  in Atlas.
-- `mongosync
-  <https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync>`__
-  utility.
