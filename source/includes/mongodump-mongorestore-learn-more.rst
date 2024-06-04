@@ -3,3 +3,4 @@
   in Atlas
 - `mongosync utility
   <https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync>`__
+  for cluster to cluster migrations
