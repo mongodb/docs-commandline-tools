@@ -12,8 +12,8 @@ The :term:`oplog` contains the history of database write operations.
 - Writes that occur during the ``mongodump`` run, if ``--oplog`` is
   specified.
 
-Use mongodump with the oplog Option
-```````````````````````````````````
+Use mongodump with oplog Option
+```````````````````````````````
 
 ``mongodump --oplog`` creates a file named :file:`oplog.bson` in the top
 level of the ``mongodump`` output directory. The file contains write
@@ -23,8 +23,8 @@ after ``mongodump`` completes aren't recorded in the file.
 To back up sharded clusters with ``mongodump``, see
 :ref:`backup-sharded-dumps`.
 
-Use mongorestore with the oplogReplay Option
-````````````````````````````````````````````
+Use mongorestore with oplogReplay Option
+````````````````````````````````````````
 
 To restore oplog entries from the ``oplog.bson`` file, use
 ``mongorestore --oplogReplay``. Use ``mongodump --oplog`` together with
