@@ -373,11 +373,11 @@ Other Backup Methods
 
 You can use these other migration and backup methods:
 
-- :atlas:`MongoDB Atlas <?tck=docs_server>` live migrate.
-- :atlas:`Migrate or Import Data </import>` in the Atlas documentation.
-- :atlas:`Backup restore cluster data </backup-restore-cluster>` in the Atlas documentation.
+- :atlas:`Migrate or import data </import>` in Atlas.
+- :atlas:`Backup and restore data </backup-restore-cluster>` in Atlas.
 - `mongosync
-  <https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync>`__.
+  <https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync>`__
+  utility.
 
 .. _mongorestore-example-connect-using-aws-iam:
 
