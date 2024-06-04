@@ -331,12 +331,15 @@ namespace:
        You cannot restore the ``system.buckets.weather.bson`` file
        by itself. Attempting to do so results in an error.
 
-Create and Restore a Consistent Backup File
--------------------------------------------
+Create and Restore Consistent Backup Files
+------------------------------------------
 
-To create a consistent backup file using the oplog, use the
+To create a consistent backup file using the oplog entries, use the
 :option:`mongodump --oplog` option. To restore the file, use
 :option:`mongorestore --oplogReplay` option.
+
+Use mongodump with the oplog Option
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ``mongodump --oplog`` option creates a file named :file:`oplog.bson`
 as part of the ``mongodump`` output. The ``oplog.bson`` file, located in
@@ -351,6 +354,9 @@ data is current and has all the writes that occurred during the dump.
 To back up individual replica sets and still accept writes, use
 ``--oplog``. To back up sharded clusters with ``mongodump``, see
 :ref:`backup-sharded-dumps`.
+
+Use mongorestore with the oplogReplay Option
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ``mongorestore --oplogReplay`` option restores the oplog entries
 from an ``oplog.bson`` file.
