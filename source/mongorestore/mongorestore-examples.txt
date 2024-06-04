@@ -364,9 +364,10 @@ Use mongorestore with the oplogReplay Option
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To apply oplog entries from the ``oplog.bson`` file in the restore, use
-``mongorestore --oplogReplay``. Use ``mongodump --oplog`` together with
-``mongorestore --oplogReplay`` to ensure the data is current and has all
-the writes that occurred during the dump operation.
+the ``mongorestore --oplogReplay`` option. Use ``mongodump --oplog``
+together with ``mongorestore --oplogReplay`` to ensure the data is
+current and has all the writes that occurred during the ``mongodump``
+run.
 
 Other Backup Methods
 ~~~~~~~~~~~~~~~~~~~~
