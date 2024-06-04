@@ -438,6 +438,5 @@ Learn More
 - :ref:`Behavior <mongorestore-behavior-access-usage>`
 - :ref:`manual-tutorial-backup-and-restore`
 - :ref:`backup-sharded-dumps`
-- :ref:`mongosync`
 
 .. include:: /includes/mongodump-mongorestore-learn-more.rst
