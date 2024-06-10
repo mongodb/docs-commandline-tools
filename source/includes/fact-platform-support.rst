@@ -42,7 +42,7 @@
     -
 
   * - Debian 8
-    - |checkmark|
+    - 
     -
     -
     -
