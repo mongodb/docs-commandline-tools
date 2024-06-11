@@ -41,12 +41,6 @@
     -
     -
 
-  * - Debian 8
-    - 
-    -
-    -
-    -
-
   * - :abbr:`RHEL (Red Hat Enterprise Linux)` / CentOS 9
     - |checkmark|
     - |checkmark|
