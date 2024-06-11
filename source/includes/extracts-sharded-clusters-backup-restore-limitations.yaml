@@ -5,8 +5,8 @@ content: |
    strategy for sharded clusters, see :ref:`backup-sharded-dumps`.
 
    Sharded clusters can also use one of the following coordinated backup
-   and restore processes, which maintain the atomicity guarantees of
-   transactions across shards:
+   and restore processes, which guarantee atomicity across shards while
+   still accepting writes:
 
    - `MongoDB Atlas <https://www.mongodb.com/atlas/database?tck=docs_databasetools>`__
 
