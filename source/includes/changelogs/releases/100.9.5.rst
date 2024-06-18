@@ -1,6 +1,6 @@
 .. _100.9.4-changelog:
 
-100.9.4 Changelog
+100.9.5 Changelog
 -----------------
 
 *Released 2024-06-18*
@@ -53,7 +53,7 @@ Task
    release artifacts
 - :issue:`TOOLS-3551` - Fix integration test failures with MongoDB 8.0 
    RC release
-- :issue:`TOOLS-3555` - Remove support for Debian 8.
+- :issue:`TOOLS-3555` - Remove support for Debian 8
 - :issue:`TOOLS-3559` - Include the Augmented SBOM in all release 
    artifacts
 - :issue:`TOOLS-3565` - Artifact: Static Code Analysis Report for 
