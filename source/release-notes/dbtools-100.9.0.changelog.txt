@@ -28,4 +28,14 @@ For the current version, see :ref:`dbtools-current-changelog`
 Database Tools |tool-version|
 -----------------------------
 
+.. include:: /includes/changelogs/releases/100.9.5.rst   
+
+.. include:: /includes/changelogs/releases/100.9.4.rst   
+
+.. include:: /includes/changelogs/releases/100.9.3.rst   
+
+.. include:: /includes/changelogs/releases/100.9.2.rst   
+
+.. include:: /includes/changelogs/releases/100.9.1.rst
+
 .. include:: /includes/changelogs/releases/100.9.0.rst
