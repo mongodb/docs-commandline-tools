@@ -38,9 +38,9 @@ Task
 - :issue:`TOOLS-3499` - Clean up release code to remove unused tags and 
   remove libsasl.dll from MSI
 - :issue:`TOOLS-3526` - Artifact Authorized publication on distribution 
-  channels for DB Tools 7.0.x*
+  channels for DB Tools 7.0.x
 - :issue:`TOOLS-3527` - Artifact Third Party Dependencies Report for 
-   DB Tools 7.0.x*
+   DB Tools 7.0.x
 - :issue:`TOOLS-3528` - Prep for Silk Onboarding Add DB Tools to 
    Silk Inventory
 - :issue:`TOOLS-3532` - Onboard DB Tools to Papertrail Service for 
@@ -57,4 +57,4 @@ Task
 - :issue:`TOOLS-3559` - Include the Augmented SBOM in all release 
    artifacts
 - :issue:`TOOLS-3565` - Artifact Static Code Analysis Report for 
-   DB Tools 7.0.x*
+   DB Tools 7.0.x
