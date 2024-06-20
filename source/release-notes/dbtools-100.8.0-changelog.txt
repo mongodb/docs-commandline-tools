@@ -1,4 +1,4 @@
-.. |tool-version| replace:: 1.8
+.. |tool-version| replace:: 100.8.0
 
 .. _dbtools-1.8-changelog:
 
