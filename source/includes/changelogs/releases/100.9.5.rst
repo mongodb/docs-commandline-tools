@@ -5,24 +5,24 @@
 
 *Released 2024-06-18*
 
-For this release we have updated many of our third-party dependencies, 
-as well adding third-party dependency vulnerability scanning, static 
+For this release, we have updated many of our third-party dependencies, 
+as well as adding third-party dependency vulnerability scanning, static 
 analysis, and other tooling to comply with MongoDB's Software Security 
 Development Lifecycle initiative. Notably, all releases now ship with 
 a Software Bill of Materials (SBOM). Look for a file ending with 
 ``.cdx.json`` in the archive. For OS packages, this file should be 
-installed in an appropriate location for each package, like 
+installed in an appropriate location for each package, such as 
 ``/usr/share/docs`` for deb packages.
 
 Investigation
 ~~~~~~~~~~~~~
 
-- :issue:`TOOLS-3486` - Investigate changes in SERVER-81378: Change 
-  classic behavior: equality to null should not match undefined
-- :issue:`TOOLS-3498` - Investigate changes in SERVER-86928: Local 
-  Privilege Escalation via Untrusted Directory | mongodbldap.exe
-- :issue:`TOOLS-3500` - Investigate changes in SERVER-88071: Deprecate 
-  filemd5 with the intent of eventual removal
+- :issue:`TOOLS-3486` - Investigate changes in :issue:`SERVER-81378` 
+  Change classic behavior: equality to null should not match undefined
+- :issue:`TOOLS-3498` - Investigate changes in :issue:`SERVER-86928` 
+  Local Privilege Escalation via Untrusted Directory | mongodbldap.exe
+- :issue:`TOOLS-3500` - Investigate changes in :issue:`SERVER-88071` 
+  Deprecate filemd5 with the intent of eventual removal
 
 Bug
 ~~~
@@ -58,4 +58,3 @@ Task
    artifacts
 - :issue:`TOOLS-3565` - Artifact: Static Code Analysis Report for 
    DB Tools 7.0.x*
-
