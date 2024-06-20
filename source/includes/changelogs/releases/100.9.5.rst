@@ -41,7 +41,7 @@ Task
   channels for DB Tools 7.0.x
 - :issue:`TOOLS-3527` - Artifact: Third Party Dependencies Report for 
   DB Tools 7.0.x
-- :issue:`TOOLS-3528` - Prep for Silk Onboarding Add DB Tools to 
+- :issue:`TOOLS-3528` - Prep for Silk Onboarding: Add DB Tools to 
   Silk Inventory
 - :issue:`TOOLS-3532` - Onboard DB Tools to Papertrail Service for 
   SSDLC Compliance
