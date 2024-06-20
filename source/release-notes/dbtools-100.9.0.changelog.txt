@@ -24,7 +24,6 @@ For the current version, see :ref:`dbtools-current-changelog`
 
 .. include:: /includes/changelogs/dbtools-changelogs.rst
 
-
 Database Tools |tool-version|
 -----------------------------
 
