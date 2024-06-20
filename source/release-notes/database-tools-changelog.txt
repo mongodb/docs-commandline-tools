@@ -29,6 +29,8 @@ All Releases
 Database Tools |tool-version|
 -----------------------------
 
+.. include:: /includes/changelogs/releases/100.9.5.rst
+
 .. include:: /includes/changelogs/releases/100.9.4.rst
 
 .. include:: /includes/changelogs/releases/100.9.3.rst
