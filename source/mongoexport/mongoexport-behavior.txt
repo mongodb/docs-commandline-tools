@@ -29,6 +29,11 @@ Type Fidelity
 
 .. include:: /includes/fact-type-fidelity.rst
 
+Document Order
+~~~~~~~~~~~~~~
+
+.. include:: /includes/mongoimport-export-document-order.rst
+
 FIPS
 ~~~~
 
