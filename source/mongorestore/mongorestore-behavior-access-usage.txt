@@ -40,7 +40,7 @@ same value ``_id`` field as the to-be-restored documents,
 Document Order
 ~~~~~~~~~~~~~~
 
-.. include:: /includes/mongoimport-export-document-order.rst
+.. include:: /includes/mongodump-restore-document-order.rst
 
 Rebuild Indexes
 ~~~~~~~~~~~~~~~
