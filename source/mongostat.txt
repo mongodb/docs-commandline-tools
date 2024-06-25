@@ -637,7 +637,7 @@ average operations per second.
         - unknown
 
       * - ``RTR``
-        - mongos process ("router")
+        - ``mongos`` process ("router")
 
       * - ``ARB``
         - :term:`arbiter`
