@@ -50,7 +50,12 @@ formatted using Extended JSON v1.0, specify the
 Document Order
 ~~~~~~~~~~~~~~
 
-.. include:: /includes/mongoimport-export-document-order.rst
+Document Order
+~~~~~~~~~~~~~~
+
+.. |maintain-order-flag| replace:: :option:`--maintainInsertionOrder <mongoimport --maintainInsertionOrder>`
+
+.. include:: /includes/restore-document-order.rst
 
 Encoding
 ~~~~~~~~

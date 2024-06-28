@@ -40,7 +40,9 @@ same value ``_id`` field as the to-be-restored documents,
 Document Order
 ~~~~~~~~~~~~~~
 
-.. include:: /includes/mongodump-restore-document-order.rst
+.. |maintain-order-flag| replace:: :option:`--maintainInsertionOrder <mongorestore --maintainInsertionOrder>`
+
+.. include:: /includes/restore-document-order.rst
 
 Rebuild Indexes
 ~~~~~~~~~~~~~~~
