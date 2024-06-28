@@ -184,11 +184,6 @@ Working Set
 ``mongod``. If your data is larger than system memory,
 ``mongodump`` will push the working set out of memory.
 
-Document Order
-~~~~~~~~~~~~~~
-
-.. include:: /includes/mongodump-restore-document-order.rst
-
 FIPS
 ~~~~
 
