@@ -31,6 +31,10 @@ mongodump
 .. |tool-binary| replace:: ``mongodump``
 .. |mongodb-aws-example| replace:: :ref:`mongodump-example-connect-using-aws-iam`
 
+.. important:: 
+
+   .. include:: /includes/fact-mongodump-restore-mongodb-only.rst
+
 Definition
 ----------
 

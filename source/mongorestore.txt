@@ -30,6 +30,10 @@
 
 This documentation is for version ``{+release+}`` of |tool-binary|.
 
+.. important:: 
+
+   .. include:: /includes/fact-mongodump-restore-mongodb-only.rst
+
 Synopsis
 --------
 
