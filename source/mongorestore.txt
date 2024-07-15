@@ -28,11 +28,11 @@
 .. |tool-command| replace:: ``mongorestore``
 .. |mongodb-aws-example| replace:: :ref:`mongorestore-example-connect-using-aws-iam`
 
-This documentation is for version ``{+release+}`` of |tool-binary|.
-
 .. important:: 
 
    .. include:: /includes/fact-mongodump-restore-mongodb-only.rst
+
+This documentation is for version ``{+release+}`` of |tool-binary|.
 
 Synopsis
 --------
