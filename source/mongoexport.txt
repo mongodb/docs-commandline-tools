@@ -177,7 +177,7 @@ Connect to a Sharded Cluster
 .. note::
 
    To avoid data inconsistencies, pause the following actions on your
-   sharded cluster when you run ``mongoexport``. 
+   sharded cluster when you run ``mongoexport``:
    
    - Cross-shard transactions
    - Data definition language operations (operations that create and modify
