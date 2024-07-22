@@ -73,3 +73,21 @@ section = 1
 file = "mongotop.txt"
 title = "mongotop"
 section = 1
+
+[[banners]]
+# Generic warning for non-genuine deployment usage with mongo tool binaries.
+targets = [
+        "mongodump.txt",
+        "mongorestore.txt",
+        "mongoimport.txt",
+        "mongoexport.txt",
+        "mongotop.txt",
+        "mongostat.txt",
+        "mongofiles.txt"
+        ]
+variant = "warning"
+value = """\
+        MongoDB Command Line Database tool binaries are not supported or tested 
+        for use with non-genuine MongoDB deployments. Any usage of these tools 
+        with non-genuine MongoDB deployments can result in data corruption.
+        """
