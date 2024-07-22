@@ -182,7 +182,9 @@ Connect to a Sharded Cluster
    - Cross-shard transactions
    - Data definition language operations (operations that create and modify
      collections)
-   - Chunk balancinng 
+   - Chunk balancing 
+
+   To stop the balancer, use the :method:`sh.stopBalancer()` method. 
 
 To connect to a sharded cluster to export its data, you can either:
 
