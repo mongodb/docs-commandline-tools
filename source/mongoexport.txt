@@ -242,8 +242,7 @@ preference <replica-set-read-preference>`:
   
   .. code-block:: sh
 
-     mongoexport --host="mongos0.example.com:27017"
-     --readPreference='{mode: "secondary", tagSets: [ { "region": "east" } ]}' --collection=events --db=reporting --out=events.json [additional options]
+     mongoexport --host="mongos0.example.com:27017" --readPreference='{mode: "secondary", tagSets: [ { "region": "east" } ]}' --collection=events --db=reporting --out=events.json [additional options]
 
 .. _mongoexport-options:
 
