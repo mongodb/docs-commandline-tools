@@ -75,7 +75,7 @@ title = "mongotop"
 section = 1
 
 [[banners]]
-# Generic warning for non-genuine deployment usage with mongo tool binaries.
+# Warning for non-genuine deployment usage with tool binaries.
 targets = [
         "mongodump.txt",
         "mongorestore.txt",
