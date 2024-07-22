@@ -87,5 +87,5 @@ targets = [
         ]
 variant = "warning"
 value = """\
-        MongoDB Command Line Database tool binaries are not supported or tested for use with non-genuine MongoDB deployments. Any usage of these tools with non-genuine MongoDB deployments can result in data corruption.
+        MongoDB Command Line Database tool binaries are not supported or tested for use with non-genuine MongoDB deployments. Any usage of these tools with non-genuine MongoDB deployments may result in data corruption.
         """
