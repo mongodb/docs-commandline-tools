@@ -70,7 +70,8 @@ Versioning
 
 .. important::
 
-   It is recommended you always use the latest release version of {+dbtools+}.
+   It is recommended you always use the latest release version of the 
+   {+dbtools+}.
 
 .. include:: /includes/extracts/dbtools-version-all.rst
 
