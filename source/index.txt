@@ -68,6 +68,10 @@ binaries:
 Versioning
 ----------
 
+.. important::
+
+   It is recommended you always use the latest release version of {+dbtools+}.
+
 .. include:: /includes/extracts/dbtools-version-all.rst
 
 Installation
