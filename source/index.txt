@@ -78,6 +78,9 @@ Versioning
 
       mongodump --version
 
+   To download the latest version, go to the `MongoDB Download Center 
+   <https://www.mongodb.com/try/download/database-tools>`__.
+
 
 .. include:: /includes/extracts/dbtools-version-all.rst
 
