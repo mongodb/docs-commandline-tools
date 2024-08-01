@@ -112,11 +112,10 @@ For more information on the options available, see :ref:`mongoexport-options`.
 Connect to a Replica Set
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 .. note::
 
    ``mongoexport`` is not a tool for backing up data. To back up your
-   sharded cluster, see :ref:`backup-restore-sharded-clusters`. 
+   replica set, see :ref:`manual-tutorial-backup-and-restore`. 
 
 To connect to a replica set to export its data, you can either:
 
