@@ -12,24 +12,19 @@ Ubuntu 24.04 platforms. It also updates several packages and fixes a bug.
 Security
 ~~~~~~~~
 
-- :issue:`TOOLS-3615`` - Security Finding: Update package ``golang.org/x/crypto`` 
+- :issue:`TOOLS-3615` - Security Finding: Update package ``golang.org/x/crypto`` 
   to address `CVE-2022-30636 <https://www.cve.org/CVERecord?id=CVE-2022-30636>`__.
-
-Release
-~~~~~~~
-
-- :issue:`TOOLS-3576`` - Release Database Tools 100.10.0
 
 Bug
 ~~~
 
-- :issue:`TOOLS-3611`` - Mongodump and restore should not produce a 
+- :issue:`TOOLS-3611` - Mongodump and restore should not produce a 
   JSON format error on $-prefixed object keys
 
 Epic
 ~~~~
 
-- :issue:`TOOLS-3413`` - Tools 8.0 Support
+- :issue:`TOOLS-3413` - Tools 8.0 Support
 
 Task
 ~~~~
