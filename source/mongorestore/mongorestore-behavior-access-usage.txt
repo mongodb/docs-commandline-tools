@@ -19,6 +19,8 @@ mongorestore Behavior, Access, and Usage
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongorestore``
 
+.. include:: /includes/warning-tools-dot-dollar-import-export-restriction.rst
+
 Behavior
 --------
 
