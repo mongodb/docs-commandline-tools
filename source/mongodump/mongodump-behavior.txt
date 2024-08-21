@@ -190,7 +190,7 @@ FIPS
 ~~~~
 
 ``mongodump`` automatically creates FIPS-compliant
-connections to a ``mongod`` or ``mongos`` that is
+connections to a ``mongod`` or ``mongos`` that are
 :manual:`configured to use FIPS mode </tutorial/configure-fips>`.
 
 Using ``mongodump`` on Atlas Free and Shared Tier Clusters 
