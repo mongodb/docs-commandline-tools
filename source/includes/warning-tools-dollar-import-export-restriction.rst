@@ -1,4 +1,4 @@
-.. warning:: Data Dump and Restore Conflicts With ($) in Collection Fields
+.. warning:: Data Dump and Restore Conflicts with $ Prefix in Fields
 
    Starting in MongoDB 5.0, document field names can be prefixed with a
    dollar character (``$``). However, :binary:`~bin.mongoimport` and
