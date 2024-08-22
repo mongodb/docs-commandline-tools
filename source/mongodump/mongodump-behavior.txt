@@ -32,7 +32,7 @@ mongodump Behavior, Access, and Usage
    the :dbtools:`--archive </mongodump/#std-option-mongodump.--archive>` 
    option.  
 
-.. include:: /includes/warning-tools-dollar-import-export-restriction.rst
+.. include:: /includes/warning-tools-dollar-dump-restore-restriction.rst
 
 Behavior
 --------
