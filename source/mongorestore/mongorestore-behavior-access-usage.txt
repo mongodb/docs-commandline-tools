@@ -21,7 +21,7 @@ mongorestore Behavior, Access, and Usage
 
 .. warning:: Data Import and Export Restriction
 
-   .. include:: /includes/warning-tools-dot-dollar-import-export-restriction-intro.rst
+   .. include:: /includes/warning-tools-dollar-import-export-restriction.rst
 
 Behavior
 --------
