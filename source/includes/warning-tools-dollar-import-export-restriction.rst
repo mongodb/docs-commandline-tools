@@ -5,8 +5,10 @@
    :binary:`~bin.mongoexport` won't work with field names that are prefixed
    with a dollar character.
 
-   MongoDB Extended JSON v2 cannot differentiate between type wrappers and
-   fields that happen to have the same name as type wrappers. Do not use
-   Extended JSON formats in contexts where the corresponding BSON
-   representations might include ($) prefixed keys. The DBRef mechanism is
-   an exception to this general rule.
+   :manual:`MongoDB Extended JSON
+   (v2)</reference/mongodb-extended-json>` cannot differentiate between
+   type wrappers and fields that happen to have the same name as type
+   wrappers. Do not use Extended JSON formats in contexts where the
+   corresponding BSON representations might include ($) prefixed keys.
+   The :ref:`DBRefs <dbref-explanation>` mechanism is an exception to
+   this general rule.
