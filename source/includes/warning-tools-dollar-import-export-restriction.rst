@@ -8,7 +8,7 @@
    :manual:`MongoDB Extended JSON
    (v2)</reference/mongodb-extended-json>` cannot differentiate between
    type wrappers and fields that have the same name as type
-   wrappers. Don't use Extended JSON formats if the
+   wrappers. Don't use extended JSON formats if the
    corresponding BSON representation might include ``$`` prefixed keys.
    The :ref:`DBRefs <dbref-explanation>` mechanism is an exception to
    this general rule.
