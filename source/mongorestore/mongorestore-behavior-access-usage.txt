@@ -19,9 +19,7 @@ mongorestore Behavior, Access, and Usage
 .. |arrow| unicode:: U+27A4
 .. |tool-binary| replace:: ``mongorestore``
 
-.. warning:: Data Import and Export Restriction
-
-   .. include:: /includes/warning-tools-dollar-import-export-restriction.rst
+.. include:: /includes/warning-tools-dollar-import-export-restriction.rst
 
 Behavior
 --------
