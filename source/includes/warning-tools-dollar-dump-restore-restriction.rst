@@ -1,9 +1,9 @@
 .. warning:: Data Dump and Restore Conflicts with $ Prefix in Fields
 
    Starting in MongoDB 5.0, document field names can be prefixed with a
-   dollar character (``$``). However, :binary:`~bin.mongoimport` and
-   :binary:`~bin.mongoexport` won't work with field names that are prefixed
-   with a dollar character.
+   dollar character (``$``). However, :binary:`~bin.mongodump` and
+   :binary:`~bin.mongorestore` won't work with field names that are
+   prefixed with a dollar character.
 
    :manual:`MongoDB Extended JSON
    (v2)</reference/mongodb-extended-json>` cannot differentiate between
