@@ -3,7 +3,7 @@
    Starting in MongoDB 5.0, document field names can be prefixed with a
    dollar character (``$``). However, :binary:`~bin.mongodump` and
    :binary:`~bin.mongorestore` won't work with field names that are
-   prefixed with a dollar character.
+   prefixed with a dollar character in a collection's options.
 
    :manual:`MongoDB Extended JSON
    (v2)</reference/mongodb-extended-json>` cannot differentiate between
