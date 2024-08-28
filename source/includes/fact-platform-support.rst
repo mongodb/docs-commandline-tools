@@ -29,6 +29,18 @@
     -
     -
 
+  * - Debian 12
+    - |checkmark|
+    -
+    -
+    -
+
+  * - Debian 11
+    - |checkmark|
+    -
+    -
+    -
+
   * - Debian 10
     - |checkmark|
     -
