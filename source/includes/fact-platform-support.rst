@@ -19,7 +19,7 @@
 
   * - Amazon 2
     - |checkmark|
-    -
+    - |checkmark|
     -
     -
 
@@ -86,6 +86,18 @@
   * - SUSE 12
     - |checkmark|
     -
+    -
+    -
+
+  * - Ubuntu 24.04
+    - |checkmark|
+    - |checkmark|
+    -
+    -
+
+  * - Ubuntu 22.04
+    - |checkmark|
+    - |checkmark|
     -
     -
 
