@@ -114,6 +114,14 @@ following limitations apply:
   - :option:`--oplogReplay <mongorestore --oplogReplay>`
   - :option:`--preserveUUID <mongorestore --preserveUUID>`
 
+.. note:: Rollback on the target cluster during a restore or import
+   
+   If you are restoring or importing data to a cluster that undergoes a
+   rollback during the restore or import process, you should delete all 
+   restored or imported data and redo the process from the beginning to
+   ensure that all data is safely restored or imported. See 
+   :ref:`the rollback documentation<replica-set-rollbacks>` for more details.
+
 .. _mongorestore-required-access:
 
 Required Access
