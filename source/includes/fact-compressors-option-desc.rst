@@ -1,5 +1,5 @@
-Specify the compression algorithm used between the MongoDB server and
-|tool-binary|. You can specify one or more of these values for the
+Specifies the compression algorithm used between the MongoDB server and
+|tool-binary|. You can use one or more of these values for the
 ``--compressors`` option:
 
 - ``snappy``
