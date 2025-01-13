@@ -729,8 +729,8 @@ Options
         was created with the :option:`--dumpDbUsersAndRoles` option. 
 
       - Restoring the ``admin`` database by specifying 
-        :option:`--db admin <mongorestore --db>` auotmatically restores all 
-        users and roles. Therefore, you cannot use ``--restoreDbUsersAndRoles`` 
+        :option:`--db admin <mongorestore --db>` automatically restores all 
+        users and roles. You cannot use ``--restoreDbUsersAndRoles`` 
         on the ``admin`` database, and attempting to do so results in an error. 
 
 .. option:: --writeConcern=<document>
