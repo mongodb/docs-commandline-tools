@@ -152,6 +152,6 @@ Further Reading
    mongostat </mongostat>
    mongotop </mongotop>
    mongofiles </mongofiles>
-   Installation </installation/installation>
+   Installation </installation>
    Logs </logs>
    100.10.0 Changelogs </release-notes/database-tools-changelog>
