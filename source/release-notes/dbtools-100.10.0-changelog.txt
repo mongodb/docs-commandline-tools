@@ -1,6 +1,5 @@
 .. |tool-version| replace:: 100.10.0
 
-.. _dbtools-current-changelog:
 .. _dbtools-100.10.0-changelog:
 
 ========================================
