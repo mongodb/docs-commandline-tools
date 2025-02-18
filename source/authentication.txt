@@ -11,4 +11,31 @@ Database Tools Authentication
    :depth: 1
    :class: singlecol
 
+Starting in 100.11.0, you can use database tools with
+:atlas:`Atlas Workload Identity Federation </workload-oidc>` to
+authenticate connections to MongoDB clusters running on
+Microsoft Azure and Google Cloud Platform.
+
+Examples
+--------
+
+This section shows database tools examples that use Workload Identity
+Federation.
+
+In the `connection string, set
+:urioption:`authMechanism` to ``MONGODB-OIDC`` and set
+:urioption:`authMechanismProperties` as needed:
+
+- For Microsoft Azure, set ``authMechanismProperties`` to
+  ``ENVIRONMENT:azure,TOKEN_RESOURCE:<audience>``. Note:
+  Omit ``TOKEN_RESOURCE`` if using Microsoft Azure Kubernetes
+  Service (AKS).
+- For Google Cloud Platform, set ``authMechanismProperties`` to
+  ``ENVIRONMENT:gcp,TOKEN_RESOURCE:<audience>``.
+
+Replace ``<audience>`` with the application or service that the access
+token is intended for. For more details, see :ref:`Identity Provider
+Fields <oidcidentityproviders-fields>`.
+
+
 
