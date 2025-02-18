@@ -22,7 +22,7 @@ Examples
 This section shows database tools examples that use Workload Identity
 Federation.
 
-In the `connection string, set
+In the connection string, set
 :urioption:`authMechanism` to ``MONGODB-OIDC`` and set
 :urioption:`authMechanismProperties` as needed:
 
