@@ -13,8 +13,8 @@ Database Tools Authentication
 
 Starting in 100.11.0, you can use database tools with
 :atlas:`Atlas Workload Identity Federation </workload-oidc>` to
-authenticate connections to MongoDB clusters running on
-Microsoft Azure and Google Cloud Platform.
+authenticate connections to MongoDB running on Microsoft Azure
+and Google Cloud Platform.
 
 Examples
 --------
@@ -22,9 +22,9 @@ Examples
 This section shows database tools examples that use Workload Identity
 Federation.
 
-In the connection string, set
-:urioption:`authMechanism` to ``MONGODB-OIDC`` and set
-:urioption:`authMechanismProperties` as needed:
+In the connection string, set :urioption:`authMechanism` to
+``MONGODB-OIDC`` and set :urioption:`authMechanismProperties` as
+needed:
 
 - For Microsoft Azure, set ``authMechanismProperties`` to
   ``ENVIRONMENT:azure,TOKEN_RESOURCE:<audience>``. Note:
@@ -37,20 +37,20 @@ Replace ``<audience>`` with the application or service that the access
 token is intended for. For more details, see :ref:`Identity Provider
 Fields <oidcidentityproviders-fields>`.
 
-Connect to MongoDB Clusters Using Microsoft Azure Instance Metadata Service
+Connect to MongoDB using Microsoft Azure Instance Metadata Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following ``mongodump`` example connects to MongoDB clusters using
+The following ``mongodump`` example connects to MongoDB using
 Microsoft Azure Instance Metadata Service (IMDS):
 
 .. code-block:: shell
-   mongodump --uri "mongodb://clusterOne01.fancyCorp.com:20020,clusterOne02.fancyCorp.com:20020,clusterOne03.fancyCorp.com:20020/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:azure,TOKEN_RESOURCE:https://www.example.com" \
+   mongodump --uri "mongodb://mongodb.example.com:20017/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:azure,TOKEN_RESOURCE:https://www.example.com" \
       --username admin
  
 Connect to MongoDB Clusters Using Microsoft Azure Kubernetes Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To connect to MongoDB clusters using Microsoft Azure Kubernetes Service,
+To connect to MongoDB using Microsoft Azure Kubernetes Service,
 define these environment variables:
 
 .. list-table::
@@ -77,7 +77,7 @@ For details about Azure and the variables, see the Microsoft Azure
 documentation.
 
 The following ``mongodump`` example defines the environment variables
-and connects to MongoDB clusters:
+and connects to MongoDB:
 
 .. code-block:: shell
 
@@ -85,7 +85,7 @@ and connects to MongoDB clusters:
    AZURE_APP_CLIENT_ID=b6c835da-e536-425b-9405-64bc471e245b \
    AZURE_CLIENT_ID=f176d4eb-7dcd-4f66-bccf-aaa316ee61fd \
    AZURE_FEDERATED_TOKEN_FILE=/var/run/secrets/azure/tokens/azure-identity-token \
-   mongodump --uri "mongodb://clusterOne01.fancyCorp.com:20020,clusterOne02.fancyCorp.com:20020,clusterOne03.fancyCorp.com:20020/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:azure" \
+   mongodump --uri "mongodb://mongodb.example.com:20017/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:azure" \
       --username "admin"
 
 ``TOKEN_RESOURCE`` isn't required for this example.
@@ -93,12 +93,12 @@ and connects to MongoDB clusters:
 Connect to MongoDB Clusters in Google Cloud Platform
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following ``mongodump`` example connects to MongoDB clusters in
+The following ``mongodump`` example connects to MongoDB on
 Google Cloud Platform:
 
 .. code-block:: shell
 
-   mongodump --uri "mongodb://clusterOne01.fancyCorp.com:20020,clusterOne02.fancyCorp.com:20020,clusterOne03.fancyCorp.com:20020/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:gcp,TOKEN_RESOURCE:https://www.example.com" \
+   mongodump --uri "mongodb://mongodb.example.com:20017/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:gcp,TOKEN_RESOURCE:https://www.example.com" \
       --username "admin"
 
 No environment variables are required for Google Cloud Platform.
