@@ -1,3 +1,4 @@
+.. _tools-authentication:
 
 =============================
 Database Tools Authentication
