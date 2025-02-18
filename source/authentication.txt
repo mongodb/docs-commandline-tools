@@ -45,6 +45,7 @@ The following ``mongodump`` example connects to MongoDB using
 Microsoft Azure Instance Metadata Service (IMDS):
 
 .. code-block:: shell
+
    mongodump --uri "mongodb://mongodb.example.com:20017/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:azure,TOKEN_RESOURCE:https://www.example.com" \
       --username admin
  
