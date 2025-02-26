@@ -49,8 +49,8 @@ Microsoft Azure Instance Metadata Service (IMDS):
    mongodump --uri "mongodb://mongodb.example.com:20017/?authMechanism=MONGODB-OIDC&authMechanismProperties=ENVIRONMENT:azure,TOKEN_RESOURCE:https://www.example.com" \
       --username admin
  
-Connect to MongoDB Clusters Using Microsoft Azure Kubernetes Service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Connect to MongoDB using Microsoft Azure Kubernetes Service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To connect to MongoDB using Microsoft Azure Kubernetes Service,
 define these environment variables:
@@ -92,8 +92,8 @@ and connects to MongoDB:
 
 ``TOKEN_RESOURCE`` isn't required for this example.
 
-Connect to MongoDB Clusters in Google Cloud Platform
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Connect to MongoDB on Google Cloud Platform
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following ``mongodump`` example connects to MongoDB on
 Google Cloud Platform:
