@@ -6,11 +6,11 @@
 *Released 2025-02-02*
 
 
-This version adds support for OIDC for programmatic workloads.
-It also updates a few dependency libraries to fix
-vulnerabilities, adds a check of metadata consistency to
-accommodate ``$``-prefixed fields, and fixes a small race
-condition in logging.
+This version adds support for :ref:`OIDC <tools-authentication>`
+for programmatic workloads. It also updates a few dependency
+libraries to fix vulnerabilities, adds a check of metadata
+consistency to accommodate ``$``-prefixed fields, and fixes a
+small race condition in logging.
 
 Bug:
 
