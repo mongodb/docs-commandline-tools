@@ -9,7 +9,7 @@
 This version adds support for OIDC for programmatic workloads.
 It also updates a few dependency libraries to fix
 vulnerabilities, adds a check of metadata consistency to
-accommodates ``$-prefixed`` fields, and fixes a small race
+accommodate ``$``-prefixed fields, and fixes a small race
 condition in logging.
 
 Bug:
