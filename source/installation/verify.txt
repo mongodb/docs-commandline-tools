@@ -1,0 +1,36 @@
+.. _db-tools-verify-packages:
+
+===========================================
+Verify Integrity of Database Tools Packages
+===========================================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+.. facet::
+   :name: genre
+   :values: tutorial
+
+.. include:: /includes/verify-signatures-intro.rst
+
+To learn how to verify MongoDB Shell packages, see the corresponding
+page for your verification method:
+
+- :ref:`db-tools-verify-signatures-disk-image`
+
+- :ref:`db-tools-verify-signatures-gpg`
+
+- :ref:`db-tools-verify-signatures-rpm`
+
+- :ref:`db-tools-verify-signatures-windows`
+
+.. toctree::
+   :titlesonly:
+
+   /installation/verify/disk-images
+   /installation/verify/gpg
+   /installation/verify/rpm
+   /installation/verify/windows
