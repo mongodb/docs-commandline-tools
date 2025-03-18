@@ -16,7 +16,7 @@ Verify Integrity of Database Tools Packages
 
 .. include:: /includes/verify-signatures-intro.rst
 
-To learn how to verify MongoDB Shell packages, see the corresponding
+To learn how to verify Database Tools packages, see the corresponding
 page for your verification method:
 
 - :ref:`db-tools-verify-signatures-disk-image`
