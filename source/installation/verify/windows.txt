@@ -1,4 +1,4 @@
-.. db-tools-verify-signatures-windows:
+.. _db-tools-verify-signatures-windows:
 
 =======================
 Verify Windows Packages
