@@ -39,8 +39,9 @@ Steps
 
    .. step:: Download the MongoDB Database Tools public signature
 
-      To download the MongoDB Shell public signature, run the following
-      command:
+      To download the Database Tools public signature, run the following
+      command, replacing the placeholder values with your platform,
+      architecture, and Database Tools version:
 
       .. code-block:: sh
 
@@ -48,8 +49,8 @@ Steps
          
       .. example::
 
-         Use the following URL for Database Tools on Amazon Linux 2,
-         version {+release+}:
+         The following URL contains the signature file for Database
+         Tools on Amazon Linux 2, version {+release+}:
 
          ``https://s3.amazonaws.com/downloads.mongodb.org/tools/db/mongodb-database-tools-amazon2-x86_64-{+release+}.tgz.sig``
 
