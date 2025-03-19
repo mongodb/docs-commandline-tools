@@ -30,7 +30,7 @@ page for your verification method:
 .. toctree::
    :titlesonly:
 
-   /installation/verify/macos
-   /installation/verify/gpg
-   /installation/verify/rpm
-   /installation/verify/windows
+   macOS </installation/verify/macos>
+   Linux </installation/verify/gpg>
+   RHEL </installation/verify/rpm>
+   Windows </installation/verify/windows>

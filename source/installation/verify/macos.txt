@@ -1,8 +1,8 @@
 .. _db-tools-verify-signatures-macos:
 
-========================
-Verify Packages on macOS
-========================
+=====================
+Verify macOS Packages
+=====================
 
 .. contents:: On this page
    :local:
