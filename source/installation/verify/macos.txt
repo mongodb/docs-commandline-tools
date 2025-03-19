@@ -1,7 +1,7 @@
 .. _db-tools-verify-signatures-macos:
 
 =====================
-Verify macOS Packages
+Verify macOS Binaries
 =====================
 
 .. contents:: On this page
