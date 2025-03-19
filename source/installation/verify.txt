@@ -19,7 +19,7 @@ Verify Integrity of Database Tools Packages
 To learn how to verify Database Tools packages, see the corresponding
 page for your verification method:
 
-- :ref:`db-tools-verify-signatures-disk-image`
+- :ref:`db-tools-verify-signatures-macos`
 
 - :ref:`db-tools-verify-signatures-gpg`
 
@@ -30,7 +30,7 @@ page for your verification method:
 .. toctree::
    :titlesonly:
 
-   /installation/verify/disk-images
+   /installation/verify/macos
    /installation/verify/gpg
    /installation/verify/rpm
    /installation/verify/windows
