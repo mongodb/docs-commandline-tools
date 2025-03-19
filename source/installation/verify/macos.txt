@@ -35,7 +35,7 @@ To verify a Database Tools binary, run:
    codesign -dv --verbose=4 <path_to_binary>
 
 For example, the following command verifies the ``mongorestore`` binary
-in the ``/usr/local/bin`` folder:
+in the ``/usr/local/bin/`` folder:
 
 .. code-block:: sh
 
