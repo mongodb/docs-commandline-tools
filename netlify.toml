@@ -7,3 +7,7 @@ name = "snooty-cache-plugin"
 [build]
 publish = "snooty/public"
 command = ". ./build.sh"
+
+[[redirects]]
+from = "/installation/installation/"
+to = "/installation"
