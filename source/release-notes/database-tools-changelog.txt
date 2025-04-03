@@ -34,7 +34,7 @@ Database Tools |tool-version|
 .. toctree::
    :maxdepth: 1
 
-   100.11.0 </release-notes/dbtools-100.11.0-changelog>
+   100.11.0 </release-notes/dbtools-100.12.0-changelog>
    100.10.0 </release-notes/dbtools-100.10.0-changelog>
    100.9.0 </release-notes/dbtools-100.9.0-changelog>
    100.8.0 </release-notes/dbtools-100.8.0-changelog>
