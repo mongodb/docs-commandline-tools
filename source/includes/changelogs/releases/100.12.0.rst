@@ -1,6 +1,6 @@
 .. _100.12.0-changelog:
 
-100.12.1 Changelog
+100.12.0 Changelog
 ------------------
 
 *Released 2025-04-01*
