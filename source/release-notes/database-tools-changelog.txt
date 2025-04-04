@@ -23,18 +23,15 @@ Database Tools |tool-version| Changelogs
 All Releases
 ------------
 
-.. include:: /includes/changelogs/dbtools-changelogs.rst
+.. include:: /includes/changelogs/releases/100.12.0.rst
 
 
 Database Tools |tool-version|
 -----------------------------
 
-.. include:: /includes/changelogs/releases/100.12.0.rst
-
 .. toctree::
    :maxdepth: 1
 
-   100.12.0 </release-notes/dbtools-100.12.0-changelog>
    100.11.0 </release-notes/dbtools-100.11.0-changelog>
    100.10.0 </release-notes/dbtools-100.10.0-changelog>
    100.9.0 </release-notes/dbtools-100.9.0-changelog>
