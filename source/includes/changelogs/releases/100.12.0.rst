@@ -36,10 +36,9 @@ Task
 ~~~~
 
 - :issue:`TOOLS-3719` - Database fails if --restoreDBUsersAndRoles used on wrong
-   target
+  target
 - :issue:`TOOLS-3745` - mongorestore does not strip the 'system.buckets' prefix 
   when restoring a timeseries collection from a BSON file 
 - :issue:`TOOLS-3762` - Switch to Silkbomb 2.0 /Kondukto
-- :issue:`TOOLS-3764` - Run integration tests for 8.1 server support
 - :issue:`TOOLS-3782` - Handle removal of ``authSchema`` document in system.version
   in server 8.1
