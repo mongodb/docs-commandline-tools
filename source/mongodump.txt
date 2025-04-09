@@ -770,12 +770,20 @@ Options
 
    Excludes the specified collection from the ``mongodump`` output.
    To exclude multiple collections, specify the ``--excludeCollection`` multiple times.
+   
+   If you use ``--excludeCollection`` option without a database specified, 
+   ``mongodump`` errors. For information on specifying a database, see
+   :option:`--db <mongodump --db>`.
 
 .. option:: --excludeCollectionsWithPrefix=<string>
 
    Excludes all collections with a specified prefix from the ``mongodump``
    outputs. To specify multiple prefixes, specify the ``--excludeCollectionsWithPrefix`` multiple
    times.
+
+   If you use ``--excludeCollectionsWithPrefix`` option without a database specified, 
+   ``mongodump`` errors. For information on specifying a database, see
+   :option:`--db <mongodump --db>`.
 
 .. option:: --numParallelCollections=<int>, -j=<int>
 
