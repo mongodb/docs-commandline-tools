@@ -771,9 +771,9 @@ Options
    Excludes the specified collection from the ``mongodump`` output.
    To exclude multiple collections, specify the ``--excludeCollection`` multiple times.
    
-   If you use ``--excludeCollection`` option without a database specified, 
-   ``mongodump`` errors. For information on specifying a database, see
-   :option:`--db <mongodump --db>`.
+   To use the ``--excludeCollection`` option, you must specify a database. You can specify
+   a database with the :option:`--db <mongodump --db>` option or directly in 
+   :option:`--uri connection string <mongodump --uri>`.
 
 .. option:: --excludeCollectionsWithPrefix=<string>
 
@@ -781,9 +781,9 @@ Options
    outputs. To specify multiple prefixes, specify the ``--excludeCollectionsWithPrefix`` multiple
    times.
 
-   If you use ``--excludeCollectionsWithPrefix`` option without a database specified, 
-   ``mongodump`` errors. For information on specifying a database, see
-   :option:`--db <mongodump --db>`.
+   To use the ``--excludeCollection`` option, you must specify a database. You can specify
+   a database with the :option:`--db <mongodump --db>` option or directly in 
+   :option:`--uri connection string <mongodump --uri>`.
 
 .. option:: --numParallelCollections=<int>, -j=<int>
 
