@@ -88,10 +88,9 @@ perform bulk insert/upsert operations.
 Time Series Collections
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-``mongoimport`` can only import data into a :ref:`time series collection <manual-timeseries-landing>` created before running
-``mongoimport``. ``mongoimport`` does not support creating time series collections
-automatically. To import time series data, run :method:`~db.createCollection()` on your MongoDB
-instance first, then pass in the time series collection you created to ``mongoimport``.
+To import time series data, you must create a :ref:`time series collection <manual-timeseries-landing>`
+before running ``mongoimport``. ``mongoimport`` does not support creating time series collections
+automatically. For more information about creating a collection, see :method:`~db.createCollection()`.
 
 Required Access
 ---------------
